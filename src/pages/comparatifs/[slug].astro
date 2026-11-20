@@ -1,0 +1,153 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import CarteApercu from '../../components/CarteApercu.astro';
+import TableauComparatif from '../../components/TableauComparatif.astro';
+import { slugify } from '../../utils/slugify';
+
+export async function getStaticPaths() {
+  const allProducts = await getCollection('produits');
+  const categoriesRaw = [...new Set(allProducts.flatMap(p => p.data.categories))];
+  const categoryContent = await getCollection('categories');
+
+  return categoriesRaw.map(categoryName => {
+    const slug = slugify(categoryName);
+    const products = allProducts.filter(p => p.data.categories.includes(categoryName));
+    const content = categoryContent.find(c => c.id === slug);
+    
+    return {
+      params: { slug },
+      props: { categoryName, products, content, slug },
+    };
+  });
+}
+
+const { categoryName, products, content, slug } = Astro.props;
+const Content = content ? (await render(content)).Content : null;
+
+let seoTitle = content?.data.titre_seo || `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
+seoTitle = seoTitle.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
+if (seoTitle.length < 20) seoTitle = `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
+if (seoTitle.length > 90) seoTitle = seoTitle.slice(0, 87) + '...';
+
+let seoDescription = content?.data.description_seo || `Découvrez notre comparatif complet et sélection pour ${categoryName}. Analyse technique, tests et conseils d'experts.`;
+seoDescription = seoDescription.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
+if (seoDescription.length < 90) seoDescription = `${seoDescription} Consultez notre guide d'achat complet pour bien choisir votre matériel.`;
+if (seoDescription.length > 200) seoDescription = seoDescription.slice(0, 197) + '...';
+
+const breadcrumbs = [
+  { name: "Accueil", url: "/" },
+  { name: "Comparatifs", url: "/comparatifs/" },
+  { name: categoryName, url: `/comparatifs/${slug}/` }
+];
+---
+
+<Layout 
+  title={seoTitle}
+  description={seoDescription}
+  breadcrumbs={breadcrumbs}
+>
+  <nav class="flex text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+    <ol class="flex items-center space-x-2">
+      <li><a href="/" class="hover:text-orange-600 transition-colors">Accueil</a></li>
+      <li><span class="mx-1 text-slate-300">/</span></li>
+      <li><a href="/comparatifs/" class="hover:text-orange-600 transition-colors">Comparatifs</a></li>
+      <li><span class="mx-1 text-slate-300">/</span></li>
+      <li class="font-bold text-slate-900 truncate capitalize" aria-current="page">{categoryName}</li>
+    </ol>
+  </nav>
+
+  <header class="mb-10 max-w-4xl">
+    <span class="text-xs font-black uppercase tracking-wider bg-orange-100 text-orange-800 px-3 py-1 rounded-full inline-block mb-3">
+      Comparatif Spécialisé
+    </span>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight capitalize !my-0">
+      {content?.data.titre_seo?.replace(/\b202[0-9]\b/g, '') || `Meilleurs équipements pour ${categoryName}`}
+    </h1>
+    <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
+      Bancs d'essai comparatifs et guide de sélection pour vous équiper avec le modèle le plus adapté à vos attentes.
+    </p>
+  </header>
+
+  {products.length > 0 && (
+    <TableauComparatif 
+      produits={products}
+      titreSection={`Comparatif de la catégorie : ${categoryName}`}
+      sousTitreSection="Analyse des critères de performance déterminants"
+    />
+  )}
+
+  {content && (
+    <section class="bg-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-sm my-12">
+      <div class="prose prose-slate prose-lg max-w-none">
+        <Content />
+      </div>
+    </section>
+  )}
+
+  <section class="my-14">
+    <div class="flex items-center justify-between mb-8 pb-3 border-b border-gray-200">
+      <div>
+        <h2 class="text-2xl font-black text-slate-900 tracking-tight !my-0 capitalize">
+          Tous les modèles retenus en {categoryName}
+        </h2>
+        <p class="text-xs text-slate-500 mt-1">Fiches techniques détaillées et bancs d'essai complets</p>
+      </div>
+      <span class="text-xs font-bold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+        {products.length} {products.length > 1 ? 'modèles analysés' : 'modèle analysé'}
+      </span>
+    </div>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {products.map(product => (
+        <CarteApercu 
+          titre={product.data.titre}
+          description={product.data.description_courte}
+          image={product.data.image_url}
+          slug={product.id}
+          lienAffiliation={product.data.lien_affiliation}
+        />
+      ))}
+    </div>
+  </section>
+
+  {content?.data.faq && content.data.faq.length > 0 && (
+    <section class="my-14 bg-gradient-to-b from-stone-50 to-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-sm">
+      <div class="max-w-2xl mb-8">
+        <span class="text-xs font-black uppercase tracking-wider text-orange-600">Réponses d'experts</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
+          Foire aux questions ({categoryName})
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        {content.data.faq.map(item => (
+          <div class="bg-white p-5 rounded-2xl border border-gray-200/90 shadow-2xs">
+            <h3 class="text-base font-extrabold text-slate-900 mb-2 flex items-start gap-2 !my-0">
+              <span class="text-orange-500 font-black">Q.</span>
+              <span>{item.q}</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed pl-6 !mb-0 mt-2">
+              {item.r}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {content?.data.faq && content.data.faq.length > 0 && (
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": content.data.faq.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.r
+        }
+      }))
+    })} />
+  )}
+</Layout>

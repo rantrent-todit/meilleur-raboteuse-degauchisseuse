@@ -1,0 +1,224 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CarteApercu from '../components/CarteApercu.astro';
+import TableauComparatif from '../components/TableauComparatif.astro';
+import BlocVerdictTop3 from '../components/BlocVerdictTop3.astro';
+import BadgeConfiance from '../components/BadgeConfiance.astro';
+import BoutonAmazon from '../components/BoutonAmazon.astro';
+import SelecteurExpress from '../components/SelecteurExpress.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../utils/slugify';
+import { siteConfig } from '../config/site.config';
+
+const allProducts = await getCollection('produits');
+const topPickProduct = allProducts[0];
+const recentProducts = allProducts.slice(0, 6);
+
+const categoryContent = await getCollection('categories');
+const categoryMap = new Map();
+for (const cat of categoryContent) {
+  categoryMap.set(cat.id, cat.id.replace(/-/g, ' '));
+}
+for (const rawName of allProducts.flatMap(p => p.data.categories)) {
+  const s = slugify(rawName);
+  categoryMap.set(s, rawName);
+}
+const allCategories = Array.from(categoryMap.entries()).map(([slug, name]) => ({ slug, name })).sort((a, b) => a.name.localeCompare(b.name));
+
+const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": siteConfig.siteName,
+      "url": `${siteUrl}/`,
+      "description": siteConfig.description,
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@type": "Organization",
+        "name": siteConfig.siteName,
+        "url": `${siteUrl}/`,
+        "logo": `${siteUrl}/favicon.svg`
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": siteConfig.siteName,
+      "url": `${siteUrl}/`,
+      "email": siteConfig.contactEmail,
+      "logo": `${siteUrl}/favicon.svg`
+    }
+  ]
+};
+---
+
+<Layout
+  title={`${siteConfig.siteName} : Comparatifs et Tests d'Experts`}
+  description={siteConfig.description}
+  breadcrumbs={[{ name: "Accueil", url: "/" }]}
+>
+  <script type="application/ld+json" is:inline slot="extra-head" set:html={JSON.stringify(websiteSchema)} />
+
+  <!-- HERO SECTION CONVERSION BENTO -->
+  <section class="py-8 md:py-16">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="lg:col-span-7 text-left">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs font-black uppercase tracking-wider mb-6">
+          <svg class="w-4 h-4 text-orange-600" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+          </svg>
+          Guide Comparatif & Bancs d'Essai Indépendants
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-6">
+          {siteConfig.siteName} : <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500">{siteConfig.tagline}</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+          {siteConfig.description}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+          <a 
+            href="#podium" 
+            class="px-7 py-4 bg-slate-900 hover:bg-slate-800 text-white font-extrabold rounded-xl shadow-lg transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm"
+          >
+            <span>Voir le Podium des Gagnants</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <a 
+            href="/avis/" 
+            class="px-7 py-4 bg-white text-slate-800 font-extrabold border border-slate-300 rounded-xl hover:bg-slate-50 transition-all text-sm flex items-center justify-center"
+          >
+            Explorer tous les tests
+          </a>
+        </div>
+      </div>
+
+      {topPickProduct && (
+        <div class="lg:col-span-5">
+          <div class="bg-white border-2 border-orange-500 rounded-3xl p-6 sm:p-7 shadow-xl relative overflow-hidden">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[11px] font-black uppercase tracking-wider bg-orange-600 text-white px-3 py-1 rounded-full shadow-sm">
+                🏆 Recommandation N°1
+              </span>
+              <span class="text-xs font-black uppercase tracking-wider text-orange-600">Coup de Cœur Rédaction</span>
+            </div>
+
+            <div class="w-full h-52 bg-slate-50/70 rounded-2xl p-4 flex items-center justify-center mb-5 border border-slate-100">
+              <img 
+                src={topPickProduct.data.image_url} 
+                alt={topPickProduct.data.titre} 
+                class="w-full h-full object-contain"
+                loading="eager"
+              />
+            </div>
+
+            <h3 class="font-extrabold text-lg text-slate-900 mb-2 leading-snug !my-0">
+              <a href={`/avis/${topPickProduct.id}/`} class="hover:text-orange-600 transition-colors">
+                {topPickProduct.data.titre}
+              </a>
+            </h3>
+
+            <p class="text-xs text-slate-600 mb-5 line-clamp-2 leading-relaxed mt-2">
+              {topPickProduct.data.description_courte}
+            </p>
+
+            <BoutonAmazon 
+              href={topPickProduct.data.lien_affiliation}
+              variant="winner"
+              texte="Vérifier le meilleur prix"
+              sousTexte="Sur Amazon.fr • Stock vérifié"
+              class="w-full"
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- GUIDE INTERACTIF EXPRESS EN 2 CLICS -->
+  {allProducts.length > 0 && (
+    <SelecteurExpress produits={allProducts} categories={allCategories} />
+  )}
+
+  <!-- PODIUM TOP 3 BENTO -->
+  {allProducts.length >= 3 && (
+    <div id="podium">
+      <BlocVerdictTop3 produits={allProducts} />
+    </div>
+  )}
+
+  <!-- TABLEAU COMPARATIF -->
+  {allProducts.length > 0 && (
+    <TableauComparatif produits={allProducts.slice(0, 5)} />
+  )}
+
+  <!-- PARCOURIR PAR CATÉGORIE -->
+  <section class="my-14">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <span class="text-xs font-black uppercase tracking-wider text-orange-600">Catégories & Usages</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
+          Trouvez selon votre besoin
+        </h2>
+      </div>
+      <a href="/comparatifs/" class="text-xs sm:text-sm font-extrabold text-orange-600 hover:text-orange-700">
+        Toutes les catégories &rarr;
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {allCategories.slice(0, 6).map(cat => (
+        <a 
+          href={`/comparatifs/${cat.slug}/`}
+          class="bg-white border border-slate-200/90 rounded-2xl p-5 hover:border-orange-500 hover:shadow-lg transition-all flex items-center justify-between group"
+        >
+          <div>
+            <h3 class="font-bold text-base text-slate-900 group-hover:text-orange-600 capitalize leading-tight !my-0">
+              {cat.name}
+            </h3>
+            <span class="text-xs text-slate-500 mt-1 inline-block">Consulter la sélection</span>
+          </div>
+          <span class="text-orange-600 group-hover:translate-x-1 transition-transform font-bold">&rarr;</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- DERNIERS AVIS -->
+  {recentProducts.length > 0 && (
+    <section class="my-16">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-500">Laboratoire & Bancs d'Essai</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
+            Derniers tests détaillés
+          </h2>
+        </div>
+        <a href="/avis/" class="text-sm font-extrabold text-orange-600 hover:text-orange-700">
+          Tous les tests &rarr;
+        </a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentProducts.map((product, idx) => (
+          <CarteApercu 
+            titre={product.data.titre}
+            description={product.data.description_courte}
+            image={product.data.image_url}
+            slug={product.id}
+            lienAffiliation={product.data.lien_affiliation}
+            categories={product.data.categories}
+            index={idx}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <BadgeConfiance />
+</Layout>

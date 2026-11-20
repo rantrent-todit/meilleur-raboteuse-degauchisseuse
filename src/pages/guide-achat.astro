@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TableauComparatif from '../components/TableauComparatif.astro';
+import { getCollection } from 'astro:content';
+import { siteConfig } from '../config/site.config';
+
+const allProducts = await getCollection('produits');
+const topProducts = allProducts.slice(0, 4);
+
+const breadcrumbs = [
+  { name: "Accueil", url: "/" },
+  { name: "Guide d'achat", url: "/guide-achat/" }
+];
+---
+
+<Layout 
+  title={`Comment bien choisir ? | Le guide d'achat complet ${siteConfig.siteName}`}
+  description="Tous les conseils d'experts pour bien choisir votre matériel : critères techniques indispensables, pièges à éviter et sélection de référence."
+  breadcrumbs={breadcrumbs}
+>
+  <nav class="flex text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+    <ol class="flex items-center space-x-2">
+      <li><a href="/" class="hover:text-orange-600 transition-colors">Accueil</a></li>
+      <li><span class="mx-1 text-slate-300">/</span></li>
+      <li class="font-bold text-slate-900" aria-current="page">Guide d'achat</li>
+    </ol>
+  </nav>
+
+  <article class="max-w-4xl mx-auto">
+    <header class="text-center mb-12">
+      <span class="text-xs font-black uppercase tracking-wider bg-orange-100 text-orange-800 px-3 py-1 rounded-full inline-block mb-3">
+        Dossier Conseil
+      </span>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight !my-0">
+        Guide d'achat complet : Comment bien choisir ?
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed max-w-2xl mx-auto">
+        Comprendre les critères déterminants pour identifier le modèle qui répond exactement à votre usage sans surpayer.
+      </p>
+    </header>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-xs mb-12">
+      <h2 class="text-base font-extrabold text-slate-900 uppercase tracking-wider mb-4 !my-0">
+        Les 3 règles fondamentales avant d'acheter
+      </h2>
+      <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <span class="w-6 h-6 rounded-full bg-orange-100 text-orange-600 font-bold flex items-center justify-center flex-shrink-0">1</span>
+          <span><strong>Définir l'usage :</strong> Priorisez vos besoins réels plutôt que les fiches techniques démesurées.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="w-6 h-6 rounded-full bg-orange-100 text-orange-600 font-bold flex items-center justify-center flex-shrink-0">2</span>
+          <span><strong>Qualité de fabrication :</strong> Privilégiez des matériaux robustes et des garanties sérieuses.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="w-6 h-6 rounded-full bg-orange-100 text-orange-600 font-bold flex items-center justify-center flex-shrink-0">3</span>
+          <span><strong>Rapport Qualité/Prix :</strong> Comparez les fonctionnalités utiles au quotidien.</span>
+        </div>
+      </div>
+    </div>
+
+    {topProducts.length > 0 && (
+      <div class="mt-12">
+        <TableauComparatif 
+          produits={topProducts}
+          titreSection="Les modèles de référence de notre guide"
+          sousTitreSection="Sélection rigoureusement analysée en banc d'essai"
+        />
+      </div>
+    )}
+  </article>
+</Layout>

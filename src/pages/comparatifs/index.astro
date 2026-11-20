@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../utils/slugify';
+import { siteConfig } from '../../config/site.config';
+
+const allProducts = await getCollection('produits');
+const categoryContent = await getCollection('categories');
+
+// Map unifiée pour toutes les catégories
+const categoryMap = new Map();
+
+for (const cat of categoryContent) {
+  categoryMap.set(cat.id, {
+    slug: cat.id,
+    name: cat.id.replace(/-/g, ' '),
+    description: cat.data.description_seo
+  });
+}
+
+for (const rawName of allProducts.flatMap(p => p.data.categories)) {
+  const s = slugify(rawName);
+  if (!categoryMap.has(s)) {
+    categoryMap.set(s, {
+      slug: s,
+      name: rawName,
+      description: `Découvrez notre sélection des meilleurs modèles pour la catégorie ${rawName}.`
+    });
+  } else {
+    const entry = categoryMap.get(s);
+    if (entry) entry.name = rawName;
+  }
+}
+
+const allCategories = Array.from(categoryMap.values()).sort((a, b) => a.name.localeCompare(b.name));
+
+const breadcrumbs = [
+  { name: "Accueil", url: "/" },
+  { name: "Comparatifs", url: "/comparatifs/" }
+];
+
+const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `Tous nos comparatifs par catégorie | ${siteConfig.siteName}`,
+  "description": `Accédez à nos guides comparatifs par usage et catégorie sur ${siteConfig.siteName}.`,
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": allCategories.map((c, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "url": `${siteUrl}/comparatifs/${c.slug}/`,
+      "name": c.name
+    }))
+  }
+};
+---
+
+<Layout 
+  title={`Tous nos Comparatifs par Catégorie | ${siteConfig.siteName}`}
+  description={`Accédez à l'ensemble de nos guides comparatifs par usage et catégorie. Trouvez le meilleur équipement au prix le plus juste sur ${siteConfig.siteName}.`}
+  breadcrumbs={breadcrumbs}
+>
+  <script type="application/ld+json" is:inline slot="extra-head" set:html={JSON.stringify(collectionSchema)} />
+
+  <nav class="flex text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
+    <ol class="flex items-center space-x-2">
+      <li><a href="/" class="hover:text-brand transition">Accueil</a></li>
+      <li><span class="mx-2">/</span></li>
+      <li class="font-bold text-gray-900" aria-current="page">Comparatifs</li>
+    </ol>
+  </nav>
+
+  <div class="mb-12">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Nos comparatifs par catégorie</h1>
+    <p class="text-lg text-gray-600 max-w-3xl leading-relaxed">
+      Chaque besoin a ses exigences spécifiques. Sélectionnez une catégorie pour explorer notre sélection filtrée et optimisée des meilleurs modèles.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {allCategories.map(category => (
+      <a 
+        href={`/comparatifs/${category.slug}/`}
+        class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:border-brand/40 hover:shadow-md transition-all flex flex-col items-center text-center"
+      >
+        <div class="w-16 h-16 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+          <svg xmlns="http://www.w3.org/2001/XMLSchema/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+        </div>
+        <h2 class="text-xl font-bold text-gray-900 group-hover:text-brand capitalize mb-2">{category.name}</h2>
+        <p class="text-sm text-gray-500 line-clamp-2">
+          {category.description}
+        </p>
+      </a>
+    ))}
+  </div>
+</Layout>
