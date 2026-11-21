@@ -1,11 +1,11 @@
 ---
-titre: "DEWALT - Raboteuse dégauchisseuse 2100W - 6200 tr/mn - 260mm - Fers HSS-1 guide réglable - 1 clé plate - 1 dispositif de réglage - D27300-QS"
+titre: "DeWalt D27300-QS - Raboteuse Dégauchisseuse 2100 W 260 mm"
 description_courte: "Test complet de la raboteuse dégauchisseuse DeWalt D27300-QS 2100W : précision d'usinage, moteur à induction robuste et capacités d'atelier."
 description_longue: "Découvrez notre banc d'essai exhaustif de la DeWalt D27300-QS. Avec son moteur à induction de 2100W, ses tables en fonte d'aluminium et sa largeur de 260 mm, cette combinée semi-stationnaire s'impose comme une référence pour les artisans et menuisiers exigeants."
 categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/61JLXXlvHlL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0013LFU4G/?tag=amazonwp0b-21"
-meta_title: "DEWALT - Raboteuse dégauchisseuse 2100W - 6200 tr/mn - 260mm - Fers HSS-1 guide réglable - 1 clé plate - 1 dispositif de réglage - D27300-QS : Test, Avis et Banc d'Essai"
+meta_title: "DeWalt D27300-QS - Raboteuse Dégauchisseuse 2100 W 260 mm : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur DEWALT - Raboteuse dégauchisseuse 2100W - 6200 tr/mn - 260mm - Fers HSS-1 guide réglable - 1 clé plate - 1 dispositif de réglage - D27300-QS. Découvrez ses performances réelles et points forts."
 ---
 

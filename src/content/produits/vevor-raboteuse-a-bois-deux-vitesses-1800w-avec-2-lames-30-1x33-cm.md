@@ -1,11 +1,11 @@
 ---
-titre: "VEVOR Raboteuse à Bois Deux Vitesses 1800W avec 2 Lames 30,1x33 cm"
+titre: "VEVOR Raboteuse à Bois 1800W - Deux Vitesses"
 description_courte: "Banc d'essai complet de la raboteuse d'établi VEVOR 1800W. Analyse technique du double système de vitesse, précision d'usinage et avis d'atelier."
 description_longue: "Découvrez notre test détaillé de la raboteuse stationnaire VEVOR 1800W avec table de 33 cm. Analyse de sa motorisation 15A, de son système d'avance automatique à deux vitesses et de ses performances sur bois tendres et durs."
 categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/71xC6hZIe9L._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0BYYHG7NJ/?tag=amazonwp0b-21"
-meta_title: "VEVOR Raboteuse à Bois Deux Vitesses 1800W avec 2 Lames 30,1x33 cm : Test, Avis et Banc d'Essai"
+meta_title: "VEVOR Raboteuse à Bois 1800W - Deux Vitesses : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur VEVOR Raboteuse à Bois Deux Vitesses 1800W avec 2 Lames 30,1x33 cm. Découvrez ses performances réelles et points forts."
 ---
 

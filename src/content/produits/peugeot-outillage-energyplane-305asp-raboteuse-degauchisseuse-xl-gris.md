@@ -1,11 +1,11 @@
 ---
-titre: "Peugeot Outillage ENERGYPLANE-305ASP raboteuse dégauchisseuse XL, Gris"
+titre: "Peugeot ENERGYPLANE-305ASP - Raboteuse-dégauchisseuse 305 mm"
 description_courte: "Test complet de la Peugeot ENERGYPLANE-305ASP : 305 mm de largeur, aspiration intégrée et moteur 1800 W. Analyse technique et avis d'expert indépendant."
 description_longue: "Découvrez notre banc d'essai exhaustif de la combinée raboteuse dégauchisseuse Peugeot ENERGYPLANE-305ASP XL. Avec sa capacité de passage de 305 mm et son système d'aspiration des copeaux intégré, cette machine semi-stationnaire apporte une réponse concrète aux menuisiers et ébénistes à la recherche de polyvalence sans compromis sur l'espace d'atelier."
 categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/71QBWFoaJsL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0B5Y9Z94T/?tag=amazonwp0b-21"
-meta_title: "Peugeot Outillage ENERGYPLANE-305ASP raboteuse dégauchisseuse XL, Gris : Test, Avis et Banc d'Essai"
+meta_title: "Peugeot ENERGYPLANE-305ASP - Raboteuse-dégauchisseuse 305 mm : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur Peugeot Outillage ENERGYPLANE-305ASP raboteuse dégauchisseuse XL, Gris. Découvrez ses performances réelles et points forts."
 ---
 

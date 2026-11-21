@@ -1,11 +1,11 @@
 ---
-titre: "WEN JT630H Fer à joint en spirale 10 A 15,2 cm"
+titre: "WEN JT630H Dégauchisseuse d'établi 152 mm"
 description_courte: "Test approfondi de la dégauchisseuse d'établi WEN JT630H : arbre hélicoïdal, moteur 10 A et finitions nettes pour vos travaux de menuiserie."
 description_longue: "Découvrez notre analyse complète de la dégauchisseuse d'établi WEN JT630H équipée d'un arbre de coupe hélicoïdal à plaquettes. Performances du moteur 10 A, précision du guide biseauté, comportement sur bois durs et gestion des copeaux : tout ce qu'il faut savoir avant d'équiper votre atelier."
 categories: ["aspiration-gestion-copeaux"]
 image_url: "https://m.media-amazon.com/images/I/712OeY8RPBL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B08M6KQ5LX/?tag=amazonwp0b-21"
-meta_title: "WEN JT630H Fer à joint en spirale 10 A 15,2 cm : Test, Avis et Banc d'Essai"
+meta_title: "WEN JT630H Dégauchisseuse d'établi 152 mm : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur WEN JT630H Fer à joint en spirale 10 A 15,2 cm. Découvrez ses performances réelles et points forts."
 ---
 

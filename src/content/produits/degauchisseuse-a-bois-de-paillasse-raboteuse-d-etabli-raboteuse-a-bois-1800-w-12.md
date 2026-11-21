@@ -1,11 +1,11 @@
 ---
-titre: "Dégauchisseuse à Bois de Paillasse, Raboteuse D'établi, Raboteuse à Bois, 1800 W 12000 Tr/min Pour Les Passionnés De La Coupe Du Bois"
+titre: "Raboteuse Dégauchisseuse d'Établi 1800 W"
 description_courte: "Banc d'essai complet de la dégauchisseuse raboteuse d'établi 1800 W à 12000 tr/min : puissance, précision de coupe, ergonomie et avis technique détaillé."
 description_longue: "Découvrez notre analyse approfondie de cette dégauchisseuse raboteuse compacte de paillasse développant 1800 W à 12000 tr/min. Un outil conçu pour les passionnés du travail du bois cherchant un surfaçage précis et un calibrage efficace en atelier."
 categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/61ZDJSMUKLL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B09FK7Y6RB/?tag=amazonwp0b-21"
-meta_title: "Dégauchisseuse à Bois de Paillasse, Raboteuse D'établi, Raboteuse à Bois, 1800 W 12000 Tr/min Pour Les Passionnés De La Coupe Du Bois : Test, Avis et Banc d'Essai"
+meta_title: "Raboteuse Dégauchisseuse d'Établi 1800 W : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur Dégauchisseuse à Bois de Paillasse, Raboteuse D'établi, Raboteuse à Bois, 1800 W 12000 Tr/min Pour Les Passionnés De La Coupe Du Bois. Découvrez ses performances réelles et points forts."
 ---
 

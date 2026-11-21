@@ -1,11 +1,11 @@
 ---
-titre: "Raboteuses Dégauchisseuses, Machine De Raboteuse De Surface De Travail Du Bois Portative D"
+titre: "Raboteuse-dégauchisseuse d'établi portable pour bois"
 description_courte: "Test approfondi de cette machine de rabotage d'établi compacte : précision du rabotage, puissance moteur, qualité de finition et bilan technique complet."
 description_longue: "Pensée pour les artisans du bois et les menuisiers exigeants en quête de mobilité, cette raboteuse d'établi compacte promet d'allier puissance de coupe et précision de calibrage. Notre banc d'essai complet examine en détail son comportement mécanique, sa motorisation, la régularité de son avance et la tenue de ses réglages sur diverses essences de bois."
 categories: ["raboteuses-degauchisseuses-etabli"]
 image_url: "https://m.media-amazon.com/images/I/61gRjz5wbiL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B09FK96CYN/?tag=amazonwp0b-21"
-meta_title: "Raboteuses Dégauchisseuses, Machine De Raboteuse De Surface De Travail Du Bois Portative D : Test, Avis et Banc d'Essai"
+meta_title: "Raboteuse-dégauchisseuse d'établi portable pour bois : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur Raboteuses Dégauchisseuses, Machine De Raboteuse De Surface De Travail Du Bois Portative D. Découvrez ses performances réelles et points forts."
 ---
 

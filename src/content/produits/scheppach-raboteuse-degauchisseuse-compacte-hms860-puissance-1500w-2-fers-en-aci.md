@@ -1,11 +1,11 @@
 ---
-titre: "Scheppach Raboteuse & Dégauchisseuse compacte HMS860 | Puissance 1500W | 2 fers en acier rapide | Largeur de rabotage 204mm | Hauteur de passage 120mm | Régime de l'arbre 9000min-1"
+titre: "Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W"
 description_courte: "Banc d'essai de la raboteuse-dégauchisseuse Scheppach HMS860 : 1500W, arbre à 9000 tr/min et table de 204 mm passés au crible pour vos projets d'atelier."
 description_longue: "Découvrez notre analyse détaillée de la combinée Scheppach HMS860. Une machine compacte de 1500W conçue pour dégauchir et raboter le bois massif avec précision dans les ateliers de menuiserie à espace réduit."
 categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/61NVhq-oupL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B08BPH3YFJ/?tag=amazonwp0b-21"
-meta_title: "Scheppach Raboteuse & Dégauchisseuse compacte HMS860 | Puissance 1500W | 2 fers en acier rapide | Largeur de rabotage 204mm | Hauteur de passage 120mm | Régime de l'arbre 9000min-1 : Test, Avis et Banc d'Essai"
+meta_title: "Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS860 | Puissance 1500W | 2 fers en acier rapide | Largeur de rabotage 204mm | Hauteur de passage 120mm | Régime de l'arbre 9000min-1. Découvrez ses performances réelles et points forts."
 ---
 

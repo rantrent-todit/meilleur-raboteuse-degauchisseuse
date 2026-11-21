@@ -1,11 +1,11 @@
 ---
-titre: "Scheppach Raboteuse & Dégauchisseuse compacte HMS1250 | Puissance 1800W | 2 fers en acier rapide | Largeur de rabotage 305mm | Hauteur de passage 120mm | Régime de l'arbre 9000-1min"
+titre: "Scheppach HMS1250 - Raboteuse Dégauchisseuse 1800W"
 description_courte: "Banc d'essai complet de la raboteuse-dégauchisseuse Scheppach HMS1250 : moteur 1800W, 305 mm de largeur utile et 9000 tr/min passés au crible par nos experts."
 description_longue: "Découvrez notre test complet de la Scheppach HMS1250. Avec sa capacité record de 305 mm sous format compact, son moteur de 1800 W et son arbre à 9000 tours par minute, cette machine combinée séduit les artisans et passionnés du travail du bois à la recherche de précision."
 categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/61sHr45Q4fL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0C9JZKP2P/?tag=amazonwp0b-21"
-meta_title: "Scheppach Raboteuse & Dégauchisseuse compacte HMS1250 | Puissance 1800W | 2 fers en acier rapide | Largeur de rabotage 305mm | Hauteur de passage 120mm | Régime de l'arbre 9000-1min : Test, Avis et Banc d'Essai"
+meta_title: "Scheppach HMS1250 - Raboteuse Dégauchisseuse 1800W : Test, Avis et Banc d'Essai"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS1250 | Puissance 1800W | 2 fers en acier rapide | Largeur de rabotage 305mm | Hauteur de passage 120mm | Régime de l'arbre 9000-1min. Découvrez ses performances réelles et points forts."
 ---
 
