@@ -5,7 +5,6 @@ import TableauComparatif from '../components/TableauComparatif.astro';
 import BlocVerdictTop3 from '../components/BlocVerdictTop3.astro';
 import BadgeConfiance from '../components/BadgeConfiance.astro';
 import BoutonAmazon from '../components/BoutonAmazon.astro';
-import SelecteurExpress from '../components/SelecteurExpress.astro';
 import { getCollection } from 'astro:content';
 import { slugify } from '../utils/slugify';
 import { siteConfig } from '../config/site.config';
@@ -26,6 +25,35 @@ for (const rawName of allProducts.flatMap(p => p.data.categories)) {
 const allCategories = Array.from(categoryMap.entries()).map(([slug, name]) => ({ slug, name })).sort((a, b) => a.name.localeCompare(b.name));
 
 const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
+
+// Questions/Réponses pour la FAQ et Schema.org FAQPage
+const faqItems = [
+  {
+    q: "Quelle est la différence fondamentale entre dégauchir et raboter ?",
+    r: "Le dégauchissage consiste à aplanir deux faces contiguës d'une planche brute (une face large et un chant) pour former un angle droit rigoureusement parfait à 90 degrés. Le rabotage intervient dans un second temps : la planche préalablement dégauchie est introduite dans la machine pour calibrer avec précision les deux autres faces opposées, garantissant ainsi une épaisseur régulière et un parallélisme parfait sur toute la longueur de la pièce."
+  },
+  {
+    q: "Peut-on utiliser un aspirateur d'atelier standard avec une raboteuse dégauchisseuse ?",
+    r: "Un aspirateur d'atelier classique pour poussière fine sature extrêmement vite avec les copeaux volumineux produits lors du rabotage. Une raboteuse dégauchisseuse génère plusieurs dizaines de litres de copeaux en quelques minutes seulement. Il est fortement conseillé de raccorder la machine à un aspirateur à copeaux dédié (avec buse de diamètre 100 mm et sac collecteur grande capacité), ou d'intercaler un séparateur cyclonique robuste pour préserver le moteur et éviter le bourrage du tambour."
+  },
+  {
+    q: "Comment éviter le phénomène de talonnage (ou snipe) lors du rabotage ?",
+    r: "Le talonnage se produit lorsque les extrémités de la pièce basculent légèrement sous l'effort des rouleaux d'entraînement à l'entrée ou à la sortie de la table. Pour l'éliminer, plusieurs réglages sont efficaces : soutenir la planche à l'horizontale dès sa sortie, régler des servantes à rouleaux à hauteur exacte de la table de rabotage, vérifier le verrouillage rigide de la tête d'usinage, et conserver une surlongueur de quelques centimètres sur le bois brut avant de recouper les extrémités après corroyage."
+  },
+  {
+    q: "Quelle largeur de passage choisir pour équiper un premier atelier de menuiserie ?",
+    r: "Pour un bricoleur exigeant ou un menuisier passionné, une largeur de dégauchissage de 204 mm (standard d'établi) permet déjà d'usiner la majorité des tasseaux, chevrons et montants de meuble. Cependant, pour corroyer des plateaux de table, des marches d'escalier ou des panneaux massifs assemblés, un modèle offrant 260 mm voire 310 mm de largeur procure un confort et une polyvalence nettement supérieurs sans nécessiter de refente préalable."
+  },
+  {
+    q: "Faut-il privilégier des fers droits réaffûtables ou un arbre hélicoïdal à plaquettes carbure ?",
+    r: "Les fers droits en acier rapide HSS restent les plus économiques et offrent une excellente qualité de finition sur les bois tendres, mais leur réglage à chaque changement demande minutie et patience. Les arbres hélicoïdaux équipés de plaquettes carbure réversibles représentent l'évolution technique la plus performante : ils réduisent considérablement les décibels, éliminent les arrachements sur les bois à contrefil, et permettent de faire pivoter une plaquette endommagée individuellement sans dérégler l'ensemble de l'arbre."
+  },
+  {
+    q: "Quel entretien est nécessaire pour maintenir la précision des tables et des fers ?",
+    r: "L'entretien d'une combinée repose sur trois opérations simples mais indispensables : dépoussiérer les vis sans fin et tringleries de montée de table après chaque session, appliquer régulièrement un lubrifiant sec pour bois (glissant table) sur les surfaces métalliques pour fluidifier l'avance du bois et repousser l'oxydation, et vérifier l'état du tranchant des fers afin d'éviter de faire forcer le bloc moteur sur des passes difficiles."
+  }
+];
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -48,14 +76,36 @@ const websiteSchema = {
       "url": `${siteUrl}/`,
       "email": siteConfig.contactEmail,
       "logo": `${siteUrl}/favicon.svg`
+    },
+    {
+      "@type": "ItemList",
+      "name": "Les Meilleures Raboteuses Dégauchisseuses d'Atelier",
+      "description": "Sélection des machines les plus performantes et précises testées en atelier.",
+      "itemListElement": allProducts.slice(0, 5).map((p, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "name": p.data.titre,
+        "url": `${siteUrl}/avis/${p.id}/`
+      }))
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.r
+        }
+      }))
     }
   ]
 };
 ---
 
 <Layout
-  title={`${siteConfig.siteName} : Comparatifs et Tests d'Experts`}
-  description={siteConfig.description}
+  title="Meilleure Raboteuse Dégauchisseuse : Comparatif & Tests"
+  description="Découvrez notre comparatif des meilleures raboteuses dégauchisseuses pour le bois. Guides d'achat complets, bancs d'essai impartiaux et conseils d'experts d'atelier."
   breadcrumbs={[{ name: "Accueil", url: "/" }]}
 >
   <script type="application/ld+json" is:inline slot="extra-head" set:html={JSON.stringify(websiteSchema)} />
@@ -68,15 +118,15 @@ const websiteSchema = {
           <svg class="w-4 h-4 text-orange-600" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
           </svg>
-          Guide Comparatif & Bancs d'Essai Indépendants
+          Bancs d'Essai d'Atelier & Comparatif Indépendant
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-6">
-          {siteConfig.siteName} : <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500">{siteConfig.tagline}</span>
+          Meilleure Raboteuse Dégauchisseuse : <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500">Comparatif et Guide d'Achat</span>
         </h1>
 
         <p class="text-base sm:text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
-          {siteConfig.description}
+          Le corroyage précis du bois brut exige une machine stable, dotée de tables rigides et d'un arbre d'usinage irréprochable. Nos analyses indépendantes comparent la puissance, la planéité des tables et la régularité d'entraînement pour vous guider vers le modèle parfait pour votre atelier.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
@@ -90,10 +140,10 @@ const websiteSchema = {
             </svg>
           </a>
           <a 
-            href="/avis/" 
+            href="#guide-achat" 
             class="px-7 py-4 bg-white text-slate-800 font-extrabold border border-slate-300 rounded-xl hover:bg-slate-50 transition-all text-sm flex items-center justify-center"
           >
-            Explorer tous les tests
+            Lire le guide d'achat complet
           </a>
         </div>
       </div>
@@ -140,34 +190,58 @@ const websiteSchema = {
     </div>
   </section>
 
-  <!-- GUIDE INTERACTIF EXPRESS EN 2 CLICS -->
-  {allProducts.length > 0 && (
-    <SelecteurExpress produits={allProducts} categories={allCategories} />
-  )}
+  <!-- SOMMAIRE RAPIDE DE NAVIGATION PILIER -->
+  <section class="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 my-8 shadow-xl">
+    <div class="max-w-4xl">
+      <span class="text-xs font-black uppercase tracking-wider text-orange-400">Navigation directe</span>
+      <h2 class="text-xl sm:text-2xl font-black text-white mt-1 mb-4 !my-0">
+        Accès direct aux sélections et analyses techniques
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+        Découvrez notre sélection hiérarchisée, notre tableau comparatif exhaustif, ou approfondissez vos connaissances techniques grâce à notre guide d'achat complet rédigé pour le travail du bois massif.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-extrabold">
+        <a href="#podium" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
+          🏆 Top 3 d'Atelier
+        </a>
+        <a href="#tableau-comparatif" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
+          📊 Tableau Comparatif
+        </a>
+        <a href="#guide-achat" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
+          📖 Guide d'Achat Détaillé
+        </a>
+        <a href="#faq" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
+          ❓ FAQ Spécialisée
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- PODIUM TOP 3 BENTO -->
   {allProducts.length >= 3 && (
-    <div id="podium">
+    <div id="podium" class="scroll-mt-24">
       <BlocVerdictTop3 produits={allProducts} />
     </div>
   )}
 
   <!-- TABLEAU COMPARATIF -->
   {allProducts.length > 0 && (
-    <TableauComparatif produits={allProducts.slice(0, 5)} />
+    <div id="tableau-comparatif" class="scroll-mt-24">
+      <TableauComparatif produits={allProducts.slice(0, 6)} />
+    </div>
   )}
 
   <!-- PARCOURIR PAR CATÉGORIE -->
-  <section class="my-14">
+  <section class="my-16">
     <div class="flex items-center justify-between mb-8">
       <div>
-        <span class="text-xs font-black uppercase tracking-wider text-orange-600">Catégories & Usages</span>
+        <span class="text-xs font-black uppercase tracking-wider text-orange-600">Catégories & Usages d'Atelier</span>
         <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
-          Trouvez selon votre besoin
+          Trouver votre machine selon votre configuration
         </h2>
       </div>
       <a href="/comparatifs/" class="text-xs sm:text-sm font-extrabold text-orange-600 hover:text-orange-700">
-        Toutes les catégories &rarr;
+        Tous les comparatifs &rarr;
       </a>
     </div>
 
@@ -181,7 +255,7 @@ const websiteSchema = {
             <h3 class="font-bold text-base text-slate-900 group-hover:text-orange-600 capitalize leading-tight !my-0">
               {cat.name}
             </h3>
-            <span class="text-xs text-slate-500 mt-1 inline-block">Consulter la sélection</span>
+            <span class="text-xs text-slate-500 mt-1 inline-block">Consulter la sélection spécialisée</span>
           </div>
           <span class="text-orange-600 group-hover:translate-x-1 transition-transform font-bold">&rarr;</span>
         </a>
@@ -189,14 +263,201 @@ const websiteSchema = {
     </div>
   </section>
 
-  <!-- DERNIERS AVIS -->
+  <!-- GRAND GUIDE D'ACHAT CORNERSTONE / PILIER SEO (+1200 MOTS, INTEMPOREL) -->
+  <article id="guide-achat" class="my-20 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm scroll-mt-24">
+    <header class="max-w-3xl mb-12">
+      <span class="text-xs font-black uppercase tracking-wider bg-orange-100 text-orange-800 px-3 py-1 rounded-full inline-block mb-3">
+        Dossier Conseil Rédaction
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight !my-0">
+        Guide d'Achat Complet : Comment Bien Choisir sa Raboteuse Dégauchisseuse ?
+      </h2>
+      <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
+        Investir dans une raboteuse dégauchisseuse représente un tournant majeur pour tout passionné du bois ou professionnel du second œuvre. Passer du bois brut d'affouage ou de sciage à des pièces parfaitement d'équerre, calibrées au dixième de millimètre, demande de comprendre les mécanismes fondamentaux qui dictent la précision et la longévité de cet outillage d'atelier.
+      </p>
+    </header>
+
+    <div class="space-y-12 text-slate-700 text-sm sm:text-base leading-relaxed">
+      
+      <!-- Section H3 : Fondamentaux du corroyage -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          Dégauchir et raboter : comprendre les fondamentaux indispensables du corroyage
+        </h3>
+        <p class="mb-4">
+          Dans le travail du bois massif, aucune planche issue d'une scierie n'est naturellement plane. Le séchage génère des déformations inévitables : tuilage, gauchissement, flèche ou vrillage. L'opération de <strong>corroyage</strong> vise à transformer ce bois brut en un parallélépipède rectangle géométriquement parfait sur ses quatre faces. Pour y parvenir sans erreur, deux étapes consécutives et indissociables sont obligatoires.
+        </p>
+        <p class="mb-4">
+          La première phase est le <strong>dégauchissage</strong>. La pièce de bois est glissée manuellement sur la table d'entrée, passe sur l'arbre de coupe rotatif, puis repose sur la table de sortie réglée à fleur exacte du sommet des fers. Cette opération permet de créer une première face de référence rigoureusement plane. Dans la foulée, l'opérateur appuie cette face de référence contre le guide parallèle pour dresser un chant perpendiculaire à angle droit parfait de 90 degrés. Sans cette étape préalable, il est techniquement impossible d'obtenir une pièce calibrée.
+        </p>
+        <p>
+          La seconde phase est le <strong>rabotage</strong> (ou rabotage d'épaisseur). La planche, dotée de ses deux faces de référence dégauchies, est introduite dans le tunnel de la machine. La face plane repose sur le plateau inférieur, tandis que des rouleaux d'entraînement crantés tractent automatiquement la pièce sous l'arbre de coupe. Cette opération calibre les deux faces restantes en assurant une épaisseur constante et un parallélisme irréprochable d'un bout à l'autre de la planche.
+        </p>
+      </section>
+
+      <!-- Section H3 : Puissance et Motorisation -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          La puissance du moteur et le type d'alimentation électrique
+        </h3>
+        <p class="mb-4">
+          L'usinage d'essences denses comme le chêne, le hêtre, le frêne ou les bois exotiques impose un effort mécanique considérable au groupe motopropulseur. La puissance nominale du moteur conditionne directement la capacité de la machine à maintenir sa vitesse de rotation sans caler ni créer d'échauffement sur les fers.
+        </p>
+        <p class="mb-4">
+          Sur les modèles compacts d'établi, on retrouve généralement des <strong>moteurs universels à balais</strong> développant entre 1250 watts et 1800 watts. Alimentés en courant monophasé 230 volts, ils offrent un rapport poids/puissance très avantageux pour les ateliers nomades ou les espaces restreints. Leur montée en régime est vive, mais leur niveau sonore est plus élevé et ils nécessitent un contrôle périodique des charbons.
+        </p>
+        <p>
+          Sur les combinées stationnaires lourdes et les machines semi-professionnelles, la norme est au <strong>moteur à induction asynchrone</strong> (d'une puissance de 1800 watts à plus de 2600 watts). Ce type de motorisation se distingue par un fonctionnement silencieux, un couple constant remarquable même lors de passes généreuses dans des bois durs, et une absence totale d'usure de pièces de contact. Les versions triphasées 400 volts représentent le sommet de la régularité pour un usage intensif au quotidien.
+        </p>
+      </section>
+
+      <!-- Section H3 : Qualité des Tables -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          La conception des tables de corroyage : fonte d'acier rectifiée versus aluminium moulé
+        </h3>
+        <p class="mb-4">
+          La précision finale d'une pièce de bois ne peut excéder la planéité géométrique des tables qui la guident. Deux grandes philosophies de fabrication se partagent le marché :
+        </p>
+        <ul class="list-disc pl-6 space-y-3 mb-4">
+          <li>
+            <strong>Les tables en fonte d'acier rectifiée :</strong> Présentes sur les machines d'atelier stationnaires, elles constituent la référence absolue des artisans menuisiers. Leur masse imposante absorbe les micro-vibrations produites par le tambour en rotation, garantissant une stabilité sans faille. Leur surface rectifiée présente une glisse fluide et une résistance exceptionnelle à l'abrasion au fil des décennies.
+          </li>
+          <li>
+            <strong>Les tables en fonte d'aluminium moulée sous pression :</strong> Privilégiées sur les raboteuses d'établi portatives, elles permettent de contenir le poids total sous la barre des 35 kg. Usinées avec précision et souvent dotées de stries longitudinales pour réduire l'adhérence par ventouse, elles sont parfaites pour les chantiers et les petits ateliers, à condition de manipuler les pièces lourdes sans choc brutal.
+          </li>
+        </ul>
+        <p>
+          Un critère fondamental réside également dans la <strong>longueur totale des tables de dégauchissage</strong>. Plus les tables sont longues (d'au moins 80 cm sur établi à plus de 120 cm sur machine fixe), plus il devient simple de redresser des planches de grande portée sans risquer de copier les courbures du bois.
+        </p>
+      </section>
+
+      <!-- Section H3 : Arbre de coupe et types de fers -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          L'arbre porte-fers : couteaux traditionnels, fers réversibles ou arbre hélicoïdal
+        </h3>
+        <p class="mb-4">
+          Le tambour de coupe est le cœur névralgique de la machine. Tournant généralement entre 6000 et 9000 tours par minute, il conditionne directement la finesse d'usinage et le temps nécessaire à la finition au ponçage. On distingue trois technologies majeures d'outils de coupe :
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4 my-6">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm mb-2 !my-0">Fers droits HSS réaffûtables</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Solution historique et économique. En acier rapide haute qualité, ils peuvent être réaffûtés plusieurs fois. Leur positionnement exige toutefois l'utilisation de positionneurs magnétiques de précision.
+            </p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm mb-2 !my-0">Fers jetables à double tranchant</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Dotés de repères de positionnement automatiques, ils se retournent en quelques minutes dès que la première arête s'émousse. Pratiques et rapides, ils évitent les réglages fastidieux au comparateur.
+            </p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm mb-2 !my-0">Arbres hélicoïdaux (plaquettes carbure)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              La technologie de pointe. Plusieurs dizaines de plaquettes carrées en carbure de tungstène disposées en spirale cisaillent le bois en douceur, réduisent le bruit de moitié et résistent à l'usure de façon spectaculaire.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section H3 : Capacités de coupe -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          Capacités d'usinage : largeur de table et hauteur maximale de passage
+        </h3>
+        <p class="mb-4">
+          Le choix des dimensions utiles d'usinage doit correspondre aux projets que vous envisagez de concevoir dans votre atelier :
+        </p>
+        <p class="mb-4">
+          La <strong>largeur de dégauchissage</strong> définit la largeur maximale d'une pièce que vous pouvez surfacer en une seule passe. Le standard d'entrée se situe à 204 mm (parfait pour les chevrons et montants d'ossature), tandis que les dimensions intermédiaires de 260 mm à 310 mm ouvrent la porte aux plateaux de meuble, bâtis de porte et pièces maîtresses d'ébénisterie.
+        </p>
+        <p>
+          La <strong>hauteur de passage en rabotage</strong> oscille habituellement entre 120 mm et 210 mm selon les châssis. Une hauteur importante s'avère précieuse si vous restaurez d'anciennes poutres, corroyer des chevrons de forte section ou travaillez sur des charpentes apparentes.
+        </p>
+      </section>
+
+      <!-- Section H3 : Aspiration et Sécurité -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          Aspiration des copeaux et règles de sécurité primordiales en atelier
+        </h3>
+        <p class="mb-4">
+          La sécurité lors de l'utilisation d'une raboteuse dégauchisseuse ne tolère aucun compromis. Les fers tournant à très haute vélocité peuvent occasionner des blessures graves ou projeter des éclats de bois en cas de nœud vicieux.
+        </p>
+        <p class="mb-4">
+          Le <strong>capot d'aspiration réversible</strong> remplit un double rôle : il protège l'opérateur en masquant l'arbre lorsqu'il n'est pas sollicité, et canalise le flux titanesque de copeaux vers le système d'aspiration. Travailler sans aspiration adaptée entraîne un colmatage immédiat du tambour, une dégradation brutale de l'état de surface du bois (les copeaux étant réécrasés par les rouleaux) et une surchauffe moteur.
+        </p>
+        <p>
+          Sur le plan pratique, l'utilisation de <strong>poussoirs à talons</strong> et de blocs de poussée ergonomiques est impérative pour maintenir le bois sans jamais approcher les mains à moins de 20 centimètres du pont protecteur. De même, le port de protections auditives et de lunettes étanches fait partie intégrante de l'équipement de base.
+        </p>
+      </section>
+
+      <!-- Section H3 : Éviter le talonnage -->
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          Conseils de réglage : comment éliminer le talonnage (snipe) sur vos pièces de bois
+        </h3>
+        <p class="mb-4">
+          Le « talonnage » (ou *snipe* en anglais) est la hantise des usineurs du bois : il se manifeste par une marque de surcreusement d'un demi-millimètre de profondeur sur les 5 à 10 premiers ou derniers centimètres de la planche lors du rabotage. Ce phénomène survient lorsque la planche perd l'appui de l'un des deux rouleaux presseurs internes et bascule imperceptiblement vers l'arbre.
+        </p>
+        <p>
+          Pour éradiquer ce défaut, appliquez ces trois bonnes pratiques reconnues en atelier : d'une part, maintenez une légère poussée ascendante sur l'extrémité libre de la planche lors de son engagement et de sa sortie. D'autre part, alignez scrupuleusement vos rallonges de table en créant une infime concavité ascendante (un quart de millimètre plus haut aux extrémités). Enfin, pour les pièces haut de gamme, prévoyez toujours 10 centimètres de marge en longueur pour tronçonner net les extrémités après corroyage.
+        </p>
+      </section>
+
+    </div>
+  </article>
+
+  <!-- FOIRE AUX QUESTIONS EXPERTE ACCORDÉONS (SCHEMA FAQPAGE) -->
+  <section id="faq" class="my-16 scroll-mt-24">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="text-xs font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full inline-block mb-3">
+          Questions Fréquentes
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight !my-0">
+          Foire aux questions : Tout savoir sur la raboteuse dégauchisseuse
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-2">
+          Retrouvez les réponses techniques de notre équipe pour sécuriser votre choix d'équipement d'atelier.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        {faqItems.map((item, idx) => (
+          <details class="group bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 transition-all [&_summary::-webkit-details-marker]:hidden open:border-orange-500 open:shadow-sm">
+            <summary class="flex items-center justify-between cursor-pointer font-extrabold text-slate-900 text-sm sm:text-base select-none">
+              <span class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-orange-100 text-orange-700 font-black text-xs flex items-center justify-center flex-shrink-0">
+                  {idx + 1}
+                </span>
+                {item.q}
+              </span>
+              <span class="w-6 h-6 flex items-center justify-center text-slate-400 group-open:text-orange-600 group-open:rotate-180 transition-transform">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </summary>
+            <p class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed pl-9">
+              {item.r}
+            </p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DERNIERS AVIS & BANCS D'ESSAI -->
   {recentProducts.length > 0 && (
     <section class="my-16">
       <div class="flex items-center justify-between mb-8">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-slate-500">Laboratoire & Bancs d'Essai</span>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-500">Bancs d'Essai d'Atelier</span>
           <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
-            Derniers tests détaillés
+            Derniers tests et fiches techniques détaillées
           </h2>
         </div>
         <a href="/avis/" class="text-sm font-extrabold text-orange-600 hover:text-orange-700">

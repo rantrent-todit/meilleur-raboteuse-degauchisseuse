@@ -6,7 +6,7 @@ categories: ["meilleurs-modeles"]
 image_url: "https://m.media-amazon.com/images/I/61NVhq-oupL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B08BPH3YFJ/?tag=amazonwp0b-21"
 meta_title: "Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W : Test, Avis et Banc d'Essai"
-meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS860 | Puissance 1500W | 2 fers en acier rapide | Largeur de rabotage 204mm | Hauteur de passage 120mm | Régime de l'arbre 9000min-1. Découvrez ses performances réelles et points forts."
+meta_description: "Avis et test indépendant sur la Scheppach HMS860 (1500W, 204mm). Découvrez nos mesures d'atelier, points forts et performances pour équiper votre espace."
 ---
 
 ## Introduction et positionnement
