@@ -2,7 +2,7 @@
 titre: "Makita 2012NB - Raboteuse stationnaire 1650 W"
 description_courte: "Banc d'essai complet de la raboteuse Makita 2012NB : précision micrométrique, réduction du talonnage et silence de fonctionnement à la loupe."
 description_longue: "Découvrez notre analyse technique complète de la raboteuse automatique Makita 2012NB. Avec son moteur de 1650 W, sa capacité de passage de 304 mm et son système de maintien breveté, ce banc d'essai détaille ses performances réelles en atelier."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/7145HxAImcL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B000051ZOO/?tag=amazonwp0b-21"
 meta_title: "Makita 2012NB - Raboteuse stationnaire 1650 W : Test, Avis et Banc d'Essai"

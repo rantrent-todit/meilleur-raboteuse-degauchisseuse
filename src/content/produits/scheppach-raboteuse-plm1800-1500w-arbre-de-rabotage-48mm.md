@@ -2,7 +2,7 @@
 titre: "Scheppach Raboteuse PLM1800 | 1500W | Arbre de Rabotage Ø48mm"
 description_courte: "Banc d'essai complet de la raboteuse Scheppach PLM1800 : moteur 1500W, arbre 8500 tr/min, passage 330 mm. Analyse technique, mesures réelles et avis d'expert."
 description_longue: "La raboteuse stationnaire Scheppach PLM1800 s'impose comme une référence accessible pour les passionnés du travail du bois et les artisans. Avec son moteur de 1500 W, sa largeur de rabotage de 330 mm et sa vitesse de rotation de 8500 min-1, elle promet un calibrage précis sur bois durs et résineux. Découvrez notre banc d'essai exhaustif et nos mesures d'atelier."
-categories: ["aspiration-gestion-copeaux"]
+categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61+aVLGh7BL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B082W8XKK4/?tag=amazonwp0b-21"
 meta_title: "Scheppach Raboteuse PLM1800 | 1500W | Arbre de Rabotage Ø48mm : Test, Avis et Banc d'Essai"

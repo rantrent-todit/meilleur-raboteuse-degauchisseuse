@@ -2,7 +2,7 @@
 titre: "Scheppach HMS1070 - Raboteuse Dégauchisseuse (+2 Fers)"
 description_courte: "Banc d'essai complet de la Scheppach HMS1070 : raboteuse-dégauchisseuse 1500W avec passage de 254 mm, guide inclinable et fers de rechange inclus."
 description_longue: "Découvrez notre test détaillé de la raboteuse-dégauchisseuse Scheppach HMS1070 fournie avec un jeu de fers additionnel. Une machine compacte de 1500W taillée pour les ateliers de menuiserie amateurs et semi-professionnels."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61f8xFQbAYL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B09N41N8BG/?tag=amazonwp0b-21"
 meta_title: "Scheppach HMS1070 - Raboteuse Dégauchisseuse (+2 Fers) : Test, Avis et Banc d'Essai"

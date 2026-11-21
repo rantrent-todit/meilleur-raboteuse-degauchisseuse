@@ -2,7 +2,7 @@
 titre: "Scheppach HMS1070 - Raboteuse Dégauchisseuse 1500W"
 description_courte: "Test approfondi de la dégauchisseuse-raboteuse Scheppach HMS1070. Analyse technique du moteur 1500W, précision des passes et verdict d'atelier."
 description_longue: "Découvrez notre banc d'essai complet de la Scheppach HMS1070. Avec ses tables de 254 mm et son moteur de 1500W, cette combinée d'établi s'adresse aux passionnés du bois cherchant compacité et efficacité d'usinage."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61k4723-aCL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B01BTZI6LE/?tag=amazonwp0b-21"
 meta_title: "Scheppach HMS1070 - Raboteuse Dégauchisseuse 1500W : Test, Avis et Banc d'Essai"

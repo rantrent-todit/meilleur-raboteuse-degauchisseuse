@@ -2,7 +2,7 @@
 titre: "Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W"
 description_courte: "Banc d'essai complet de la Scheppach HMS1500 : moteur 2200W, capacité 260 mm et test d'usinage. Découvrez l'avis détaillé de nos spécialistes."
 description_longue: "Analyse technique approfondie de la combinée raboteuse-dégauchisseuse Scheppach HMS1500. Équipée d'un moteur puissant de 2200W et offrant une largeur d'usinage de 260 mm avec guide inclinable jusqu'à 135°, cette machine d'atelier s'adresse aux passionnés du bois exigeants."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-degauchisseuses-stationnaires","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/61J8d2v11GL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0DFH32W5W/?tag=amazonwp0b-21"
 meta_title: "Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W : Test, Avis et Banc d'Essai"

@@ -2,7 +2,7 @@
 titre: "Einhell Rabot électrique TC-PL 750"
 description_courte: "Test complet du rabot Einhell TC-PL 750 : moteur 750 W, largeur 82 mm, profondeur de passe 2 mm, accessoires de guidage et analyse de ses performances réelles."
 description_longue: "Banc d'essai indépendant du rabot filaire Einhell TC-PL 750. Analyse détaillée de sa puissance mécanique, de la précision de ses réglages, de son ergonomie et de son comportement sur différentes essences de bois."
-categories: ["aspiration-gestion-copeaux"]
+categories: ["premier-equipement-bricolage","raboteuses-epaisseur-portatives"]
 image_url: "https://m.media-amazon.com/images/I/716C84UOOML._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B01MYUJ1A8/?tag=amazonwp0b-21"
 meta_title: "Einhell Rabot électrique TC-PL 750 : Test, Avis et Banc d'Essai"

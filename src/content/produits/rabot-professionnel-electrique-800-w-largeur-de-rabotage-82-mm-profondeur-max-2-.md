@@ -2,7 +2,7 @@
 titre: "Rabot électrique professionnel 800 W - Largeur 82 mm"
 description_courte: "Banc d'essai complet du rabot électrique 800 W : largeur de 82 mm, passe de 2 mm et semelle fraisée. Découvrez notre analyse technique et nos tests d'usinage."
 description_longue: "Analyse approfondie du rabot filaire 800 W équipé d'un fer de 82 mm. Évaluation rigoureuse de la planéité de la semelle, de l'évacuation des copeaux, de la précision du tambour de coupe et du comportement sur bois massifs et dérivés."
-categories: ["aspiration-gestion-copeaux"]
+categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/51vX-zz4TPL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0F1CJD71C/?tag=amazonwp0b-21"
 meta_title: "Rabot électrique professionnel 800 W - Largeur 82 mm : Test, Avis et Banc d'Essai"

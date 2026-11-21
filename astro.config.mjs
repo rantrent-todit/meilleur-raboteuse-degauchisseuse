@@ -8,5 +8,8 @@ export default defineConfig({
   site: siteConfig.siteDomain,
   output: 'static',
   trailingSlash: 'always',
+  redirects: {
+    '/guide-achat/': '/#guide-achat',
+  },
   integrations: [tailwind(), sitemap()],
 });

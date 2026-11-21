@@ -2,7 +2,7 @@
 titre: "ZELCAN 2000W Raboteuse d'établi stationnaire"
 description_courte: "Banc d'essai complet de la raboteuse ZELCAN 2000W 33 cm : puissance, précision de passe, gestion du rabotage et analyse technique détaillée en atelier."
 description_longue: "Analyse poussée de la raboteuse stationnaire d'établi ZELCAN 2000W de 33 cm. Découvrez les performances de son moteur 15A, la vitesse de son arbre porte-fers à 20 000 coupes par minute, sa qualité d'usinage sur bois durs et son comportement face au phénomène de snipe."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/71vlqDrSDbL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0GVZ641KS/?tag=amazonwp0b-21"
 meta_title: "ZELCAN 2000W Raboteuse d'établi stationnaire : Test, Avis et Banc d'Essai"

@@ -2,7 +2,7 @@
 titre: "RABOT MAKITA 82 MM 18 V LXT -DKP180Z"
 description_courte: "Test approfondi du rabot sans fil Makita DKP180Z 18V LXT 82 mm : précision de coupe, ergonomie, gestion des copeaux et performances d'usinage sur chantier."
 description_longue: "Découvrez notre analyse complète et technique du rabot sans fil Makita DKP180Z. Conçu pour les charpentiers, menuisiers et artisans exigeants, cet outil 18V allie une largeur de passe de 82 mm, une semelle en aluminium usiné et une maniabilité remarquable pour tous les travaux d'ajustement et de chanfreinage."
-categories: ["aspiration-gestion-copeaux"]
+categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/61L+NcnfbWL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B00HYEAN4I/?tag=amazonwp0b-21"
 meta_title: "RABOT MAKITA 82 MM 18 V LXT -DKP180Z : Test, Avis et Banc d'Essai"

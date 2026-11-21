@@ -2,7 +2,7 @@
 titre: "VEVOR Raboteuse d'Établi 3 Lames (330 mm)"
 description_courte: "Banc d'essai complet de la raboteuse d'établi VEVOR 330 mm : moteur 2000 W, arbre 3 lames et double rouleau. Découvrez notre analyse technique et nos tests terrain."
 description_longue: "Analyse technique détaillée et test en conditions réelles de la raboteuse électrique stationnaire VEVOR 33 cm. Avec sa motorisation de 2000 W, son arbre porte-fer à trois couteaux et son système d'entraînement à double rouleau, cette machine cible les menuisiers amateurs exigeants et les artisans cherchant un calibrage précis du bois massif sans investissement démesuré."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/712fqvob2fL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0FNC1ZFNG/?tag=amazonwp0b-21"
 meta_title: "VEVOR Raboteuse d'Établi 3 Lames (330 mm) : Test, Avis et Banc d'Essai"

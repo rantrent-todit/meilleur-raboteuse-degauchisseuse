@@ -7,22 +7,59 @@ import { slugify } from '../../utils/slugify';
 
 export async function getStaticPaths() {
   const allProducts = await getCollection('produits');
-  const categoriesRaw = [...new Set(allProducts.flatMap(p => p.data.categories))];
   const categoryContent = await getCollection('categories');
 
-  return categoriesRaw.map(categoryName => {
-    const slug = slugify(categoryName);
-    const products = allProducts.filter(p => p.data.categories.includes(categoryName));
-    const content = categoryContent.find(c => c.id === slug);
-    
+  // Map unifiée par slug pour garantir l'absence de doublons et couvrir 100% des catégories
+  const pathsMap = new Map();
+
+  // 1. Ajouter toutes les catégories déclarées dans content/categories
+  for (const cat of categoryContent) {
+    const slug = cat.id;
+    const name = cat.data.titre_seo
+      ? cat.data.titre_seo.replace(/^Meilleurs?\s+(modèles\s+)?/i, '').split(':')[0].trim()
+      : cat.id.replace(/-/g, ' ');
+
+    pathsMap.set(slug, {
+      slug,
+      categoryName: name,
+      content: cat
+    });
+  }
+
+  // 2. Ajouter d'éventuelles catégories présentes dans les produits
+  for (const p of allProducts) {
+    for (const rawCat of (p.data.categories || [])) {
+      const s = slugify(rawCat);
+      if (!pathsMap.has(s)) {
+        pathsMap.set(s, {
+          slug: s,
+          categoryName: rawCat,
+          content: null
+        });
+      }
+    }
+  }
+
+  // 3. Associer les produits à chaque catégorie avec un matching robuste
+  return Array.from(pathsMap.values()).map(catEntry => {
+    const products = allProducts.filter(p => {
+      const pCats = p.data.categories || [];
+      return pCats.some(c => slugify(c) === catEntry.slug || c === catEntry.slug);
+    });
+
     return {
-      params: { slug },
-      props: { categoryName, products, content, slug },
+      params: { slug: catEntry.slug },
+      props: {
+        categoryName: catEntry.categoryName,
+        products,
+        content: catEntry.content,
+        slug: catEntry.slug
+      }
     };
   });
 }
 
-const { categoryName, products, content, slug } = Astro.props;
+const { categoryName, products = [], content, slug } = Astro.props;
 const Content = content ? (await render(content)).Content : null;
 
 let seoTitle = content?.data.titre_seo || `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
@@ -85,31 +122,53 @@ const breadcrumbs = [
     </section>
   )}
 
-  <section class="my-14">
-    <div class="flex items-center justify-between mb-8 pb-3 border-b border-gray-200">
-      <div>
-        <h2 class="text-2xl font-black text-slate-900 tracking-tight !my-0 capitalize">
-          Tous les modèles retenus en {categoryName}
-        </h2>
-        <p class="text-xs text-slate-500 mt-1">Fiches techniques détaillées et bancs d'essai complets</p>
+  {products.length > 0 ? (
+    <section class="my-14">
+      <div class="flex items-center justify-between mb-8 pb-3 border-b border-gray-200">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight !my-0 capitalize">
+            Tous les modèles retenus en {categoryName}
+          </h2>
+          <p class="text-xs text-slate-500 mt-1">Fiches techniques détaillées et bancs d'essai complets</p>
+        </div>
+        <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+          {products.length} {products.length > 1 ? 'modèles analysés' : 'modèle analysé'}
+        </span>
       </div>
-      <span class="text-xs font-bold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
-        {products.length} {products.length > 1 ? 'modèles analysés' : 'modèle analysé'}
-      </span>
-    </div>
-    
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {products.map(product => (
-        <CarteApercu 
-          titre={product.data.titre}
-          description={product.data.description_courte}
-          image={product.data.image_url}
-          slug={product.id}
-          lienAffiliation={product.data.lien_affiliation}
-        />
-      ))}
-    </div>
-  </section>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map(product => (
+          <CarteApercu 
+            titre={product.data.titre}
+            description={product.data.description_courte}
+            image={product.data.image_url}
+            slug={product.id}
+            lienAffiliation={product.data.lien_affiliation}
+            categories={product.data.categories}
+          />
+        ))}
+      </div>
+    </section>
+  ) : (
+    <section class="my-14 bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 text-center shadow-xs">
+      <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        </svg>
+      </div>
+      <h2 class="text-xl sm:text-2xl font-black text-slate-900 mb-2">Bancs d'essai en cours de finalisation</h2>
+      <p class="text-sm text-slate-600 max-w-xl mx-auto mb-6 leading-relaxed">
+        Nos spécialistes analysent actuellement de nouvelles références pour cette sous-catégorie. Consultez dès à présent l'ensemble de notre catalogue d'avis pour découvrir nos tests complets.
+      </p>
+      <a 
+        href="/avis/" 
+        class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-orange-600 text-white font-extrabold text-xs rounded-xl shadow-xs transition-colors"
+      >
+        <span>Consulter tous les tests & avis</span>
+        <span>&rarr;</span>
+      </a>
+    </section>
+  )}
 
   {content?.data.faq && content.data.faq.length > 0 && (
     <section class="my-14 bg-gradient-to-b from-stone-50 to-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-sm">

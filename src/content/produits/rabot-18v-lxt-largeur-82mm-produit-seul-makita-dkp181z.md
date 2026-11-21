@@ -2,7 +2,7 @@
 titre: "Rabot 18V LXT largeur 82mm (Produit seul) - MAKITA DKP181Z"
 description_courte: "Test approfondi du rabot sans fil Makita DKP181Z 18V Brushless : puissance, passe jusqu'à 3 mm, système AWS et éjection bilatérale des copeaux."
 description_longue: "Découvrez notre banc d'essai complet du rabot sans fil 18V LXT Makita DKP181Z. Analyse technique, ergonomie, gestion des copeaux et performances de coupe pour les professionnels du bois et artisans exigeants."
-categories: ["aspiration-gestion-copeaux"]
+categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/71hO3OvZphL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0848LHJKV/?tag=amazonwp0b-21"
 meta_title: "Rabot 18V LXT largeur 82mm (Produit seul) - MAKITA DKP181Z : Test, Avis et Banc d'Essai"

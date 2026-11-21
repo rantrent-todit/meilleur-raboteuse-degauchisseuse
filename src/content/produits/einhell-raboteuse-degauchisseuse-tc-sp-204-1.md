@@ -2,7 +2,7 @@
 titre: "Einhell Raboteuse Dégauchisseuse TC-SP 204/1"
 description_courte: "Banc d'essai complet de l'Einhell TC-SP 204/1 : moteur 1500 W, compacité et précision pour le travail du bois en atelier d'amateur exigeant."
 description_longue: "Découvrez notre analyse technique complète de la raboteuse dégauchisseuse stationnaire Einhell TC-SP 204/1. Nous avons évalué sa puissance de 1500 W, la qualité de ses tables en aluminium, la précision de ses passes et son comportement face aux résineux et aux bois durs."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/41lWaa5xIKL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0GHR1P5W4/?tag=amazonwp0b-21"
 meta_title: "Einhell Raboteuse Dégauchisseuse TC-SP 204/1 : Test, Avis et Banc d'Essai"

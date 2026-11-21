@@ -11,28 +11,45 @@ const categoryContent = await getCollection('categories');
 const categoryMap = new Map();
 
 for (const cat of categoryContent) {
+  const name = cat.data.titre_seo
+    ? cat.data.titre_seo.replace(/^Meilleurs?\s+(modèles\s+)?/i, '').split(':')[0].trim()
+    : cat.id.replace(/-/g, ' ');
+
   categoryMap.set(cat.id, {
     slug: cat.id,
-    name: cat.id.replace(/-/g, ' '),
-    description: cat.data.description_seo
+    name,
+    description: cat.data.description_seo || `Découvrez notre guide comparatif complet et notre sélection pour ${name}.`
   });
 }
 
-for (const rawName of allProducts.flatMap(p => p.data.categories)) {
-  const s = slugify(rawName);
-  if (!categoryMap.has(s)) {
-    categoryMap.set(s, {
-      slug: s,
-      name: rawName,
-      description: `Découvrez notre sélection des meilleurs modèles pour la catégorie ${rawName}.`
-    });
-  } else {
-    const entry = categoryMap.get(s);
-    if (entry) entry.name = rawName;
+for (const p of allProducts) {
+  for (const rawName of (p.data.categories || [])) {
+    const s = slugify(rawName);
+    if (!categoryMap.has(s)) {
+      categoryMap.set(s, {
+        slug: s,
+        name: rawName,
+        description: `Découvrez notre sélection des meilleurs modèles pour la catégorie ${rawName}.`
+      });
+    }
   }
 }
 
-const allCategories = Array.from(categoryMap.values()).sort((a, b) => a.name.localeCompare(b.name));
+// Calculer le nombre de produits pour chaque catégorie
+const allCategories = Array.from(categoryMap.values()).map(cat => {
+  const count = allProducts.filter(p => {
+    const cats = p.data.categories || [];
+    return cats.some(c => slugify(c) === cat.slug || c === cat.slug);
+  }).length;
+
+  return {
+    ...cat,
+    count
+  };
+}).sort((a, b) => {
+  if (b.count !== a.count) return b.count - a.count;
+  return a.name.localeCompare(b.name);
+});
 
 const breadcrumbs = [
   { name: "Accueil", url: "/" },
@@ -64,36 +81,61 @@ const collectionSchema = {
 >
   <script type="application/ld+json" is:inline slot="extra-head" set:html={JSON.stringify(collectionSchema)} />
 
-  <nav class="flex text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
+  <nav class="flex text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
     <ol class="flex items-center space-x-2">
-      <li><a href="/" class="hover:text-brand transition">Accueil</a></li>
-      <li><span class="mx-2">/</span></li>
-      <li class="font-bold text-gray-900" aria-current="page">Comparatifs</li>
+      <li><a href="/" class="hover:text-orange-600 transition-colors">Accueil</a></li>
+      <li><span class="mx-1 text-slate-300">/</span></li>
+      <li class="font-bold text-slate-900" aria-current="page">Comparatifs</li>
     </ol>
   </nav>
 
-  <div class="mb-12">
-    <h1 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Nos comparatifs par catégorie</h1>
-    <p class="text-lg text-gray-600 max-w-3xl leading-relaxed">
-      Chaque besoin a ses exigences spécifiques. Sélectionnez une catégorie pour explorer notre sélection filtrée et optimisée des meilleurs modèles.
+  <div class="mb-10 max-w-3xl">
+    <span class="text-xs font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full inline-block mb-3">
+      Guides & Comparatifs
+    </span>
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3 tracking-tight">
+      Nos comparatifs par catégorie
+    </h1>
+    <p class="text-base text-slate-600 leading-relaxed">
+      Chaque usage a ses exigences spécifiques. Sélectionnez une catégorie pour explorer nos bancs d'essai comparatifs et notre sélection rigoureuse des modèles les plus fiables.
     </p>
   </div>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {allCategories.map(category => (
       <a 
         href={`/comparatifs/${category.slug}/`}
-        class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:border-brand/40 hover:shadow-md transition-all flex flex-col items-center text-center"
+        class="group bg-white p-7 rounded-2xl border border-slate-200/90 shadow-xs hover:border-orange-500 hover:shadow-md transition-all flex flex-col justify-between"
       >
-        <div class="w-16 h-16 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
-          <svg xmlns="http://www.w3.org/2001/XMLSchema/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-          </svg>
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center group-hover:scale-105 group-hover:bg-orange-600 group-hover:text-white transition-all">
+              <svg xmlns="http://www.w3.org/2001/XMLSchema/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            {category.count > 0 ? (
+              <span class="text-[11px] font-bold text-orange-700 bg-orange-50 border border-orange-200 px-2.5 py-1 rounded-full">
+                {category.count} {category.count > 1 ? 'modèles' : 'modèle'}
+              </span>
+            ) : (
+              <span class="text-[11px] font-medium text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
+                Dossier conseil
+              </span>
+            )}
+          </div>
+          <h2 class="text-lg font-black text-slate-900 group-hover:text-orange-600 capitalize mb-2 transition-colors">
+            {category.name}
+          </h2>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            {category.description}
+          </p>
         </div>
-        <h2 class="text-xl font-bold text-gray-900 group-hover:text-brand capitalize mb-2">{category.name}</h2>
-        <p class="text-sm text-gray-500 line-clamp-2">
-          {category.description}
-        </p>
+
+        <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-orange-600 group-hover:text-orange-700">
+          <span>Découvrir le comparatif</span>
+          <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
       </a>
     ))}
   </div>

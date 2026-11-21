@@ -2,7 +2,7 @@
 titre: "Einhell Raboteuse Dégauchisseuse TC-SP 204/2"
 description_courte: "Banc d'essai complet de l'Einhell TC-SP 204/2 : puissance de 1500 W, compacité et précision pour le corroyage du bois en atelier amateur."
 description_longue: "Découvrez notre avis d'expert sur la combinée rabot-dégau Einhell TC-SP 204/2. Analyse technique détaillée de la table en aluminium, de l'arbre de coupe à 9000 tr/min, des capacités de passe et du comportement en atelier."
-categories: ["meilleurs-modeles"]
+categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/71bMyz6-utL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0D93Y8Y2F/?tag=amazonwp0b-21"
 meta_title: "Einhell Raboteuse Dégauchisseuse TC-SP 204/2 : Test, Avis et Banc d'Essai"

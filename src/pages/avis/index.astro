@@ -7,14 +7,28 @@ import { slugify } from '../../utils/slugify';
 import { siteConfig } from '../../config/site.config';
 
 const allProducts = await getCollection('produits');
+const categoryContent = await getCollection('categories');
+
+// Map des noms propres officiels pour un affichage soigné
+const officialNameMap = new Map<string, string>();
+for (const cat of categoryContent) {
+  const name = cat.data.titre_seo
+    ? cat.data.titre_seo.replace(/^Meilleurs?\s+(modèles\s+)?/i, '').split(':')[0].trim()
+    : cat.id.replace(/-/g, ' ');
+  officialNameMap.set(cat.id, name);
+}
 
 // Calcul des catégories avec compteurs
 const catCountMap = new Map<string, { name: string; slug: string; count: number }>();
 for (const p of allProducts) {
   for (const catName of (p.data.categories || [])) {
     const s = slugify(catName);
+    if (s === 'meilleurs-modeles') continue; // Ignorer le faux slug générique
+
+    const prettyName = officialNameMap.get(s) || (catName.includes('-') ? catName.replace(/-/g, ' ') : catName);
+
     if (!catCountMap.has(s)) {
-      catCountMap.set(s, { name: catName, slug: s, count: 1 });
+      catCountMap.set(s, { name: prettyName, slug: s, count: 1 });
     } else {
       catCountMap.get(s)!.count++;
     }
