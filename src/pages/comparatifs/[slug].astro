@@ -56,16 +56,22 @@ export async function getStaticPaths() {
         slug: catEntry.slug
       }
     };
-  });
+  }).filter(pathItem => pathItem.props.products.length > 0);
 }
 
 const { categoryName, products = [], content, slug } = Astro.props;
 const Content = content ? (await render(content)).Content : null;
 
+// SEO Title (pour la balise <title> SERP)
 let seoTitle = content?.data.titre_seo || `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
 seoTitle = seoTitle.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
 if (seoTitle.length < 20) seoTitle = `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
 if (seoTitle.length > 90) seoTitle = seoTitle.slice(0, 87) + '...';
+
+// H1 Lisible et concis (pour l'affichage en tête de page)
+const pageHeading = content?.data.titre_h1 || (categoryName.toLowerCase().startsWith('rabot') || categoryName.toLowerCase().startsWith('meilleur') 
+  ? categoryName 
+  : `Comparatif : ${categoryName}`);
 
 let seoDescription = content?.data.description_seo || `Découvrez notre comparatif complet et sélection pour ${categoryName}. Analyse technique, tests et conseils d'experts.`;
 seoDescription = seoDescription.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
@@ -99,7 +105,7 @@ const breadcrumbs = [
       Comparatif Spécialisé
     </span>
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight capitalize !my-0">
-      {content?.data.titre_seo?.replace(/\b202[0-9]\b/g, '') || `Meilleurs équipements pour ${categoryName}`}
+      {pageHeading}
     </h1>
     <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
       Bancs d'essai comparatifs et guide de sélection pour vous équiper avec le modèle le plus adapté à vos attentes.

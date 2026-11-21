@@ -5,6 +5,7 @@ const produits = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/produits" }),
   schema: z.object({
     titre: z.string(),
+    titre_h1: z.string().optional(),
     description_courte: z.string(),
     description_longue: z.string(),
     image_url: z.string(),
@@ -19,6 +20,7 @@ const categories = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/categories" }),
   schema: z.object({
     titre_seo: z.string(),
+    titre_h1: z.string().optional(),
     description_seo: z.string(),
     faq: z.array(z.object({
       q: z.string(),

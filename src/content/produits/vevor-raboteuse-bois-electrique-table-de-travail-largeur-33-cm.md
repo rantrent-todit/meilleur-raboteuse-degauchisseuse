@@ -1,5 +1,5 @@
 ---
-titre: "VEVOR Raboteuse Bois Électrique, Table de Travail Largeur 33 cm"
+titre: "VEVOR - Raboteuse à bois électrique 330 mm"
 description_courte: "Banc d'essai complet de la raboteuse VEVOR 33 cm à arbre hélicoïdal. Analyse technique, qualité de coupe à 24 inserts et test sur bois durs."
 description_longue: "La raboteuse d'établi VEVOR 33 cm se distingue par son arbre de coupe hélicoïdal équipé de 24 plaquettes carbure réversibles et son moteur de 2000 W. Nous avons testé en profondeur sa rigidité, sa tolérance dimensionnelle et sa finition sur essences dures et résineuses afin de déterminer sa réelle valeur pour les artisans et passionnés du travail du bois."
 categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]

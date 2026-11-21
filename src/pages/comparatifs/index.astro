@@ -35,7 +35,7 @@ for (const p of allProducts) {
   }
 }
 
-// Calculer le nombre de produits pour chaque catégorie
+// Calculer le nombre de produits pour chaque catégorie et filtrer les catégories vides
 const allCategories = Array.from(categoryMap.values()).map(cat => {
   const count = allProducts.filter(p => {
     const cats = p.data.categories || [];
@@ -46,7 +46,7 @@ const allCategories = Array.from(categoryMap.values()).map(cat => {
     ...cat,
     count
   };
-}).sort((a, b) => {
+}).filter(cat => cat.count > 0).sort((a, b) => {
   if (b.count !== a.count) return b.count - a.count;
   return a.name.localeCompare(b.name);
 });
@@ -94,10 +94,10 @@ const collectionSchema = {
       Guides & Comparatifs
     </span>
     <h1 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3 tracking-tight">
-      Nos comparatifs par catégorie
+      Nos comparatifs de produits
     </h1>
     <p class="text-base text-slate-600 leading-relaxed">
-      Chaque usage a ses exigences spécifiques. Sélectionnez une catégorie pour explorer nos bancs d'essai comparatifs et notre sélection rigoureuse des modèles les plus fiables.
+      Sélectionnez une catégorie pour explorer nos bancs d'essai comparatifs et notre sélection rigoureuse des modèles les plus fiables.
     </p>
   </div>
 
@@ -114,15 +114,9 @@ const collectionSchema = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
             </div>
-            {category.count > 0 ? (
-              <span class="text-[11px] font-bold text-orange-700 bg-orange-50 border border-orange-200 px-2.5 py-1 rounded-full">
-                {category.count} {category.count > 1 ? 'modèles' : 'modèle'}
-              </span>
-            ) : (
-              <span class="text-[11px] font-medium text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
-                Dossier conseil
-              </span>
-            )}
+            <span class="text-[11px] font-bold text-orange-700 bg-orange-50 border border-orange-200 px-2.5 py-1 rounded-full">
+              {category.count} {category.count > 1 ? 'modèles comparés' : 'modèle comparé'}
+            </span>
           </div>
           <h2 class="text-lg font-black text-slate-900 group-hover:text-orange-600 capitalize mb-2 transition-colors">
             {category.name}
