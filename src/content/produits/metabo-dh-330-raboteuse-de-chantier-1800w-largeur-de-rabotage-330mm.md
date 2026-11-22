@@ -8,17 +8,12 @@ image_url: "https://m.media-amazon.com/images/I/81iJl8AcewL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B00068WPI6/?tag=amazonwp0b-21"
 meta_title: "Avis Metabo DH 330 - Raboteuse de chantier 1800 W"
 meta_description: "Avis complet et test indépendant sur metabo DH 330 Raboteuse de Chantier, 1800W, Largeur de Rabotage 330mm. Découvrez ses performances réelles et points forts."
+
 avis_clients:
   - auteur: "BoB"
     note: 5
     titre: "Matériel quasi pro"
     commentaire: "Achetée en remplacement d'une rabot-degau que j'ai vrillé, j'ai été agréablement surpris par l'impression de solidité dès la sortie du carton.Les 1ers tests sont tres concluants. La raboteuse avale sans problème les planches de faible épaisseur, mais un peu plus de mal a entraîner des bastaings (normal). La surface rabotée est assez lisse. Les manivelles de réglages sont précises. La manette de blocage est solide et permet d'éviter que les lames ne remontent avec les vibrations. La bille en entrée de rabot est top, elle permet de bien vérifier l'épaisseur de rabotage avant d'envoyer la planche. Franchement un tres bon investissement. Un plus serait d'avoir le support sur pieds adapté. Mais avec un peu d'astuce, j'ai pu récupérer et adapter l'ancien pied de mon ancienne rabot-degau."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Velez C."
-    note: 5
-    titre: "ravis"
-    commentaire: "excellent!"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
   - auteur: "Wagner J."
@@ -31,6 +26,12 @@ avis_clients:
     note: 4
     titre: "Pas vraiment neuf"
     commentaire: "C'est une superbe machineMais dommage qu'elle ne soit pas neuve. Le plastique bleu de protection de la table à été retiré et lors d'un test à vide, des copeaux sont sortis.Lors d'essais réels avec des planches de pin, il reste une trace sur le bois comme si un des fers était abîmé.J'achète une machine neuve et je reçois une machine déjà utilisée.Un dédommagement serait un minimum, car un retour est exclu vu le poids de la machine"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "dav29"
+    note: 5
+    titre: "Très bien"
+    commentaire: "Très bonne machine par contre très déçu sur la livraison étant absent le colis à été livré chez mon voisin sans ma demande livré chez mon pire ennemis on a réussi à la récupérer mais de grâce les livreur ne faite plus ça sans votre demande"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

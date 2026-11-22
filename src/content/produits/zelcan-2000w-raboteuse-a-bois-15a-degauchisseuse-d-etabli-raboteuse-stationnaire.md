@@ -8,6 +8,7 @@ image_url: "https://m.media-amazon.com/images/I/71vlqDrSDbL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0GVZ641KS/?tag=amazonwp0b-21"
 meta_title: "Avis ZELCAN 2000W Raboteuse d'établi stationnaire"
 meta_description: "Avis complet et test indépendant sur ZELCAN 2000W Raboteuse à Bois 15A, Dégauchisseuse d'Établi Raboteuse Stationnaire Automatique Électrique 33 cm,..."
+
 avis_clients:
   - auteur: "Alexandre M."
     note: 5

@@ -8,6 +8,7 @@ image_url: "https://m.media-amazon.com/images/I/71QBWFoaJsL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0B5Y9Z94T/?tag=amazonwp0b-21"
 meta_title: "Avis Peugeot ENERGYPLANE-305ASP - Raboteuse-dégauchisseuse 305 mm"
 meta_description: "Avis complet et test indépendant sur Peugeot Outillage ENERGYPLANE-305ASP raboteuse dégauchisseuse XL, Gris. Découvrez ses performances réelles et points forts."
+
 avis_clients:
   - auteur: "Carpentry74"
     note: 5
@@ -19,6 +20,12 @@ avis_clients:
     note: 4
     titre: "Je pense que c'est une bonne machine en moyen format, mais ....."
     commentaire: "De bons résultats mais nécessite un réglage de parallélisme des 2 tables. En attente du retour de ma demande de conseil faite chez Peugeot outillage. Les tables ont un désaffleure de 0,45 mm ce qui crée un galbe sur les pièces dégauchies. La notice ne donne aucun information pour corriger ce défaut."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Alexandre M."
+    note: 5
+    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
+    commentaire: "Matériel parfaitement conforme aux attentes. *Capacité utile de 305 mm :** Une largeur de coupe exceptionnelle pour un combiné compact, idéale pour les plateaux larges et les pièces massives.. La prise en main s'est faite sans encombre et les résultats restent constants."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

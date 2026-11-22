@@ -8,29 +8,30 @@ image_url: "https://m.media-amazon.com/images/I/61L+NcnfbWL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B00HYEAN4I/?tag=amazonwp0b-21"
 meta_title: "Avis Makita DKP180Z - Rabot sans fil 18V LXT (82 mm)"
 meta_description: "Avis complet et test indépendant sur RABOT MAKITA 82 MM 18 V LXT -DKP180Z. Découvrez ses performances réelles et points forts."
+
 avis_clients:
+  - auteur: "Macumb'House"
+    note: 5
+    titre: "Surper rabot que je recommande aux amateurs et aux pro"
+    commentaire: "Je suis menuisier. J'avais le rabot electrique filaire Bosh qui etait déjà très bien avec double sortie pour l'aspirateur mais une seule lame. Là le rabot est super efficace, puissant, et precis. Le choix de la hauteur est très bien fait, la prise en main facile et l'appareil léger. La batterie 5A dure vraiment longtemp. Je suis super satisfait. De plus l'appareil s'arrête direct dès qu'on arrête d'appuyer sur la gachette ce qui est super secure. Bon seul hic pas de boîte de rangement mais je vais m'en faire une. Je recommande à tout les bricoleurs amateurs et pro."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Client D."
+    note: 4
+    titre: "Bien mais autonomie faible, préférer la version BL"
+    commentaire: "Le rabot fonctionne bien et est ergonomique. Les fers carbure sont performants. Par contre je vous recommande vraiment la version brushless parce que l'autonomie est ridicule et surtout la vitesse baisse énormément au fur et à mesure de la décharge, ça change la qualité du travail en cours de route..."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "Buzer"
     note: 5
     titre: "Très bon produit"
     commentaire: "Je suis très content de cette outil qui est facile à manipuler et très efficace"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "ludovic L."
-    note: 5
-    titre: "."
-    commentaire: "Super"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
   - auteur: "aimé"
     note: 5
     titre: "tres bien pour le bricoleur"
     commentaire: "R A S du makita conforme a mes demande"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Eric M."
-    note: 5
-    titre: "Produit conforme"
-    commentaire: "Makita top"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

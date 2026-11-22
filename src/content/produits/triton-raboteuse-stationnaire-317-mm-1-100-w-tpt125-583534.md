@@ -8,29 +8,30 @@ image_url: "https://m.media-amazon.com/images/I/71T21YcDE2L._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B008JEL6KC/?tag=amazonwp0b-21"
 meta_title: "Avis Triton TPT125 - Raboteuse stationnaire 317 mm 1100 W"
 meta_description: "Avis complet et test indépendant sur Triton - Raboteuse stationnaire 317 mm, 1 100 W TPT125 (583534). Découvrez ses performances réelles et points forts."
+
 avis_clients:
-  - auteur: "Angel76"
-    note: 5
-    titre: "super machine"
-    commentaire: "étant en pleine rénovation cette machine me fait vraiment gagné du temps et de l'argentje peut prendre du bois de charpente afin de pouvoir faire tous ce que je veux avec et sans passer un temps du diable avec un rabot électrique, ponceuse, etc pour obtenir le même résultatpour un usage semi professionnel c'est parfaitpetit bémol quand le kit aspirateur est monté on ne peu plus rabattre la plaque de guide et il manque un aimant pour extraire le couteau"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Loic"
-    note: 5
-    titre: "Génial"
-    commentaire: "J’adore cette machine, bon rapport qualité prix, les lame coupe’ bien, asser précise, un peut lourd (40kg) poser sur un chariot en fixe juste génial, part contre faut prévoir un bon aspirateur à copeaux"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
   - auteur: "Wall-E"
     note: 4
     titre: "Génial !"
     commentaire: "ce n'est certainement une raboteuse de pro, mais ca tombe bien, je ne suis pas un pro non plus :)En tous cas, c'est du très bon matériel car j'ai réussi à refaire toute ma cuisine en planchettes de palettes et j'avoue que cette raboteuse m'a beaucoup aidée. Attention à vérifier qu'il n'y ai plus un seul clou-même cassé- car sinon vous risquez d’abîmer un rouleau qui vous fera ensuite une trace sur toutes les autres planches.Je suis très satisfait de mon investissement.PS: Juste un bémol concernant la livraison car n'tant pas chez moi lors de la premiere presentation, il n'y a eu aucun avis de passage du transporteur !? Après qq recherches, l'article a été présenté une seconde fois, même problème !! Alors je suis allé le recupérer à la poste et là..., la raboteuse EXPLOSEE !!! (Du au tranport car elle a dû se ballader un peu partout...). Après contact avec le fournisseur, celui ci m'en a renvoyé une autre avec laquelle il n'y a eu aucun probème. Bravo pour la réactivité"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "Casqdor"
+  - auteur: "Angel76"
     note: 5
-    titre: "RAS"
-    commentaire: "La raboteuse fait le job. Bon rapport qualité prix"
+    titre: "super machine"
+    commentaire: "étant en pleine rénovation cette machine me fait vraiment gagné du temps et de l'argentje peut prendre du bois de charpente afin de pouvoir faire tous ce que je veux avec et sans passer un temps du diable avec un rabot électrique, ponceuse, etc pour obtenir le même résultatpour un usage semi professionnel c'est parfaitpetit bémol quand le kit aspirateur est monté on ne peu plus rabattre la plaque de guide et il manque un aimant pour extraire le couteau"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "TLaw"
+    note: 5
+    titre: "Bon matériel"
+    commentaire: "Je possède déjà une raboteuse/dégauchisseuse et je souhaitais utiliser cette raboteuse en \"dépotage\" ...Mais je l'utilise en raboteuse principale... Les réglages sont précis et faciles et la qualité du rabotage est nickel pour peu que l'on ne veuille pas enlever trop de matière en une seule passe.Je recommande"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Loic"
+    note: 5
+    titre: "Génial"
+    commentaire: "J’adore cette machine, bon rapport qualité prix, les lame coupe’ bien, asser précise, un peut lourd (40kg) poser sur un chariot en fixe juste génial, part contre faut prévoir un bon aspirateur à copeaux"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

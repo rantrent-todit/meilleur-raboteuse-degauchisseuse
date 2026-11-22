@@ -8,6 +8,7 @@ image_url: "https://m.media-amazon.com/images/I/61gRjz5wbiL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B09FK96CYN/?tag=amazonwp0b-21"
 meta_title: "Avis Raboteuse-dégauchisseuse d'établi portable pour bois"
 meta_description: "Avis complet et test indépendant sur Raboteuses Dégauchisseuses, Machine De Raboteuse De Surface De Travail Du Bois Portative D. Découvrez ses..."
+
 avis_clients:
   - auteur: "Alexandre M."
     note: 5

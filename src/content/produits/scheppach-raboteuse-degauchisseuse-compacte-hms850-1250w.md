@@ -8,23 +8,24 @@ image_url: "https://m.media-amazon.com/images/I/61n5ASEj+bL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B01BTZLSNM/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W. Découvrez ses performances réelles et points forts."
+
 avis_clients:
-  - auteur: "amemael"
-    note: 5
-    titre: "Parfait"
-    commentaire: "Très bien,rend vraiment un effet de profondeur 👍"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Client vérifié"
+  - auteur: "jeanty"
     note: 4
-    titre: "conforme aux attentes"
-    commentaire: "Efficace, conforme aux attentes"
+    titre: "Bonne machine mais"
+    commentaire: "Bonne machine avec un MAIS !elle est relativement puissante j'ai essayé avec du chêne et elle l'avale sans souci !Le rabot comme le degau est bien la conception est plutôt solide pour le prix et la gamme pour cela pas grand choses à redire ! Cependant LE GUIDE qu'elle saloperie ce guide il est très souple et pas pratique ! Quand on degauchie il bouge beaucoup (je vais l'améliorer)Quand on rabote le guide (oui le guide)est pénible , comme tout rabot degau il faut retirer le guide et le protège degau pour raboter ! On est obligé de mettre le récupérateur de copeaux pour que la machine fonctionne alors au moment de retirer le guide c'est pas du tout pratique il faut obligatoirement une clé et pour le protège \"lame\" c'est très compliqué pour faire passer le récupérateur donc j'ai retirer le petit arrêt en métal !En général très bonne machine sauf le rabot pas pratique mais fonctionne bien"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
   - auteur: "WILLY E."
     note: 5
     titre: "Impeccable travail précis et propre"
     commentaire: "Raboteuse dégauchisseuse pour le prix Franchement j'étais esitant car je touche le SMIC mais maintenant que le les prises c'est nikel pas trop bruyant en plus facile d'utilisation prévoir un aspirateur de copeaux quand-même un gros bouquins avec toute les langues et toutes les explications je suis suis très satisfait de mon achat au près de cette marque j'ai même acheté la scie angulaire de chez eux vous pouvez acheter sans soucis livraison rapide et possibilité de payer en plusieurs fois et le sav et très rapide j'ai eux un soucis avec l'autre machine et il mon répondu rapidement"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Jacqueline L."
+    note: 5
+    titre: "Maniable et légère"
+    commentaire: "Fonctionne parfaitement. Très bonne machine. Livraison très rapide."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
   - auteur: "Michel P."

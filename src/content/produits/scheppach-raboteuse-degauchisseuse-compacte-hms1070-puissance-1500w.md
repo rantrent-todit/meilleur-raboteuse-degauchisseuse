@@ -8,29 +8,30 @@ image_url: "https://m.media-amazon.com/images/I/61k4723-aCL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B01BTZI6LE/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach HMS1070 - Raboteuse Dégauchisseuse 1500W"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS1070 | Puissance 1500W. Découvrez ses performances réelles et points forts."
+
 avis_clients:
+  - auteur: "Webster"
+    note: 5
+    titre: "Robuste et precis"
+    commentaire: "Très facile à monter,Matériaux robustesLa coupe est précise et nette,Je l utilise en passés de 1mm de profondeur pour éviter les traces sur le bois , quand on ne va pas trop vite l état de surface du bois est impeccable, quasi pas besoin de poncerPas encore change les fers , je ne peux donc pas juger ce point pour le momentCe n est bien sûr pas une degau professionnelle mais le rapport qualité prix est excellent pour un bricoleur averti qui veut travailler un peu de bois brut de scierieLa'largeir de 25 cm permet de travailler des planches de bonne tailleIl faut y brancher un aspirateur sinon les copeaux bouche le réceptacle et cela vole partout.Je recommandeJe recommande"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "guerin A."
     note: 5
     titre: "FACILE A TRANSPORTE"
     commentaire: "cette machine a bien fonctionné au début, puis maintenant, des que je passe 3 ou 4 planches elle fait disjonctée le disjoncteur de la maison, c'est la seule ,qui fait ça ,les autre machine, fonctionne bien. il y a un problème sur cette machine. affaire a suivre. je renvoie la machine aujourd'hui ,j'ai imprimer le bon de retourcolissimo.je compte sur vous pour me rembourser au plus vite. que je puisse en reprendre une plus puissante. jusqu'ici, j'ai toujours été satisfait d'AMAZON , cordialement.Mr GUERIN"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
+  - auteur: "Patrice G."
+    note: 5
+    titre: "Très bonne bécane"
+    commentaire: "Facile à monter. L'emballage d'origine est parfait.La machine est parfaite. Pas trop bruyante et par chance ou par qualité tous mes équerrages étaient parfait.Les table en alu sont parfaitement plane. Le récupérateur de copeau est un peu difficile à installer la première fois en mode rabot. Après on s'habitue et ça va assez vite.Mon premier essai a été réalisé avec du chêne sec et j'ai obtenu un résultat parfait avec la dégau et avec le rabot ensuite."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "Karolusss"
     note: 4
     titre: "Efficace pour le prix"
     commentaire: "Efficace pour le prixBruyante, la protection thermique se déclenche un peu vite mais si on prend son temps en rabot en faisant des passages de 0,5 ou 1mm pas de problème.Je passe des planches de 3 m de long et ça fait le taf"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Michel M."
-    note: 5
-    titre: "Achat matériel menuiserie"
-    commentaire: "Très bon produit,pour moi qui fait de petits travaux de menuiserie il est parfait et je le recommande. Michel du 41."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Webster"
-    note: 5
-    titre: "Robuste et precis"
-    commentaire: "Très facile à monter,Matériaux robustesLa coupe est précise et nette,Je l utilise en passés de 1mm de profondeur pour éviter les traces sur le bois , quand on ne va pas trop vite l état de surface du bois est impeccable, quasi pas besoin de poncerPas encore change les fers , je ne peux donc pas juger ce point pour le momentCe n est bien sûr pas une degau professionnelle mais le rapport qualité prix est excellent pour un bricoleur averti qui veut travailler un peu de bois brut de scierieLa'largeir de 25 cm permet de travailler des planches de bonne tailleIl faut y brancher un aspirateur sinon les copeaux bouche le réceptacle et cela vole partout.Je recommandeJe recommande"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

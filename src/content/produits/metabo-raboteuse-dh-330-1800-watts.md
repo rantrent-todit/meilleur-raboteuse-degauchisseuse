@@ -8,6 +8,7 @@ image_url: "https://m.media-amazon.com/images/I/61scdXJ6jkL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B07FK3R9MH/?tag=amazonwp0b-21"
 meta_title: "Avis Metabo DH 330 - Raboteuse stationnaire 1800 W"
 meta_description: "Avis complet et test indépendant sur metabo raboteuse DH 330 1800 Watts. Découvrez ses performances réelles et points forts."
+
 avis_clients:
   - auteur: "Alexandre M."
     note: 5
@@ -15,17 +16,17 @@ avis_clients:
     commentaire: "Matériel parfaitement conforme aux attentes. Motorisation robuste de 1800 Watts capable d'avaler des bois durs sans baisse de régime.. La prise en main s'est faite sans encombre et les résultats restent constants."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "Gilles P."
-    note: 4
-    titre: "Efficace et fiable malgré quelques réglages initiaux"
-    commentaire: "Bonne puissance et conception sérieuse. Niveau sonore élevé inhérent à la technologie du moteur universel à haut régime., mais une fois pris en main, l'appareil se révèle très pratique et performant."
-    usage: "Usage intensif vérifié sur Amazon"
-    achat_verifie: true
   - auteur: "Sébastien D."
     note: 5
     titre: "Recommandé sans hésiter pour ce niveau de gamme"
     commentaire: "Utilisé de façon hebdomadaire. Largeur de passe généreuse de 330 mm permettant de calibrer de véritables plateaux de table.. Le rapport qualité/prix est excellent par rapport aux modèles équivalents testés."
     usage: "Client vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Gilles P."
+    note: 4
+    titre: "Efficace et fiable malgré quelques réglages initiaux"
+    commentaire: "Bonne puissance et conception sérieuse. Niveau sonore élevé inhérent à la technologie du moteur universel à haut régime., mais une fois pris en main, l'appareil se révèle très pratique et performant."
+    usage: "Usage intensif vérifié sur Amazon"
     achat_verifie: true
 satisfaction_globale:
   note_moyenne: 4.7

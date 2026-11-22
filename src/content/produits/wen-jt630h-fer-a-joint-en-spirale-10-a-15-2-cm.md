@@ -8,6 +8,7 @@ image_url: "https://m.media-amazon.com/images/I/712OeY8RPBL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B08M6KQ5LX/?tag=amazonwp0b-21"
 meta_title: "Avis WEN JT630H Dégauchisseuse d'établi 152 mm"
 meta_description: "Avis complet et test indépendant sur WEN JT630H Fer à joint en spirale 10 A 15,2 cm. Découvrez ses performances réelles et points forts."
+
 avis_clients:
   - auteur: "Alexandre M."
     note: 5

@@ -8,7 +8,14 @@ image_url: "https://m.media-amazon.com/images/I/51OHHrJDeqL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B005KH4VXK/?tag=amazonwp0b-21"
 meta_title: "Avis Rabot électrique filaire 620 W - MAKITA KP0800"
 meta_description: "Avis complet et test indépendant sur le rabot électrique filaire Makita KP0800 de 620 W. Découvrez ses performances réelles, son ergonomie et ses limites."
+
 avis_clients:
+  - auteur: "Lentiez"
+    note: 4
+    titre: "Excellent rapport qualité-prix"
+    commentaire: "J'ai acheté ce matériel pour raboter des planches pour l'instant. Je craignais après avoir commencé avec du bois tendre (des résineux) que la matériel ne souffre un peu avec du chêne très ancien. Aucun problème. Le réglage de la profondeur est simple, et je conseille quand on commence de régler la profondeur au minimum pour acquérir les bons réflexes. Bien tenir la raboteuse horizontalement et surtout à l'extrémité de la surface pour éviter le \"coup de talon\". ça s'acquiert assez rapidement. Un très bon matériel pour le prix at qui ne m'a pas déçu. Evidemment ça reste un outil pour débuter mais ça peut aller au-delà."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "Uzureau C."
     note: 5
     titre: "bon matériel"
@@ -21,16 +28,10 @@ avis_clients:
     commentaire: "La qualité Makita, rabotte parfaitement et peut avaler plusieurs millimètres en un passage."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "Lentiez"
-    note: 4
-    titre: "Excellent rapport qualité-prix"
-    commentaire: "J'ai acheté ce matériel pour raboter des planches pour l'instant. Je craignais après avoir commencé avec du bois tendre (des résineux) que la matériel ne souffre un peu avec du chêne très ancien. Aucun problème. Le réglage de la profondeur est simple, et je conseille quand on commence de régler la profondeur au minimum pour acquérir les bons réflexes. Bien tenir la raboteuse horizontalement et surtout à l'extrémité de la surface pour éviter le \"coup de talon\". ça s'acquiert assez rapidement. Un très bon matériel pour le prix at qui ne m'a pas déçu. Evidemment ça reste un outil pour débuter mais ça peut aller au-delà."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Florian C."
+  - auteur: "3D P."
     note: 5
-    titre: "Ras"
-    commentaire: "Impeccable"
+    titre: "C’est Makita !"
+    commentaire: "Parfait malgré un poids conséquent. Réglage fin et prise en main facile. C’est Makita !"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

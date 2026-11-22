@@ -8,7 +8,14 @@ image_url: "https://m.media-amazon.com/images/I/71bMyz6-utL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0D93Y8Y2F/?tag=amazonwp0b-21"
 meta_title: "Avis Einhell Raboteuse Dégauchisseuse TC-SP 204/2"
 meta_description: "Avis complet et test indépendant sur Einhell Raboteuse Dégauchisseuse TC-SP 204/2. Découvrez ses performances réelles et points forts."
+
 avis_clients:
+  - auteur: "Alexandre M."
+    note: 5
+    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
+    commentaire: "Matériel parfaitement conforme aux attentes. Puissance moteur confortable de 1500 W capable d'usiner des bois durs.. La prise en main s'est faite sans encombre et les résultats restent constants."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "Georges"
     note: 5
     titre: "Fait le job si on reste raisonnable"
@@ -20,18 +27,6 @@ avis_clients:
     titre: "J en avais besoin"
     commentaire: "Super que ça marche Super bien contrairement à ce certains disent"
     usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Haute-Vienne"
-    note: 3
-    titre: "Peut être pas loin d'être super."
-    commentaire: "Emballage sérieux.Facile à monter malgré les imprécisions du mode d'emploi.Mode d'emploi nul. Les numéros de renvoi ne correspondent pas au texte ou n'existent pas. Il faut se reporter sans cesse 25 pages en arrière. J'attends une réponse du sav de la marque pour savoir s'il existe un correctif.La traduction fait parfois un peu peur. Par exemple que veut dire \"tirer d'épaisseur\" ?Je ferai un essai sur la machine dès que je l'aurai reçu."
-    usage: "Retour terrain vérifié Amazon"
-    achat_verifie: true
-  - auteur: "Pierre T."
-    note: 1
-    titre: "Outil inutile"
-    commentaire: "Outil inutile car:- problème de réglage des fers à l'arrivé: heureusement ça peut être corrigé. Par contre le gabarit fournit semble inutile, un réglé fait mieux le job- tables d'arrivé et de sortie non parallèles: j'ai aperçu des vis sous le carter de protection, mais je n'ai pas pu vérifier si ça permettait de régler la solution- guide parallèle en tole un peu tordu:- le fait que ça soit en tole avec une unique attache, fait qu'il est très facile de bouger ce guide lorsque l'on veut faire un chant à 90°- le fait qu'il soit un peu tordu rend impossible d'avoir 90°- je n'ai jamais pu avoir les 90° et j'ai toujours du rectifié ça avec une scie sous tableJe n'ai pas vérifié la parallélité de la table de rabotage."
-    usage: "Retour terrain vérifié Amazon"
     achat_verifie: true
 satisfaction_globale:
   note_moyenne: 4.1

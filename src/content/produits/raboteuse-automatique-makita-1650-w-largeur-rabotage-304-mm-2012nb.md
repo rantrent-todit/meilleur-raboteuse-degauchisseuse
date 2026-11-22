@@ -8,29 +8,30 @@ image_url: "https://m.media-amazon.com/images/I/7145HxAImcL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B000051ZOO/?tag=amazonwp0b-21"
 meta_title: "Avis Makita 2012NB - Raboteuse stationnaire 1650 W"
 meta_description: "Avis complet et test indépendant sur RABOTEUSE AUTOMATIQUE MAKITA 1650 W LARGEUR RABOTAGE 304 MM 2012NB. Découvrez ses performances réelles et points forts."
+
 avis_clients:
-  - auteur: "Littlebig"
-    note: 5
-    titre: "Parfaite pour mon utilisation"
-    commentaire: "Ce qui frappe au déballage, c'est le poids! Ensuite la mise en service est simplissime. Vient ensuite l'utilisation. Le principe des fers réversibles sur un support dédié permet une action rapide en évitant les réglages pénibles. La qualité de surface après rabotage est excellente, et les consommables faciles à trouver et d'un prix raisonnable. Seul bémol: on est sensé pouvoir mettre des lames carbure traditionnelles, sauf que le kit d'adaptation n'est pas fourni et pas facile à trouver (en entier je veux dire, puisque visiblement les vis ne font pas partie du kit et sont introuvables même chez Makita que j'ai eu au téléphone pendant une heure). Concernant l'évacuation des copeaux: en l'absence d'un aspirateur d'atelier spécialisé avec un tuyau de 80mm minimum, il vaut mieux le laisser \"cracher\" directement, mon évacuation de 50mm saturant toutes les 5 minutes j'ai laissé tomber. On peut travailler avec des passes de 1mm sur des largeurs de 250mm sans que le moteur ne cale, et j'ai enchainé des passes de 1mm sur des bois de 80 mm de large sur 1200 de longueur pendant trois heures sans problème. La manivelle de réglage est précise et l'existence d'un blocage pour la répétabilité est une bonne idée.Côté réglages, j'ai ajusté le curseur de la jauge d'épaisseur et vérifié la position des fers dans les supports.Le changement des fers se fait en moins de 10 minutes quand on est bien organisé et que l'on a mis le kit livré avec la machine à portée de main (il contient des aimants qui facilitent la manipulation).Qualité Makita confirmée"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Dragon"
-    note: 5
-    titre: "Pffff c'est dla bomb"
-    commentaire: "La raboteuse de mes rêves !!!! ohhh c'est bow c'est doux c'est ..... bah beaucoup moins casse bonbon que ce palucher ses planches a la main ! Je suis amateur donc pour les pros ou pointilleux ce commentaire n'est pas fait pour vous, mais pour les autres rooooohhhhh on découvre la finesse du bois sans ponçage !! même sur du bois de palettes c'est pour dire ! le sapin bah c'est du ptit lait j'ai pas de bois dûr je suis pauvre ! Bref je vous recommande grandement cette machine si vous avez les moyens puisqu'il me manque un bras à présent (pour l'achat pas d'accident hein ^^)."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
   - auteur: "zo"
     note: 5
     titre: "Attention Rabotteuse seulement!"
     commentaire: "Je ne l'ai pas encore testée mais elle semble de bonne facture.En revanche il m'a semblé utile de mentionner qu'il ne s'agit pas d'une raboteuse/degauchisseuse, mais seulement d'une raboteuse.Je me suis faite avoir car elle est sortie dans mes résultats de recherche de \"raboteuse dégauchisseuse\" et rien ne contredisait cette info dans le descriptif quasi inexistant. Comme je note l'article je n'en ai pas tenu rigueur, mais quand je noterai le vendeur la note s'en ressentira pour descriptif quasi inexistant.Même chose pour l'adaptateur d'aspiration, amazon nous propose de compléter l'achat avec, ce que j'ai fait, alors qu'il il y en a déjà un d'inclus... j'ai annulé la livraison...Pour finir, la sortie d'aspiration est en 76, si comme moi voulez la relier à une aspiration type aspi eau et poussière karcher (wd2 plus en l'occurrence), j'ai adapté un réducteur de plomberie pvc 80 vers 40 femelle femelle en sortie (nickel, aucun jeu donc j'imagine qu'il s'agit d'un 76 diamètre intérieur...😅) ensuite un coude 40 pour pas avoir le flexible qui fait obstacle pendant que je rabote... et enfin un de ces manchons (40 toujours, male/femelle donc) avec une lévre caoutchouc à l'intérieur pour que le bout du flexible soit \"atttrapé\" et ne retombe pas tout seul. C'est un peu du bricolage mais ça s'adapte nickel pour à peine quelques euros.Voilà je ne fournis pas de retour sur le produit lui-même que je n'ai pas encore utilisé mais il y a foule de questions/réponses et de commentaires qui le font déjà.😊En espérant vous épargner mes déboires!😊NB: Peut-être à la place de mon réducteur 80 vers 40 qui peut laisser de la sciure s'accumuler là ou ça se resserre, en choisir un à réduction \"progressive\", et du coup avec un coude avant pour pas prolonger l'évacuation de 20cm sur le côté de l'appareil. J'ai fait avec ce que j'avais sous la main, je verrai à lusage si ca mérite d'être remplacé!"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "Mika"
+  - auteur: "Littlebig"
     note: 5
-    titre: "Tres bonne machine!"
-    commentaire: "Très bonne machine, très facile d'utilisation, prête à travailler dès la sortie du carton.Un léger réglage des plateaux entrée et sortie pour effacer une trace de rabotage sur les 5 premiers cm.Bonne qualité de la machine, stable, semble costaud et bien pensée.Pour le reste au top! Je ne regrette pas du tout cet achat. Je recommande cette machine.Livrée avec kit aspiration en Ø75 ~ (chacun adapte à son aspiration)Livrée avec 1 poussoir, 2 clés et des aimants pour changer les fers.Made in PRC."
+    titre: "Parfaite pour mon utilisation"
+    commentaire: "Ce qui frappe au déballage, c'est le poids! Ensuite la mise en service est simplissime. Vient ensuite l'utilisation. Le principe des fers réversibles sur un support dédié permet une action rapide en évitant les réglages pénibles. La qualité de surface après rabotage est excellente, et les consommables faciles à trouver et d'un prix raisonnable. Seul bémol: on est sensé pouvoir mettre des lames carbure traditionnelles, sauf que le kit d'adaptation n'est pas fourni et pas facile à trouver (en entier je veux dire, puisque visiblement les vis ne font pas partie du kit et sont introuvables même chez Makita que j'ai eu au téléphone pendant une heure). Concernant l'évacuation des copeaux: en l'absence d'un aspirateur d'atelier spécialisé avec un tuyau de 80mm minimum, il vaut mieux le laisser \"cracher\" directement, mon évacuation de 50mm saturant toutes les 5 minutes j'ai laissé tomber. On peut travailler avec des passes de 1mm sur des largeurs de 250mm sans que le moteur ne cale, et j'ai enchainé des passes de 1mm sur des bois de 80 mm de large sur 1200 de longueur pendant trois heures sans problème. La manivelle de réglage est précise et l'existence d'un blocage pour la répétabilité est une bonne idée.Côté réglages, j'ai ajusté le curseur de la jauge d'épaisseur et vérifié la position des fers dans les supports.Le changement des fers se fait en moins de 10 minutes quand on est bien organisé et que l'on a mis le kit livré avec la machine à portée de main (il contient des aimants qui facilitent la manipulation).Qualité Makita confirmée"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Client D."
+    note: 4
+    titre: "Machine parfaite, sur tous les points"
+    commentaire: "Comme dit par les autres acheteurs, cette machine est super, fait un travail très propre, est précise, efficace.Bonne surprise. On en a pour son argent.Seul point très négatif : il y a soit-disant une offre dans laquelle on nous offre le support pour cette machine, mais je n'ai rien reçu !Pire : j'ai tenté de \"poser une question\" concernant cet objet à ce sujet, et n'ai reçu aucune réponse.Aucun moyen de contacter le vendeur, qui est Amazon en l'occurence, je n'ai pas trouvé et ne sais pas quoi faire...Si on lance une procédure de retour, pour amorcer le dialogue, on est obligé de renvoyer la machine, sinon, une deuxième machine nous est facturée au bout d'un certain temps...N'espérez donc pas profiter de cette offre...Bref, c'est bien dommage. J'enlève une étoile pour ça."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Dragon"
+    note: 5
+    titre: "Pffff c'est dla bomb"
+    commentaire: "La raboteuse de mes rêves !!!! ohhh c'est bow c'est doux c'est ..... bah beaucoup moins casse bonbon que ce palucher ses planches a la main ! Je suis amateur donc pour les pros ou pointilleux ce commentaire n'est pas fait pour vous, mais pour les autres rooooohhhhh on découvre la finesse du bois sans ponçage !! même sur du bois de palettes c'est pour dire ! le sapin bah c'est du ptit lait j'ai pas de bois dûr je suis pauvre ! Bref je vous recommande grandement cette machine si vous avez les moyens puisqu'il me manque un bras à présent (pour l'achat pas d'accident hein ^^)."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

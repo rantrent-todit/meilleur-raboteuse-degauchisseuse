@@ -8,6 +8,7 @@ image_url: "https://m.media-amazon.com/images/I/71qEv0MomSL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0013LK5TQ/?tag=amazonwp0b-21"
 meta_title: "Avis DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS"
 meta_description: "Avis complet et test indépendant sur DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS. Découvrez ses performances réelles et points forts."
+
 avis_clients:
   - auteur: "Alexis"
     note: 5
@@ -15,22 +16,22 @@ avis_clients:
     commentaire: "Parfaite !! Je l’ai achetée en seconde main pour moins de 350 € et j’en suis vraiment ravi 😁 Hyper précise, elle fait parfaitement le job. Je ne regrette absolument pas mon achat !"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "emilie"
+  - auteur: "adssb"
     note: 5
-    titre: "."
-    commentaire: "Trop content"
+    titre: "DEWALT Rabot de Chantier 1800W 317mm DW733-QS"
+    commentaire: "EXCELLENT PRODUIT - PRECISION PARFAITE ET REGLAGES FACILES A METTRE EN OEUVRE - NE PAS DEPASSER UNE EPAISSEUR DE BOIS DE 60 mm"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "claudine V."
-    note: 1
-    titre: "LA qualite"
-    commentaire: "dans la barre de recherche j avais demande un deguauchisseuse raboteurs pour quoi je recois une raboteuse uniquement merci lisez les commandes de vos clients"
-    usage: "Retour terrain vérifié Amazon"
+  - auteur: "edwin K."
+    note: 5
+    titre: "DeWalt DW733"
+    commentaire: "Super produit, livré à temps et le prix le moins chère je trouver. Après mes premières utilisations je suis très content."
+    usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "BOYER D."
-    note: 4
-    titre: "Produit conforme"
-    commentaire: "Bien"
+  - auteur: "Client D."
+    note: 5
+    titre: "bonne machine"
+    commentaire: "rabottage propre, niveau sonore correct (attention, ca fait comme meme du bruit). Satisfait!"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

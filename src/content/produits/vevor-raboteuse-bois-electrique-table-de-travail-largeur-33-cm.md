@@ -8,29 +8,30 @@ image_url: "https://m.media-amazon.com/images/I/71yj+9ZWZTL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0FNX7VWGV/?tag=amazonwp0b-21"
 meta_title: "Avis VEVOR - Raboteuse à bois électrique 330 mm"
 meta_description: "Avis complet et test indépendant sur VEVOR Raboteuse Bois Électrique, Table de Travail Largeur 33 cm. Découvrez ses performances réelles et points forts."
+
 avis_clients:
-  - auteur: "Virgile S."
+  - auteur: "Alain"
     note: 5
-    titre: "très bon produit pour amateur"
-    commentaire: "Très satisfait de mon achat. Cet outil est bien utile dans l'atelier et me facilite grandement le travail pour un usage amateur. Un petit réglage des plateaux s'est avéré utile lors de la première utilisation mais très pratique à faire. Je suis très satisfait car aucun talon ne se forme sur le bois ni en entrée ni en sortie. ma note 10/10."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "PHILIPPO B."
-    note: 5
-    titre: "Super."
-    commentaire: "Ras."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "DJULS"
-    note: 4
-    titre: "Rien a signaler."
-    commentaire: "Pratique et facile d'utilisation. Finition ok.Utiliser pour bois de récupération.Un peu bruyant quand même ...mais sa fais parti du jeux"
+    titre: "quelque réglage a faire"
+    commentaire: "Quand j'ai reçu cette machine j'ai immédiatement commencé a passé des planchette a l’intérieur pour voir un peut ce qu'elle avais dans le ventre et le résultat a première vue était correcte mais quand j'ai commencé a y regardé de plus prés, les cotes n’était pas respecté d'une coté a l'autre, j'ai passé plus de 4h pour réglé ce problème grâce a la notice ou tout est expliquer et surtout grâce a l'aide de mon voisin ancien ébéniste a la retraite...Les table aussi n’étais pas réglé et une des vis de réglage avais un pas \"foiré\" ce qui rendais les réglage impossible, au prix de la machine c'est un peut innervant de devoir mettre les mais dans le cambouis dés le déballage, les réglage aurais du être fait en usine a mon sens.2 autre point négatif, la graduation n'est pas très pratique ni très lisible derrière le curseur qui cache la graduation, a modifié ou ajouté une loupe... et les lames de remplacement qui sont introuvable sur les site Français, obligé de passé par un site chinois bien connus (Ali.....s) pour trouvé des lames de remplacement estampiller Vevor pour notre machine....Dans l'ensemble après ses désagrément, la machine réglé au petit oignon tous se passe a merveille et je ne regrette pas mon achat, ne reste plus qu'a voir la tenus dans le temps..."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
   - auteur: "superfrog"
     note: 5
     titre: "Bon rapport qualité prix, ajustement corrects en sortie d'usine"
     commentaire: "Excellente pour le prix. Je viens de reprendre 55m2 de cumaru avec, elle a pas bronché.Sessions de 5m2 environ.(Mise a l'épaisseur et retrait des restes des colle sur un parquet récupére, après un premier grattage à la spatule sur burineur)Les charbons sont toujours bons, les copeaux sont propres et se séparent bien au cyclone, assez peu de ratés (une dizaine de planche ont un talonage a 5cm de la fin, pas clair pourquoi)La sortie d'aspiration en 50 est pratique et accepte sans problème des raccords plomberie pvc de 50 si il y a besoin de bricoler un truc."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Virgile S."
+    note: 5
+    titre: "très bon produit pour amateur"
+    commentaire: "Très satisfait de mon achat. Cet outil est bien utile dans l'atelier et me facilite grandement le travail pour un usage amateur. Un petit réglage des plateaux s'est avéré utile lors de la première utilisation mais très pratique à faire. Je suis très satisfait car aucun talon ne se forme sur le bois ni en entrée ni en sortie. ma note 10/10."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Vincent P."
+    note: 5
+    titre: "Superbe raboteuse, facile et puissante !"
+    commentaire: "L'outil est exactement comme décrit. Il est très simple à prendre en main et produit un travail de finition parfait. J'ai l'impression que ce matériel est vraiment construit pour durer. Je recommande sans hésiter, c'est un achat très judicieux."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

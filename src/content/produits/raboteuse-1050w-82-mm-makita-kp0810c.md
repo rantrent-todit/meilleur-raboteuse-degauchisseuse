@@ -8,29 +8,30 @@ image_url: "https://m.media-amazon.com/images/I/51PIGC3kXDL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0080D8S2Q/?tag=amazonwp0b-21"
 meta_title: "Avis Raboteuse 1050W 82 mm - MAKITA KP0810C"
 meta_description: "Avis complet et test indépendant sur Raboteuse 1050W 82 mm - MAKITA KP0810C. Découvrez ses performances réelles et points forts."
+
 avis_clients:
-  - auteur: "JM"
-    note: 5
-    titre: "Makita, parfait comme toujours"
-    commentaire: "Machine parfaite, très maniable et performante. Je suis un habitué de la marque et je ne regrette pas mon achat!! Je conseille à tous ceux qui veulent un travail parfait digne d'un pro."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Jean J."
-    note: 5
-    titre: "Pour son rabotage"
-    commentaire: "Superbe matériel sur tout les sensJe recommande"
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
   - auteur: "DG"
     note: 5
     titre: "Puissant"
     commentaire: "Compte tenu de la largeur de lame, rabot puissant. Utilise des petites lames standard pas chères.Assez lourd ce qui est normal compte tenu de sa puissance.Fabrication de qualité.Bizarrement, la courroie n'est pas couverte en bas, d'où un risque de l'abimer si la pièce est irrégulière sur le coté."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
+  - auteur: "JM"
+    note: 5
+    titre: "Makita, parfait comme toujours"
+    commentaire: "Machine parfaite, très maniable et performante. Je suis un habitué de la marque et je ne regrette pas mon achat!! Je conseille à tous ceux qui veulent un travail parfait digne d'un pro."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "PIREYRE L."
     note: 5
     titre: "Très bon appareil"
     commentaire: "Utilisé pour travaux durs : réalisation d'un côté plat sur sapin douglas de diamètre 25 cm et 6 m de longueur.bon débit, bonne puissance ...il fait le job !"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "mich"
+    note: 5
+    titre: "appareil maniable"
+    commentaire: "léger et puissant, maniable par sont poids, précis dans les hauteurs à raboter, finition remarquable.incontournable de la marque. Pas déçu"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

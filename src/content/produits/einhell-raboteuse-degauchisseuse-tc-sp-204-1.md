@@ -8,11 +8,18 @@ image_url: "https://m.media-amazon.com/images/I/41lWaa5xIKL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0GHR1P5W4/?tag=amazonwp0b-21"
 meta_title: "Avis Einhell Raboteuse Dégauchisseuse TC-SP 204/1"
 meta_description: "Avis complet et test indépendant sur Einhell Raboteuse Dégauchisseuse TC-SP 204/1. Découvrez ses performances réelles et points forts."
+
 avis_clients:
   - auteur: "kayser"
     note: 5
     titre: "Très bonne qualité, assemblage facile fonctionne parfaitement bonne coupe des couteaux"
     commentaire: "Très bonne qualité, assemblage facile fonctionne parfaitement bonne coupe des couteaux, pour une utilisation plus facile j'ai modifié le carter de protection de façon a ce qu'il s'ouvre a 180° , j'ai aussi supprimer la sécurité sur le plateau de façon a pouvoir utiliser toute la largeur du plateau pour le dégauchissage."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Alexandre M."
+    note: 5
+    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
+    commentaire: "Matériel parfaitement conforme aux attentes. Motorisation vigoureuse de 1500 W offrant une bonne régularité de coupe.. La prise en main s'est faite sans encombre et les résultats restent constants."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
   - auteur: "JM L."

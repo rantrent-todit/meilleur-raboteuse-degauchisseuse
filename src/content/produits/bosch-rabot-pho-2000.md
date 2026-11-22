@@ -8,11 +8,18 @@ image_url: "https://m.media-amazon.com/images/I/51x3cSe7giL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B00LSYEHFQ/?tag=amazonwp0b-21"
 meta_title: "Avis Bosch Rabot PHO 2000"
 meta_description: "Avis complet et test indépendant sur Bosch Rabot PHO 2000. Découvrez ses performances réelles et points forts."
+
 avis_clients:
-  - auteur: "Etienne C."
+  - auteur: "Nagrrra"
+    note: 4
+    titre: "Très bon appareil mais un défaut à signaler"
+    commentaire: "L'appareil réalise un travail parfait avec un niveau sonore acceptable (le casque reste obligatoire). Le grip sur la poignée est appréciable et le choix du coté d'éjection des copeaux a été un de mes critères de sélection. En revanche, un détail agaçant, pénible et dangereux : le bouton de réglage de profondeur n'est pas fixé, il est juste enfoncé sur un axe et se retire trop facilement. Ce point est dangereux car cet élément sert de \"poignée\". J'ai rencontré cette mauvaise surprise en rabotant des poutres au plafond (le bouton se détache). A moi de trouver un moyen réfléchi pour le fixer (le fabricant devrait revoir ce point)."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "FREDERIQUE"
     note: 5
-    titre: "Génial"
-    commentaire: "Très content de mon achat, très efficace et bonne prise en mainJ'ai raboté des chevrons et en une seule passe ils étaient nickel"
+    titre: "Bon matériel"
+    commentaire: "Utilisé pour réaliser un garde-manger à partir de planches de récupération. Le rabotage a redonné aux planches un aspect propre et lisse. Pour éviter de réduire l’épaisseur je me suit limité à la position 0,5 mm. L’aspect obtenu est parfait, à condition de raboter en une passe régulière, tout arrêt marque en creux ... j’ai raboté en extérieur, la quantité de copeaux produits est impressionnante. Le changement de bande se fait facilement, et le centrage de la bande est simple."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
   - auteur: "FABRICE B."
@@ -21,16 +28,10 @@ avis_clients:
     commentaire: "Très bonne surprise. J ai fait 3h de ponçage pour décaper des lames d abri de jardin qui avait été lazuree. Facile a prendre en main, machine efficace. Pour éviter les effets de \"creusement\" il faut appuyer vers l arrière de la bête et pas sur l'avant. Gain de temps énorme. Il faut quand même poncer pour finir la travail. Attention je confirme que ça fait un sacré tas de copeaux..."
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
-  - auteur: "Nagrrra"
-    note: 4
-    titre: "Très bon appareil mais un défaut à signaler"
-    commentaire: "L'appareil réalise un travail parfait avec un niveau sonore acceptable (le casque reste obligatoire). Le grip sur la poignée est appréciable et le choix du coté d'éjection des copeaux a été un de mes critères de sélection. En revanche, un détail agaçant, pénible et dangereux : le bouton de réglage de profondeur n'est pas fixé, il est juste enfoncé sur un axe et se retire trop facilement. Ce point est dangereux car cet élément sert de \"poignée\". J'ai rencontré cette mauvaise surprise en rabotant des poutres au plafond (le bouton se détache). A moi de trouver un moyen réfléchi pour le fixer (le fabricant devrait revoir ce point)."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Rodrigue 3."
+  - auteur: "Etienne C."
     note: 5
-    titre: "Fait du bon travail je recommande"
-    commentaire: "Fonctionne très bien qualité Bosch"
+    titre: "Génial"
+    commentaire: "Très content de mon achat, très efficace et bonne prise en mainJ'ai raboté des chevrons et en une seule passe ils étaient nickel"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

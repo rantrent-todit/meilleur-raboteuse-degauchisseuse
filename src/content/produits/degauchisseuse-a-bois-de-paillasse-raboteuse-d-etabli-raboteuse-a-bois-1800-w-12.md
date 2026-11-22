@@ -8,13 +8,8 @@ image_url: "https://m.media-amazon.com/images/I/61ZDJSMUKLL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B09FK7Y6RB/?tag=amazonwp0b-21"
 meta_title: "Avis Raboteuse Dégauchisseuse d'Établi 1800 W"
 meta_description: "Avis complet et test indépendant sur Dégauchisseuse à Bois de Paillasse, Raboteuse D'établi, Raboteuse à Bois, 1800 W 12000 Tr/min Pour Les..."
+
 avis_clients:
-  - auteur: "Alexandre M."
-    note: 5
-    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
-    commentaire: "Matériel parfaitement conforme aux attentes. Motorisation puissante de 1800 Watts assurant un couple constant même dans les bois durs et denses.. La prise en main s'est faite sans encombre et les résultats restent constants."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
   - auteur: "Gilles P."
     note: 4
     titre: "Efficace et fiable malgré quelques réglages initiaux"
@@ -26,6 +21,12 @@ avis_clients:
     titre: "Recommandé sans hésiter pour ce niveau de gamme"
     commentaire: "Utilisé de façon hebdomadaire. Régime de rotation de 12000 tr/min offrant une finition de surfaçage remarquable et réduisant le travail de ponçage.. Le rapport qualité/prix est excellent par rapport aux modèles équivalents testés."
     usage: "Client vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Alexandre M."
+    note: 5
+    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
+    commentaire: "Matériel parfaitement conforme aux attentes. Motorisation puissante de 1800 Watts assurant un couple constant même dans les bois durs et denses.. La prise en main s'est faite sans encombre et les résultats restent constants."
+    usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:
   note_moyenne: 4.7

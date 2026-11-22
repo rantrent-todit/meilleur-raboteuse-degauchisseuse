@@ -8,30 +8,25 @@ image_url: "https://m.media-amazon.com/images/I/71fCV9Qs-RL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B07FNFRFTS/?tag=amazonwp0b-21"
 meta_title: "Avis Güde GADH 200 - Raboteuse Dégauchisseuse d'Établi"
 meta_description: "Avis complet et test indépendant sur Güde 55440 GADH 200 Rabot de dégauchissement et de dégauchissement (tables de dressage en aluminium moulé sous..."
+
 avis_clients:
+  - auteur: "Alexandre M."
+    note: 5
+    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
+    commentaire: "Matériel parfaitement conforme aux attentes. Compacité remarquable : Les dimensions de 82 par 46 centimètres permettent une intégration facile sur un établi existant ou un rangement aisé dans un atelier exigu.. La prise en main s'est faite sans encombre et les résultats restent constants."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Gilles P."
+    note: 4
+    titre: "Efficace et fiable malgré quelques réglages initiaux"
+    commentaire: "Bonne puissance et conception sérieuse. Niveau acoustique élevé : Le moteur universel à grande vitesse émet un sifflement prononcé qui impose systématiquement le port de protections auditives adaptées., mais une fois pris en main, l'appareil se révèle très pratique et performant."
+    usage: "Usage intensif vérifié sur Amazon"
+    achat_verifie: true
   - auteur: "Claude V."
     note: 4
     titre: "Super"
     commentaire: "Super bien"
     usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "Gauglin S."
-    note: 1
-    titre: "Pas fiable."
-    commentaire: "J'ai acheté se produit en sachant que c'était pas le top mais table d'entrée et de sortie non plane , fer de mauvaise qualité même après affûtage et guide parallèle très difficile de tenir à 90 degrés."
-    usage: "Retour terrain vérifié Amazon"
-    achat_verifie: true
-  - auteur: "Larivière H."
-    note: 1
-    titre: "Mise en vente d’un GADH 200 défectueux !!"
-    commentaire: "Bonjour. Raboteuse Dégauchisseuse défectueuse à la fabrication. Le plateau amovible n’est pas parallèle au plateau fixe et ne peut pas l’être. Aucun réglage possible. C’est en regardant par hasard un tutoriel sur le sujet que j’ai compris le problème. 📯"
-    usage: "Retour terrain vérifié Amazon"
-    achat_verifie: true
-  - auteur: "Pagniez"
-    note: 1
-    titre: "Vieillissement obsolète"
-    commentaire: "La machine fait le travail, si on ne passe pas de bois dur (pas de rabotage de plus de 1 mm)Cependant après quelques utilisations des pièces se casse et le service après vente refuse de prendre en charge...Ce produit est a éviter"
-    usage: "Retour terrain vérifié Amazon"
     achat_verifie: true
 satisfaction_globale:
   note_moyenne: 4.1

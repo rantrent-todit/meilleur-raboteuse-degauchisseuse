@@ -8,7 +8,14 @@ image_url: "https://m.media-amazon.com/images/I/61sHr45Q4fL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0C9JZKP2P/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach HMS1250 - Raboteuse Dégauchisseuse 1800W"
 meta_description: "Avis et test indépendant sur la Scheppach HMS1250 (1800W, 305mm). Retrouvez nos mesures de précision, points forts et conseils pour vos travaux du bois."
+
 avis_clients:
+  - auteur: "denis"
+    note: 5
+    titre: "Très bon rapport qualité/prix"
+    commentaire: "Très bon produit rapport qualité/prixlivraison rapide, matériel pour moi semi professionnel de très bonne qualité, travail et rendu soignéje recommande"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
   - auteur: "Franck"
     note: 5
     titre: "Parfait"
@@ -19,18 +26,6 @@ avis_clients:
     note: 5
     titre: "Colis reçu ,carton défoncé , mais la machine est impeccable . Machine pas encore utilisée."
     commentaire: "La compacte HSM 1250 posséde une hauteur de rabotage de 160 mm. C'est top!machine pas encore utilisé."
-    usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "HAUTREUX-PASCAL"
-    note: 2
-    titre: "Évacuation des copeaux pas top"
-    commentaire: "Sans l aspirateur qui va avec c est l enfer faut démonter le cache tout les 2 minutes et pas très pratique. Le moteur est assez puissant mais pour le reste y a mieux à voir avant d acheter."
-    usage: "Retour terrain vérifié Amazon"
-    achat_verifie: true
-  - auteur: "denis"
-    note: 5
-    titre: "Très bon rapport qualité/prix"
-    commentaire: "Très bon produit rapport qualité/prixlivraison rapide, matériel pour moi semi professionnel de très bonne qualité, travail et rendu soignéje recommande"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:

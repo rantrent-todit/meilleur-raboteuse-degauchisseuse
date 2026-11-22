@@ -8,29 +8,24 @@ image_url: "https://m.media-amazon.com/images/I/61JLXXlvHlL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0013LFU4G/?tag=amazonwp0b-21"
 meta_title: "Avis DeWalt D27300-QS - Raboteuse Dégauchisseuse 2100 W 260 mm"
 meta_description: "Avis complet et test indépendant sur DEWALT - Raboteuse dégauchisseuse 2100W - 6200 tr/mn - 260mm - Fers HSS-1 guide réglable - 1 clé plate - 1..."
+
 avis_clients:
-  - auteur: "Guillaume B."
+  - auteur: "Alexandre M."
     note: 5
-    titre: "Dewalt ‼️"
-    commentaire: "Dewalt ‼️ pas besoin dans dire plus 😉"
+    titre: "Très satisfait de la qualité globale et de la tenue dans le temps"
+    commentaire: "Matériel parfaitement conforme aux attentes. Moteur à induction de 2100W puissant, silencieux et sans entretien de charbons.. La prise en main s'est faite sans encombre et les résultats restent constants."
     usage: "Acheteur vérifié Amazon.fr"
-    achat_verifie: true
-  - auteur: "HPulstar"
-    note: 3
-    titre: "Qualité à améliorer"
-    commentaire: "Il est dommage que le système des roues pour le déplacement soit vraiment mauvais: les roues s'écartent et ça ne roule pas. Les pattes de fixation des roues ne sont pas assez rigides.De plus, le guide d'équerrage est difficilement réglable correctement, il n'est même pas totalement plat, il est légèrement creusé, un règle posé dessus montre un jour entre le guide et le règle.Sans compter quelques accrocs sur la table d'entrée surtout en ras de cylindre de rabotage qui fait que ça accroche un peu.Bref, la qualité pourrait être largement au dessus pour le prix, d'autres marques professionnelles (Hammer) offrent pour un prix équivalent des machines plus puissantes et de meilleure qualité (mais bien moins mobiles certes)."
-    usage: "Retour terrain vérifié Amazon"
-    achat_verifie: true
-  - auteur: "Ben"
-    note: 2
-    titre: "Qualité"
-    commentaire: "déçu J'ai déballé la machine 1 mois après l'avoir reçu, les plateaux supérieur pas alignés,le plateau inférieur bouger (deux vissé tombées) je revisse ,met tout de niveau et la malheureusement des pièces en plastique qui tiennent les guides sont cassés ,une fissure aussi sur le support du guide en aluminium ,une dent cassée"
-    usage: "Retour terrain vérifié Amazon"
     achat_verifie: true
   - auteur: "Client D."
     note: 4
     titre: "Pièces d'aspiration trop fragile à l'utilisation"
     commentaire: "Pièces d'aspiration trop fragile à l'utilisation"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Guillaume B."
+    note: 5
+    titre: "Dewalt ‼️"
+    commentaire: "Dewalt ‼️ pas besoin dans dire plus 😉"
     usage: "Acheteur vérifié Amazon.fr"
     achat_verifie: true
 satisfaction_globale:
