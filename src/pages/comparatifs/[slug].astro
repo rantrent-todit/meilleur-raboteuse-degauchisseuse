@@ -15,9 +15,9 @@ export async function getStaticPaths() {
   // 1. Ajouter toutes les catégories déclarées dans content/categories
   for (const cat of categoryContent) {
     const slug = cat.id;
-    const name = cat.data.titre_seo
+    const name = cat.data.titre_h1 || (cat.data.titre_seo
       ? cat.data.titre_seo.replace(/^Meilleurs?\s+(modèles\s+)?/i, '').split(':')[0].trim()
-      : cat.id.replace(/-/g, ' ');
+      : cat.id.replace(/-/g, ' '));
 
     pathsMap.set(slug, {
       slug,
@@ -62,21 +62,32 @@ export async function getStaticPaths() {
 const { categoryName, products = [], content, slug } = Astro.props;
 const Content = content ? (await render(content)).Content : null;
 
-// SEO Title (pour la balise <title> SERP)
+// SEO Title (pour la balise <title> SERP, sans aucun branding parasite)
 let seoTitle = content?.data.titre_seo || `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
-seoTitle = seoTitle.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
-if (seoTitle.length < 20) seoTitle = `Meilleurs modèles ${categoryName} : Guide et Comparatif`;
+seoTitle = seoTitle.replace(/\s*\|\s*.*$/i, '').replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
+if (!seoTitle.toLowerCase().startsWith('meilleur')) {
+  seoTitle = `Meilleurs modèles ${seoTitle} : Guide et Comparatif`;
+}
 if (seoTitle.length > 90) seoTitle = seoTitle.slice(0, 87) + '...';
 
-// H1 Lisible et concis (pour l'affichage en tête de page)
-const pageHeading = content?.data.titre_h1 || (categoryName.toLowerCase().startsWith('rabot') || categoryName.toLowerCase().startsWith('meilleur') 
+// H1 Lisible, percutant et sans branding
+const pageHeading = content?.data.titre_h1 || (categoryName.toLowerCase().startsWith('meilleur') 
   ? categoryName 
   : `Comparatif : ${categoryName}`);
 
 let seoDescription = content?.data.description_seo || `Découvrez notre comparatif complet et sélection pour ${categoryName}. Analyse technique, tests et conseils d'experts.`;
 seoDescription = seoDescription.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
-if (seoDescription.length < 90) seoDescription = `${seoDescription} Consultez notre guide d'achat complet pour bien choisir votre matériel.`;
-if (seoDescription.length > 200) seoDescription = seoDescription.slice(0, 197) + '...';
+if (seoDescription.length < 80) {
+  const supplement = ` Guide d'achat complet.`;
+  if ((seoDescription + supplement).length <= 150) {
+    seoDescription += supplement;
+  }
+}
+if (seoDescription.length > 165) {
+  const truncated = seoDescription.slice(0, 160);
+  const lastSpace = truncated.lastIndexOf(' ');
+  seoDescription = (lastSpace > 120 ? truncated.slice(0, lastSpace) : truncated) + '...';
+}
 
 const breadcrumbs = [
   { name: "Accueil", url: "/" },
@@ -90,6 +101,21 @@ const breadcrumbs = [
   description={seoDescription}
   breadcrumbs={breadcrumbs}
 >
+  {content?.data.faq && content.data.faq.length > 0 && (
+    <script type="application/ld+json" is:inline slot="extra-head" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": content.data.faq.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.r
+        }
+      }))
+    })} />
+  )}
+
   <nav class="flex text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
     <ol class="flex items-center space-x-2">
       <li><a href="/" class="hover:text-orange-600 transition-colors">Accueil</a></li>
@@ -101,14 +127,17 @@ const breadcrumbs = [
   </nav>
 
   <header class="mb-10 max-w-4xl">
-    <span class="text-xs font-black uppercase tracking-wider bg-orange-100 text-orange-800 px-3 py-1 rounded-full inline-block mb-3">
-      Comparatif Spécialisé
-    </span>
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs font-black uppercase tracking-wider mb-4">
+      <svg class="w-4 h-4 text-orange-600" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+      </svg>
+      Comparatif Spécialisé & Tests Vérifiés
+    </div>
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight capitalize !my-0">
       {pageHeading}
     </h1>
     <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-      tests vérifiés comparatifs et guide de sélection pour vous équiper avec le modèle le plus adapté à vos attentes.
+      Tests comparatifs vérifiés et guide de sélection pour vous équiper avec le modèle le plus adapté à vos attentes.
     </p>
   </header>
 
@@ -136,15 +165,15 @@ const breadcrumbs = [
           <h2 class="text-2xl font-black text-slate-900 tracking-tight !my-0 capitalize">
             Tous les modèles retenus en {categoryName}
           </h2>
-          <p class="text-xs text-slate-500 mt-1">Fiches techniques détaillées et avis vérifiés</p>
+          <p class="text-xs text-slate-500 mt-1">Fiches techniques détaillées et avis vérifiés d'experts</p>
         </div>
         <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
-          {products.length} {products.length > 1 ? 'modèles analysés' : 'modèle analysé'}
+          {products.length} référence{products.length > 1 ? 's' : ''}
         </span>
       </div>
-      
+
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map(product => (
+        {products.map((product, idx) => (
           <CarteApercu 
             titre={product.data.titre}
             description={product.data.description_courte}
@@ -152,68 +181,56 @@ const breadcrumbs = [
             slug={product.id}
             lienAffiliation={product.data.lien_affiliation}
             categories={product.data.categories}
+            index={idx}
           />
         ))}
       </div>
     </section>
   ) : (
-    <section class="my-14 bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 text-center shadow-xs">
-      <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-        </svg>
-      </div>
-      <h2 class="text-xl sm:text-2xl font-black text-slate-900 mb-2">tests vérifiés en cours de finalisation</h2>
-      <p class="text-sm text-slate-600 max-w-xl mx-auto mb-6 leading-relaxed">
-        Nos spécialistes analysent actuellement de nouvelles références pour cette sous-catégorie. Consultez dès à présent l'ensemble de notre catalogue d'avis pour découvrir nos tests complets.
-      </p>
-      <a 
-        href="/avis/" 
-        class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-orange-600 text-white font-extrabold text-xs rounded-xl shadow-xs transition-colors"
-      >
-        <span>Consulter tous les tests & avis</span>
-        <span>&rarr;</span>
-      </a>
-    </section>
+    <div class="text-center py-16 bg-white rounded-3xl border border-dashed border-slate-300">
+      <p class="text-slate-500 font-medium">Aucun produit n'est actuellement associé à cette catégorie.</p>
+    </div>
   )}
 
+  <!-- FAQ DE LA CATÉGORIE (SCHEMA.ORG FAQPAGE) -->
   {content?.data.faq && content.data.faq.length > 0 && (
-    <section class="my-14 bg-gradient-to-b from-stone-50 to-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-sm">
-      <div class="max-w-2xl mb-8">
-        <span class="text-xs font-black uppercase tracking-wider text-orange-600">Réponses d'experts</span>
-        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
-          Foire aux questions ({categoryName})
-        </h2>
-      </div>
+    <section class="my-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-xs font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full inline-block mb-3">
+            Questions Fréquentes
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight !my-0">
+            Foire aux questions sur {categoryName}
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2">
+            Les réponses clés de nos experts pour faire le meilleur investissement.
+          </p>
+        </div>
 
-      <div class="space-y-4">
-        {content.data.faq.map(item => (
-          <div class="bg-white p-5 rounded-2xl border border-gray-200/90 shadow-2xs">
-            <h3 class="text-base font-extrabold text-slate-900 mb-2 flex items-start gap-2 !my-0">
-              <span class="text-orange-500 font-black">Q.</span>
-              <span>{item.q}</span>
-            </h3>
-            <p class="text-sm text-slate-600 leading-relaxed pl-6 !mb-0 mt-2">
-              {item.r}
-            </p>
-          </div>
-        ))}
+        <div class="space-y-4">
+          {content.data.faq.map((item, idx) => (
+            <details class="group bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 transition-all [&_summary::-webkit-details-marker]:hidden open:border-orange-500 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-extrabold text-slate-900 text-sm sm:text-base select-none">
+                <span class="flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-orange-100 text-orange-700 font-black text-xs flex items-center justify-center flex-shrink-0">
+                    {idx + 1}
+                  </span>
+                  {item.q}
+                </span>
+                <span class="w-6 h-6 flex items-center justify-center text-slate-400 group-open:text-orange-600 group-open:rotate-180 transition-transform">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </summary>
+              <p class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed pl-9">
+                {item.r}
+              </p>
+            </details>
+          ))}
+        </div>
       </div>
     </section>
-  )}
-
-  {content?.data.faq && content.data.faq.length > 0 && (
-    <script type="application/ld+json" is:inline set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": content.data.faq.map(item => ({
-        "@type": "Question",
-        "name": item.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.r
-        }
-      }))
-    })} />
   )}
 </Layout>

@@ -50,7 +50,7 @@ try {
 
 if (pointsForts.length === 0) {
   pointsForts = [
-    "Excellente fiabilité et performances constatées en tests vérifiés",
+    "Excellente fiabilité et performances constatées lors des tests",
     "Ergonomie travaillée et prise en main immédiate",
     "Rapport qualité / fonctionnalités très équilibré"
   ];
@@ -88,17 +88,39 @@ function formatReadableTitle(rawTitle: string): string {
   return clean;
 }
 
-const displayH1 = product.data.titre_h1 || formatReadableTitle(product.data.titre);
+const cleanBaseTitle = formatReadableTitle(product.data.titre_h1 || product.data.titre);
+// Retirer un éventuel préfixe "Avis" déjà présent dans le nom de base
+const cleanProductName = cleanBaseTitle.replace(/^avis\s*:?\s*/i, '').trim();
 
-let seoTitle = product.data.meta_title || `${displayH1} : Test et Avis Vérifié`;
+// H1 de la page : Toujours "Avis [Nom du Produit]"
+const displayH1 = `Avis ${cleanProductName}`;
+
+// Meta Title (<title>) : commence toujours par Avis et représente la méta seule
+let seoTitle = product.data.meta_title ? product.data.meta_title.trim() : displayH1;
+if (!/^avis\b/i.test(seoTitle)) {
+  seoTitle = `Avis ${seoTitle.replace(/^avis\s*:?\s*/i, '').trim()}`;
+}
+// Nettoyer d'éventuels suffixes " : Test et Avis..." pour garder la méta seule
+if (seoTitle.toLowerCase().includes(' : test et avis')) {
+  seoTitle = `Avis ${cleanProductName}`;
+}
 seoTitle = seoTitle.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
-if (seoTitle.length < 20) seoTitle = `${displayH1} : Test et Avis Vérifié`;
 if (seoTitle.length > 90) seoTitle = seoTitle.slice(0, 87) + '...';
 
+// Meta Description : bornée à 150 caractères (seuil tolérance max 165)
 let seoDesc = product.data.meta_description || product.data.description_courte;
 seoDesc = seoDesc.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
-if (seoDesc.length < 90) seoDesc = `${seoDesc} Découvrez notre test vérifié complet, caractéristiques et avis d'expert.`;
-if (seoDesc.length > 200) seoDesc = seoDesc.slice(0, 197) + '...';
+if (seoDesc.length < 75) {
+  const supplement = ` Test et avis complet.`;
+  if ((seoDesc + supplement).length <= 150) {
+    seoDesc += supplement;
+  }
+}
+if (seoDesc.length > 155) {
+  const truncated = seoDesc.slice(0, 150);
+  const lastSpace = truncated.lastIndexOf(' ');
+  seoDesc = (lastSpace > 110 ? truncated.slice(0, lastSpace) : truncated) + '...';
+}
 
 const breadcrumbs = [
   { name: "Accueil", url: "/" },
@@ -173,7 +195,7 @@ const breadcrumbs = [
         <div class="w-full h-72 sm:h-80 flex items-center justify-center p-4 bg-slate-50/50 rounded-2xl border border-slate-100">
           <img 
             src={product.data.image_url} 
-            alt={`Test et tests vérifiés : ${product.data.titre}`} 
+            alt={`Test et avis vérifié : ${product.data.titre}`} 
             class="max-w-full max-h-full object-contain"
             loading="eager"
             decoding="async"

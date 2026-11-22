@@ -25,6 +25,14 @@ const {
   breadcrumbs
 } = Astro.props;
 
+// Troncature et normalisation intelligente de la meta description (max 150-165 car.)
+let safeDescription = (description || siteConfig.description || "").trim().replace(/\s+/g, ' ');
+if (safeDescription.length > 155) {
+  const truncated = safeDescription.slice(0, 150);
+  const lastSpace = truncated.lastIndexOf(' ');
+  safeDescription = (lastSpace > 110 ? truncated.slice(0, lastSpace) : truncated) + '...';
+}
+
 const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
 const rawPath = Astro.url.pathname;
 const pathname = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
@@ -62,7 +70,7 @@ const breadcrumbItems = breadcrumbs && breadcrumbs.length > 0
     <meta name="generator" content={Astro.generator} />
     
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={safeDescription} />
     <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
     <link rel="canonical" href={canonicalURL} />
 
@@ -70,13 +78,13 @@ const breadcrumbItems = breadcrumbs && breadcrumbs.length > 0
     <meta property="og:site_name" content={siteConfig.siteName} />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={safeDescription} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={absoluteOgImage} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={safeDescription} />
     <meta name="twitter:image" content={absoluteOgImage} />
 
     <slot name="extra-head" />
@@ -201,7 +209,7 @@ const breadcrumbItems = breadcrumbs && breadcrumbs.length > 0
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              Méthodologie indépendante & Tests vérifiés
+              Méthodologie indépendante & tests vérifiés
             </div>
           </div>
 
@@ -209,7 +217,7 @@ const breadcrumbItems = breadcrumbs && breadcrumbs.length > 0
             <h4 class="font-extrabold mb-4 text-xs tracking-wider uppercase text-slate-300">Navigation</h4>
             <ul class="space-y-2.5 text-sm text-slate-400">
               <li><a href="/comparatifs/" class="hover:text-orange-400 transition-colors">Tous les comparatifs</a></li>
-              <li><a href="/avis/" class="hover:text-orange-400 transition-colors">Avis & Tests Vérifiés</a></li>
+              <li><a href="/avis/" class="hover:text-orange-400 transition-colors">Avis & tests vérifiés</a></li>
               <li><a href="/mentions-legales/" class="hover:text-orange-400 transition-colors">Mentions Légales & Cookies</a></li>
             </ul>
           </div>

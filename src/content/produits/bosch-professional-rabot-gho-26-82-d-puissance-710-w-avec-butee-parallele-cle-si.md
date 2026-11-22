@@ -1,12 +1,13 @@
 ---
 titre: "Bosch Professional GHO 26-82 D - Rabot 710 W"
+titre_h1: "Avis Bosch Professional GHO 26-82 D - Rabot 710 W"
 description_courte: "Test complet du rabot Bosch Professional GHO 26-82 D : moteur de 710 W, éjection bilatérale des copeaux et semelle aluminium pour un rabotage précis du bois."
 description_longue: "Découvrez notre test vérifié exhaustif du rabot électrique filaire Bosch Professional GHO 26-82 D. Analyse technique approfondie du moteur de 710 W, de la capacité de feuillure jusqu'à 9 mm, de l'évacuation bidirectionnelle des copeaux et de sa fiabilité en atelier comme sur chantier d'agencement."
 categories: ["gamme-semi-pro-professionnelle","raboteuses-epaisseur-portatives"]
 image_url: "https://m.media-amazon.com/images/I/612XzvESDUL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B01F1SZAO6/?tag=amazonwp0b-21"
-meta_title: "Bosch Professional GHO 26-82 D - Rabot 710 W : Test et Avis Vérifié"
-meta_description: "Avis complet et test indépendant sur Bosch Professional rabot GHO 26-82 D (puissance 710 W, avec butée parallèle, clé six pans mâle de 2,5 mm, sac à poussière en tissu, coffret de transport). Découvrez ses performances réelles et points forts."
+meta_title: "Avis Bosch Professional GHO 26-82 D - Rabot 710 W"
+meta_description: "Avis complet et test indépendant sur Bosch Professional rabot GHO 26-82 D (puissance 710 W, avec butée parallèle, clé six pans mâle de 2,5 mm, sac à..."
 ---
 
 ## Introduction et positionnement

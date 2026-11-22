@@ -1,11 +1,12 @@
 ---
 titre: "Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W"
+titre_h1: "Avis Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W"
 description_courte: "Test approfondi de la Scheppach HMS850 : une raboteuse-dégauchisseuse compacte de 1250W idéale pour les petits ateliers et le travail du bois précis."
 description_longue: "Découvrez notre test vérifié complet de la Scheppach HMS850. Avec son moteur de 1250W, sa largeur de travail de 204 mm et son arbre tournant à 8500 tr/min, nous analysons ses capacités réelles d'usinage, sa précision et sa durabilité en atelier."
 categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61n5ASEj+bL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B01BTZLSNM/?tag=amazonwp0b-21"
-meta_title: "Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W : Test et Avis Vérifié"
+meta_title: "Avis Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W. Découvrez ses performances réelles et points forts."
 ---
 

@@ -1,11 +1,12 @@
 ---
 titre: "Raboteuse 1050W 82 mm - MAKITA KP0810C"
+titre_h1: "Avis Raboteuse 1050W 82 mm - MAKITA KP0810C"
 description_courte: "test vérifié complet de la raboteuse Makita KP0810C : moteur de 1050 W, régulation électronique, passe de 4 mm et éjection bilatérale des copeaux."
 description_longue: "Découvrez notre évaluation technique approfondie de la raboteuse filaire Makita KP0810C. Avec son bloc moteur de 1050 W doté d'une régulation électronique constante, sa capacité de passe jusqu'à 4 mm et sa semelle de précision en aluminium moulé, ce modèle haut de gamme s'adresse aux charpentiers, menuisiers et artisans exigeants qui recherchent une puissance sans compromis pour le dressage et le délignage intensif."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/51PIGC3kXDL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0080D8S2Q/?tag=amazonwp0b-21"
-meta_title: "Raboteuse 1050W 82 mm - MAKITA KP0810C : Test et Avis Vérifié"
+meta_title: "Avis Raboteuse 1050W 82 mm - MAKITA KP0810C"
 meta_description: "Avis complet et test indépendant sur Raboteuse 1050W 82 mm - MAKITA KP0810C. Découvrez ses performances réelles et points forts."
 ---
 

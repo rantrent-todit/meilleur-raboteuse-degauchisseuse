@@ -1,11 +1,12 @@
 ---
 titre: "DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS"
+titre_h1: "Avis DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS"
 description_courte: "tests vérifiés de la raboteuse d'établi DEWALT DW733-QS de 1800W. Analyse de la précision d'usinage, du système à 4 colonnes et du blocage de tête."
 description_longue: "Découvrez notre test complet de la raboteuse DEWALT DW733-QS dotée d'un moteur de 1800W et d'une largeur de passe de 317 mm. Analyse technique, mesures de précision, gestion du talonnage et comportement sur essences dures."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/71qEv0MomSL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0013LK5TQ/?tag=amazonwp0b-21"
-meta_title: "DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS : Test et Avis Vérifié"
+meta_title: "Avis DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS"
 meta_description: "Avis complet et test indépendant sur DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS. Découvrez ses performances réelles et points forts."
 ---
 

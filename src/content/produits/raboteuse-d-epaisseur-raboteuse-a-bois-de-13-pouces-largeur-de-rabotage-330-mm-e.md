@@ -1,12 +1,13 @@
 ---
 titre: "Raboteuse d'établi stationnaire 330 mm (13 pouces)"
+titre_h1: "Avis Raboteuse d'établi stationnaire 330 mm (13 pouces)"
 description_courte: "test vérifié complet de la raboteuse d'établi 13 pouces (330 mm). Précision de passe, gestion du talonnage et puissance moteur analysées par nos experts."
 description_longue: "Découvrez notre évaluation technique approfondie de la raboteuse d'épaisseur 330 mm. Destinée aux artisans du bois et menuisiers amateurs exigeants, cette machine d'atelier compacte promet un calibrage précis de 5 à 150 mm. Analyse des fers, rigidité du bâti et résultats d'usinage en conditions réelles."
 categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/51MyIoRAiYL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B09FQ4JXLD/?tag=amazonwp0b-21"
-meta_title: "Raboteuse d'établi stationnaire 330 mm (13 pouces) : Test et Avis Vérifié"
-meta_description: "Avis complet et test indépendant sur Raboteuse D'épaisseur, Raboteuse à Bois De 13 Pouces, Largeur De Rabotage 330 mm Et épaisseur 5-150 mm. Découvrez ses performances réelles et points forts."
+meta_title: "Avis Raboteuse d'établi stationnaire 330 mm (13 pouces)"
+meta_description: "Avis complet et test indépendant sur Raboteuse D'épaisseur, Raboteuse à Bois De 13 Pouces, Largeur De Rabotage 330 mm Et épaisseur 5-150 mm...."
 ---
 
 ## Introduction et positionnement

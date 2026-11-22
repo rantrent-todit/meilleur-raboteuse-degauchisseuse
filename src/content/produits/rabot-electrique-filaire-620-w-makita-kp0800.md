@@ -1,11 +1,12 @@
 ---
 titre: "Rabot électrique filaire 620 W - MAKITA KP0800"
+titre_h1: "Avis Rabot électrique filaire 620 W - MAKITA KP0800"
 description_courte: "Test complet du rabot filaire Makita KP0800 de 620 W : prise en main, précision de passe, chanfreinage et analyse technique pour le travail du bois."
 description_longue: "test vérifié indépendant du rabot électrique filaire Makita KP0800. Doté d'un moteur de 620 W et d'une vitesse de rotation de 17 000 tr/min, ce modèle de 82 mm se distingue par sa semelle en aluminium usiné, sa régularité de coupe et sa compacité sur chantier comme à l'atelier."
 categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/51OHHrJDeqL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B005KH4VXK/?tag=amazonwp0b-21"
-meta_title: "Rabot électrique filaire 620 W - MAKITA KP0800 : Test et Avis Vérifié"
+meta_title: "Avis Rabot électrique filaire 620 W - MAKITA KP0800"
 meta_description: "Avis complet et test indépendant sur le rabot électrique filaire Makita KP0800 de 620 W. Découvrez ses performances réelles, son ergonomie et ses limites."
 ---
 

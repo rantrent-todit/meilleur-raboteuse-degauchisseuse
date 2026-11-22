@@ -1,11 +1,12 @@
 ---
 titre: "Metabo DH 330 - Raboteuse stationnaire 1800 W"
+titre_h1: "Avis Metabo DH 330 - Raboteuse stationnaire 1800 W"
 description_courte: "Test approfondi de la raboteuse stationnaire Metabo DH 330 de 1800 Watts : précision d'usinage, robustesse, gestion du talonnage et avis d'expert."
 description_longue: "La raboteuse d'établi Metabo DH 330 combine une motorisation puissante de 1800 Watts à une capacité de passe généreuse de 330 mm. Découvrez notre test vérifié complet évaluant ses performances mécaniques, sa précision et sa durabilité en atelier comme sur chantier."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/61scdXJ6jkL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B07FK3R9MH/?tag=amazonwp0b-21"
-meta_title: "metabo raboteuse DH 330 1800 Watts : Test et Avis Vérifié"
+meta_title: "Avis Metabo DH 330 - Raboteuse stationnaire 1800 W"
 meta_description: "Avis complet et test indépendant sur metabo raboteuse DH 330 1800 Watts. Découvrez ses performances réelles et points forts."
 ---
 

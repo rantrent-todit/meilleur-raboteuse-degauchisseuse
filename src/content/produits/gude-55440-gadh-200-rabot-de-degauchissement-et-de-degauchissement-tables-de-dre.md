@@ -1,12 +1,13 @@
 ---
 titre: "Güde GADH 200 - Raboteuse Dégauchisseuse d'Établi"
+titre_h1: "Avis Güde GADH 200 - Raboteuse Dégauchisseuse d'Établi"
 description_courte: "Test complet du combiné dégauchisseuse-raboteuse d'établi Güde GADH 200 : précision des tables alu, capacité de passe, sécurité et analyse des performances."
 description_longue: "tests vérifiés technique détaillé de la dégauchisseuse-raboteuse Güde 55440 GADH 200. Découvrez notre analyse approfondie de son moteur de 1250 W, de la géométrie de ses tables en aluminium coulé sous pression, de sa maniabilité en atelier et de ses résultats de coupe sur bois durs et tendres."
 categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/71fCV9Qs-RL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B07FNFRFTS/?tag=amazonwp0b-21"
-meta_title: "Güde GADH 200 - Raboteuse Dégauchisseuse d'Établi : Test et Avis Vérifié"
-meta_description: "Avis complet et test indépendant sur Güde 55440 GADH 200 Rabot de dégauchissement et de dégauchissement (tables de dressage en aluminium moulé sous pression, protection d'arbre de rabotage, interrupteur de surcharge), bleu, 82 x 46 cm. Découvrez ses performances réelles et points forts."
+meta_title: "Avis Güde GADH 200 - Raboteuse Dégauchisseuse d'Établi"
+meta_description: "Avis complet et test indépendant sur Güde 55440 GADH 200 Rabot de dégauchissement et de dégauchissement (tables de dressage en aluminium moulé sous..."
 ---
 
 ## Introduction et positionnement

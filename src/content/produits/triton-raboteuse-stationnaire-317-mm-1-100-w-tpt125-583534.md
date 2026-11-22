@@ -1,11 +1,12 @@
 ---
 titre: "Triton TPT125 - Raboteuse stationnaire 317 mm 1100 W"
+titre_h1: "Avis Triton TPT125 - Raboteuse stationnaire 317 mm 1100 W"
 description_courte: "Test approfondi de la raboteuse d'établi Triton TPT125 : puissance de 1 100 W, largeur de 317 mm, précision de passe et réduction efficace du talon d'usinage."
 description_longue: "Découvrez notre test vérifié complet de la raboteuse stationnaire Triton TPT125 (583534). Analyse technique de sa capacité de passe de 317 mm, de son moteur de 1 100 W, de la régularité de surfaçage et de l'efficacité de son système d'évacuation des copeaux en atelier d'ébénisterie."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/71T21YcDE2L._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B008JEL6KC/?tag=amazonwp0b-21"
-meta_title: "Triton - Raboteuse stationnaire 317 mm, 1 100 W TPT125 (583534) : Test et Avis Vérifié"
+meta_title: "Avis Triton TPT125 - Raboteuse stationnaire 317 mm 1100 W"
 meta_description: "Avis complet et test indépendant sur Triton - Raboteuse stationnaire 317 mm, 1 100 W TPT125 (583534). Découvrez ses performances réelles et points forts."
 ---
 

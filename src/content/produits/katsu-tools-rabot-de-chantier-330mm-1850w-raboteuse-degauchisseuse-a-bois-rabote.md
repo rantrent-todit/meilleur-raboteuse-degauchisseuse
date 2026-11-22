@@ -1,12 +1,13 @@
 ---
 titre: "KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm"
+titre_h1: "Avis KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm"
 description_courte: "Test approfondi de la raboteuse stationnaire KATSU 330mm 1850W. Analyse des capacités de passe, de la précision d'usinage et de l'évacuation des copeaux."
 description_longue: "Découvrez notre test vérifié complet de la raboteuse d'établi KATSU Tools 100772. Dotée d'un moteur de 1850W et d'une largeur de passage de 330 mm, cette machine stationnaire s'adresse aux menuisiers et charpentiers recherchant compacité et puissance pour le calibrage du bois massif."
 categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61FUYM2rB6L._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0CPCWBMQZ/?tag=amazonwp0b-21"
-meta_title: "KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm : Test et Avis Vérifié"
-meta_description: "Avis complet et test indépendant sur KATSU Tools Rabot de Chantier 330mm 1850W Raboteuse Dégauchisseuse à Bois, Raboteuse Stationnaire Multifonction pour Travail du Bois 100772. Découvrez ses performances réelles et points forts."
+meta_title: "Avis KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm"
+meta_description: "Avis complet et test indépendant sur KATSU Tools Rabot de Chantier 330mm 1850W Raboteuse Dégauchisseuse à Bois, Raboteuse Stationnaire Multifonction..."
 ---
 
 ## Introduction et positionnement
