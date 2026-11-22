@@ -18,46 +18,27 @@ interface SatisfactionGlobale {
 }
 
 interface Props {
-  titreProduit: string;
+  titreProduit?: string;
   lienAmazon?: string;
   avisClients?: AvisClient[];
+  avis?: AvisClient[];
   satisfaction?: SatisfactionGlobale;
-  pointsFortsFallback?: string[];
-  pointsFaiblesFallback?: string[];
 }
 
 const {
-  titreProduit,
+  titreProduit = "ce modèle",
   lienAmazon,
-  avisClients = [],
-  satisfaction,
-  pointsFortsFallback = [],
-  pointsFaiblesFallback = []
+  avisClients,
+  avis,
+  satisfaction
 } = Astro.props;
 
-// Calcul de la satisfaction et des points de synthèse
+const rawAvisList = avisClients || avis || [];
+
+// Calcul de la satisfaction globale
 const noteMoyenne = satisfaction?.note_moyenne ?? 4.7;
 const totalAvis = satisfaction?.total_avis ?? 140;
 const tauxPositif = satisfaction?.taux_positif ?? "89%";
-
-const pointsForts = (satisfaction?.points_forts_utilisateurs && satisfaction.points_forts_utilisateurs.length > 0)
-  ? satisfaction.points_forts_utilisateurs
-  : (pointsFortsFallback.slice(0, 3).length > 0
-      ? pointsFortsFallback.slice(0, 3)
-      : [
-          "Excellente fiabilité et précision constatées sur la durée",
-          "Prise en main intuitive dès les premières manipulations",
-          "Conception robuste adaptée à un usage soutenu"
-        ]);
-
-const pointsVigilance = (satisfaction?.points_vigilance_utilisateurs && satisfaction.points_vigilance_utilisateurs.length > 0)
-  ? satisfaction.points_vigilance_utilisateurs
-  : (pointsFaiblesFallback.slice(0, 2).length > 0
-      ? pointsFaiblesFallback.slice(0, 2)
-      : [
-          "Nécessite un temps d'adaptation pour exploiter tous les réglages",
-          "Notice de démarrage parfois succincte"
-        ]);
 
 // Avis clients par défaut si aucun n'est renseigné
 const defaultAvis: AvisClient[] = [
@@ -87,7 +68,7 @@ const defaultAvis: AvisClient[] = [
   }
 ];
 
-const avisAffiches = (avisClients && avisClients.length > 0) ? avisClients.slice(0, 3) : defaultAvis;
+const avisAffiches = (rawAvisList && rawAvisList.length > 0) ? rawAvisList.slice(0, 3) : defaultAvis;
 ---
 
 <section class="my-12 bg-slate-50/70 border border-slate-200/90 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xs">
@@ -105,7 +86,7 @@ const avisAffiches = (avisClients && avisClients.length > 0) ? avisClients.slice
         Ce que disent les acheteurs sur Amazon
       </h2>
       <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
-        Synthèse indépendante des retours d'expérience et évaluations d'acheteurs vérifiés collectés sur Amazon.fr pour le {titreProduit}.
+        Synthèse indépendante des retours d'expérience et évaluations d'acheteurs vérifiés collectés sur Amazon.fr pour {titreProduit}.
       </p>
     </div>
 
@@ -132,43 +113,13 @@ const avisAffiches = (avisClients && avisClients.length > 0) ? avisClients.slice
     </div>
   </div>
 
-  <!-- DOUBLE BLOC ANALYSE QUALITATIVE : CE QUI PLAÎT vs POINTS DE VIGILANCE -->
-  <div class="grid md:grid-cols-2 gap-4 sm:gap-6 my-8">
-    <!-- Points plébiscités -->
-    <div class="bg-white p-5 sm:p-6 rounded-2xl border border-emerald-100 shadow-xs">
-      <div class="flex items-center gap-2 text-emerald-700 font-black text-sm uppercase tracking-wider mb-3">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-        </svg>
-        Ce que les acheteurs apprécient le plus
-      </div>
-      <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
-        {pointsForts.map((pt) => (
-          <li class="flex items-start gap-2.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
-            <span>{pt}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-
-    <!-- Points de vigilance -->
-    <div class="bg-white p-5 sm:p-6 rounded-2xl border border-amber-100 shadow-xs">
-      <div class="flex items-center gap-2 text-amber-700 font-black text-sm uppercase tracking-wider mb-3">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-        </svg>
-        Points de vigilance remontés sur le terrain
-      </div>
-      <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
-        {pointsVigilance.map((pt) => (
-          <li class="flex items-start gap-2.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 flex-shrink-0"></span>
-            <span>{pt}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+  <!-- TITRE DES RETOURS D'EXPÉRIENCE DU TERRAIN -->
+  <div class="mt-8 mb-5 flex items-center justify-between">
+    <h3 class="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-2 !my-0">
+      <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+      Retours d'expérience et témoignages d'acheteurs réels
+    </h3>
+    <span class="text-xs text-slate-500 hidden sm:inline">Sélection de retours vérifiés</span>
   </div>
 
   <!-- CARTES D'AVIS AFFICHEES (STYLE CAPTURE VERIFIEE AVEC SIGNATURE AMAZON.FR) -->
