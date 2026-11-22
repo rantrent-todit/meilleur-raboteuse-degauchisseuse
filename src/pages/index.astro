@@ -41,7 +41,7 @@ const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
 const faqItems = [
   {
     q: `Comment notre équipe sélectionne-t-elle les modèles présentés sur ${siteConfig.siteName} ?`,
-    r: `Notre protocole d'analyse repose sur une étude comparative rigoureuse des caractéristiques techniques, des retours d'expérience vérifiés d'utilisateurs sur le long terme, et de bancs d'essai indépendants. Nous évaluons en priorité la fiabilité des composants, l'ergonomie d'utilisation et le rapport qualité-prix réel.`
+    r: `Notre protocole d'analyse repose sur une étude comparative rigoureuse des caractéristiques techniques, des retours d'expérience vérifiés d'utilisateurs sur le long terme, et de tests vérifiés indépendants. Nous évaluons en priorité la fiabilité des composants, l'ergonomie d'utilisation et le rapport qualité-prix réel.`
   },
   {
     q: "Quels sont les critères décisifs à étudier avant de finaliser un achat ?",
@@ -84,7 +84,7 @@ const websiteSchema = {
       "@type": "ItemList",
       "name": `Top Sélections | ${siteConfig.siteName}`,
       "description": `Sélection des meilleurs modèles recommandés par les experts de ${siteConfig.siteName}.`,
-      "itemListElement": allProducts.slice(0, 5).map((p, idx) => ({
+      "itemListElement": allProducts.slice(0, 3).map((p, idx) => ({
         "@type": "ListItem",
         "position": idx + 1,
         "name": p.data.titre,
@@ -121,7 +121,7 @@ const websiteSchema = {
           <svg class="w-4 h-4 text-orange-600" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
           </svg>
-          Guide Comparatif & Bancs d'Essai Indépendants
+          Guide Comparatif & Tests Vérifiés Indépendants
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-6">
@@ -208,7 +208,7 @@ const websiteSchema = {
           🏆 Top 3 Sélections
         </a>
         <a href="#tableau-comparatif" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
-          📊 Tableau Comparatif
+          📊 Tableau Top 3
         </a>
         <a href="#guide-achat" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
           📖 Guide d'Achat
@@ -230,7 +230,12 @@ const websiteSchema = {
   <!-- TABLEAU COMPARATIF -->
   {allProducts.length > 0 && (
     <div id="tableau-comparatif" class="scroll-mt-24">
-      <TableauComparatif produits={allProducts.slice(0, 5)} />
+      <TableauComparatif 
+        produits={allProducts} 
+        limit={3}
+        titreSection="Tableau Comparatif : Le Top 3 des Meilleurs Modèles"
+        sousTitreSection="Comparaison directe des 3 équipements les plus performants selon nos tests vérifiés"
+      />
     </div>
   )}
 
@@ -366,7 +371,7 @@ const websiteSchema = {
     <section class="my-16">
       <div class="flex items-center justify-between mb-8">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-slate-500">Laboratoire & Bancs d'Essai</span>
+          <span class="text-xs font-black uppercase tracking-wider text-slate-500">Laboratoire & Tests Vérifiés</span>
           <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
             Derniers tests détaillés
           </h2>

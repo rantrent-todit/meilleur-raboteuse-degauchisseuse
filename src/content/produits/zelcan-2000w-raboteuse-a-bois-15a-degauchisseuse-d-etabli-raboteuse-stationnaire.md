@@ -1,11 +1,11 @@
 ---
 titre: "ZELCAN 2000W Raboteuse d'établi stationnaire"
-description_courte: "Banc d'essai complet de la raboteuse ZELCAN 2000W 33 cm : puissance, précision de passe, gestion du rabotage et analyse technique détaillée en atelier."
+description_courte: "test vérifié complet de la raboteuse ZELCAN 2000W 33 cm : puissance, précision de passe, gestion du rabotage et analyse technique détaillée en atelier."
 description_longue: "Analyse poussée de la raboteuse stationnaire d'établi ZELCAN 2000W de 33 cm. Découvrez les performances de son moteur 15A, la vitesse de son arbre porte-fers à 20 000 coupes par minute, sa qualité d'usinage sur bois durs et son comportement face au phénomène de snipe."
 categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/71vlqDrSDbL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0GVZ641KS/?tag=amazonwp0b-21"
-meta_title: "ZELCAN 2000W Raboteuse d'établi stationnaire : Test, Avis et Banc d'Essai"
+meta_title: "ZELCAN 2000W Raboteuse d'établi stationnaire : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur ZELCAN 2000W Raboteuse à Bois 15A, Dégauchisseuse d'Établi Raboteuse Stationnaire Automatique Électrique 33 cm, 2 Lames 20000 coupes/min, pour le Travail du Bois. Découvrez ses performances réelles et points forts."
 ---
 
@@ -90,7 +90,7 @@ L'avance mécanique tracte les pièces de manière fluide sans à-coups. Les nœ
 
 ### Usinage sur feuillus denses (Chêne, Hêtre, Noyer)
 
-L'évaluation sur bois durs constitue le véritable banc d'essai pour une machine de 2000W. Des plateaux de chêne blanc de 280 millimètres de large, préalablement dégauchis sur une face, ont été passés dans la machine pour une mise à l'épaisseur progressive.
+L'évaluation sur bois durs constitue le véritable tests vérifiés pour une machine de 2000W. Des plateaux de chêne blanc de 280 millimètres de large, préalablement dégauchis sur une face, ont été passés dans la machine pour une mise à l'épaisseur progressive.
 
 Sur ces largeurs importantes et avec un bois à forte densité, la réduction de la profondeur de passe s'avère indispensable :
 - À 1 millimètre de passe : la machine conserve son régime moteur de manière stable, l'entraînement par rouleaux s'effectue sans patinage.
@@ -129,7 +129,7 @@ Certaines raboteuses haut de gamme adoptent des arbres hélicoïdaux équipés d
 
 ## Points forts et points faibles
 
-Pour résumer de manière synthétique les observations techniques relevées au cours de notre banc d'essai complet :
+Pour résumer de manière synthétique les observations techniques relevées au cours de notre test vérifié complet :
 
 ### Points forts
 - Moteur puissant de 2000 watts délivrant un couple élevé, capable d'encaisser des passes régulières sur bois durs sans baisse de régime notable.

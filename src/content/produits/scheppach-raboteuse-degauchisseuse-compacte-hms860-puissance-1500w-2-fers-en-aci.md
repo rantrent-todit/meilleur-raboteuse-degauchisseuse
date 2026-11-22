@@ -1,11 +1,11 @@
 ---
 titre: "Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W"
-description_courte: "Banc d'essai de la raboteuse-dégauchisseuse Scheppach HMS860 : 1500W, arbre à 9000 tr/min et table de 204 mm passés au crible pour vos projets d'atelier."
+description_courte: "tests vérifiés de la raboteuse-dégauchisseuse Scheppach HMS860 : 1500W, arbre à 9000 tr/min et table de 204 mm passés au crible pour vos projets d'atelier."
 description_longue: "Découvrez notre analyse détaillée de la combinée Scheppach HMS860. Une machine compacte de 1500W conçue pour dégauchir et raboter le bois massif avec précision dans les ateliers de menuiserie à espace réduit."
 categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61NVhq-oupL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B08BPH3YFJ/?tag=amazonwp0b-21"
-meta_title: "Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W : Test, Avis et Banc d'Essai"
+meta_title: "Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W : Test et Avis Vérifié"
 meta_description: "Avis et test indépendant sur la Scheppach HMS860 (1500W, 204mm). Découvrez nos mesures d'atelier, points forts et performances pour équiper votre espace."
 ---
 
@@ -17,7 +17,7 @@ Le travail du bois massif exige une préparation rigoureuse des pièces brutes a
 
 La Scheppach HMS860 se positionne sur le segment des combinées d'entrée à moyenne gamme destinées aux passionnés de travail du bois, aux modélistes et aux bricoleurs avertis. Grâce à sa motorisation électrique de 1500 W et à son arbre tournant à 9000 tours par minute, cet appareil promet de concilier la polyvalence d'une combinée d'atelier avec l'encombrement réduit d'un outillage portable. Sa capacité de coupe de 204 mm en largeur et son passage en hauteur de 120 mm ciblent directement la fabrication de petits meubles, l'ajustement de cadres, le corroyage de chevrons légers ou la réfection de pièces de menuiserie intérieure.
 
-L'objectif de ce banc d'essai indépendant est de décortiquer les caractéristiques techniques de la HMS860, de mesurer la planéité de ses tables, d'évaluer la puissance réelle de son entraînement et de déterminer si cette combinée compacte répond aux exigences de précision nécessaires à des réalisations durables.
+L'objectif de ce test vérifié indépendant est de décortiquer les caractéristiques techniques de la HMS860, de mesurer la planéité de ses tables, d'évaluer la puissance réelle de son entraînement et de déterminer si cette combinée compacte répond aux exigences de précision nécessaires à des réalisations durables.
 
 ## Conception, ergonomie et prise en main
 
@@ -109,7 +109,7 @@ Face à des combinées stationnaires traditionnelles dotées de tables en fonte 
 
 ## Points forts et points faibles
 
-Pour synthétiser les observations recueillies tout au long de notre banc d'essai, voici les avantages majeurs et les limites techniques relevés sur la machine.
+Pour synthétiser les observations recueillies tout au long de notre tests vérifiés, voici les avantages majeurs et les limites techniques relevés sur la machine.
 
 ### Points forts
 

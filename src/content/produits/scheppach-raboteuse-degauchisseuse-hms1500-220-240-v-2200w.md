@@ -1,11 +1,11 @@
 ---
 titre: "Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W"
-description_courte: "Banc d'essai complet de la Scheppach HMS1500 : moteur 2200W, capacité 260 mm et test d'usinage. Découvrez l'avis détaillé de nos spécialistes."
+description_courte: "test vérifié complet de la Scheppach HMS1500 : moteur 2200W, capacité 260 mm et test d'usinage. Découvrez l'avis détaillé de nos spécialistes."
 description_longue: "Analyse technique approfondie de la combinée raboteuse-dégauchisseuse Scheppach HMS1500. Équipée d'un moteur puissant de 2200W et offrant une largeur d'usinage de 260 mm avec guide inclinable jusqu'à 135°, cette machine d'atelier s'adresse aux passionnés du bois exigeants."
 categories: ["raboteuses-degauchisseuses-stationnaires","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/61J8d2v11GL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0DFH32W5W/?tag=amazonwp0b-21"
-meta_title: "Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W : Test, Avis et Banc d'Essai"
+meta_title: "Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W. Découvrez ses performances réelles et points forts."
 ---
 
@@ -68,7 +68,7 @@ Le raccordement à un aspirateur d'atelier d'au moins 1000 m³/h est indispensab
 
 ### Comportement en mode dégauchissage
 
-Le premier banc d'essai concerne le dressage de faces et de chants sur des chevrons de résineux (sapin du Nord) puis sur des lambourdes de chêne séché à l'air.
+Le premier tests vérifiés concerne le dressage de faces et de chants sur des chevrons de résineux (sapin du Nord) puis sur des lambourdes de chêne séché à l'air.
 
 Sur le sapin, le dressage se fait sans aucun effort. La glisse sur les tables d'aluminium est fluide et le moteur maintient son régime sans broncher. Le dressage d'un chant à 90° avec le guide parallèle donne un résultat impeccable mesuré à l'équerre de précision sur toute la longueur de deux mètres.
 

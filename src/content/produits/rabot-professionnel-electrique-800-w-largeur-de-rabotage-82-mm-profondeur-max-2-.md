@@ -1,11 +1,11 @@
 ---
 titre: "Rabot électrique professionnel 800 W - Largeur 82 mm"
-description_courte: "Banc d'essai complet du rabot électrique 800 W : largeur de 82 mm, passe de 2 mm et semelle fraisée. Découvrez notre analyse technique et nos tests d'usinage."
+description_courte: "test vérifié complet du rabot électrique 800 W : largeur de 82 mm, passe de 2 mm et semelle fraisée. Découvrez notre analyse technique et nos tests d'usinage."
 description_longue: "Analyse approfondie du rabot filaire 800 W équipé d'un fer de 82 mm. Évaluation rigoureuse de la planéité de la semelle, de l'évacuation des copeaux, de la précision du tambour de coupe et du comportement sur bois massifs et dérivés."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/51vX-zz4TPL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0F1CJD71C/?tag=amazonwp0b-21"
-meta_title: "Rabot électrique professionnel 800 W - Largeur 82 mm : Test, Avis et Banc d'Essai"
+meta_title: "Rabot électrique professionnel 800 W - Largeur 82 mm : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Rabot professionnel électrique | 800 W | Largeur de rabotage 82 mm | Profondeur max 2 mm | Plateau fraisé à plat | Puissant pour bois | Panneaux. Découvrez ses performances réelles et points forts."
 ---
 
@@ -19,7 +19,7 @@ Affiché à un tarif indicatif sous la barre des trente euros, cet appareil cibl
 
 ### Les exigences techniques du rabotage d'ajustement
 
-L'ajustement de menuiseries intérieures, le délignage de voliges ou le surfaçage de chevrons imposent deux impératifs : un parallélisme parfait entre la semelle avant mobile et la semelle arrière fixe, ainsi qu'une vitesse tangentielle de coupe suffisante pour éviter l'arrachement des fibres ligneuses. L'objectif de notre banc d'essai est d'évaluer si cette machine respecte les tolérances géométriques indispensables pour délivrer un état de surface propre, tout en assurant une sécurité d'utilisation conforme aux normes d'atelier.
+L'ajustement de menuiseries intérieures, le délignage de voliges ou le surfaçage de chevrons imposent deux impératifs : un parallélisme parfait entre la semelle avant mobile et la semelle arrière fixe, ainsi qu'une vitesse tangentielle de coupe suffisante pour éviter l'arrachement des fibres ligneuses. L'objectif de notre tests vérifiés est d'évaluer si cette machine respecte les tolérances géométriques indispensables pour délivrer un état de surface propre, tout en assurant une sécurité d'utilisation conforme aux normes d'atelier.
 
 ## Conception, ergonomie et prise en main
 

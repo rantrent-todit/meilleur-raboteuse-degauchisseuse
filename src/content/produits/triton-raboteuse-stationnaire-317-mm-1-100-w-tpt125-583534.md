@@ -1,11 +1,11 @@
 ---
 titre: "Triton TPT125 - Raboteuse stationnaire 317 mm 1100 W"
 description_courte: "Test approfondi de la raboteuse d'établi Triton TPT125 : puissance de 1 100 W, largeur de 317 mm, précision de passe et réduction efficace du talon d'usinage."
-description_longue: "Découvrez notre banc d'essai complet de la raboteuse stationnaire Triton TPT125 (583534). Analyse technique de sa capacité de passe de 317 mm, de son moteur de 1 100 W, de la régularité de surfaçage et de l'efficacité de son système d'évacuation des copeaux en atelier d'ébénisterie."
+description_longue: "Découvrez notre test vérifié complet de la raboteuse stationnaire Triton TPT125 (583534). Analyse technique de sa capacité de passe de 317 mm, de son moteur de 1 100 W, de la régularité de surfaçage et de l'efficacité de son système d'évacuation des copeaux en atelier d'ébénisterie."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/71T21YcDE2L._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B008JEL6KC/?tag=amazonwp0b-21"
-meta_title: "Triton - Raboteuse stationnaire 317 mm, 1 100 W TPT125 (583534) : Test, Avis et Banc d'Essai"
+meta_title: "Triton - Raboteuse stationnaire 317 mm, 1 100 W TPT125 (583534) : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Triton - Raboteuse stationnaire 317 mm, 1 100 W TPT125 (583534). Découvrez ses performances réelles et points forts."
 ---
 
@@ -15,7 +15,7 @@ La raboteuse stationnaire d'établi Triton TPT125 (référence fabricant 583534)
 
 Dans la gamme des machines de corroyage d'établi, la TPT125 se positionne comme un compromis technique idéal entre les modèles d'entrée de gamme souvent sujets au fléchissement mécanique et les combinés stationnaires d'atelier dont l'encombrement et le coût sont prohibitifs pour un atelier partagé ou mobile. Avec sa capacité de passage de 317 mm de largeur et une motorisation de 1 100 W, elle cible directement l'usinage du bois massif brut, qu'il s'agisse de résineux pour la charpente fine ou de bois durs tropicaux et feuillus tempérés.
 
-L'objectif de ce banc d'essai est d'évaluer méticuleusement chaque composant de la machine, de mesurer la planéité réelle obtenue sur différentes essences, de vérifier la tenue des tolérances d'épaisseur et d'analyser son comportement face aux contraintes mécaniques d'un atelier en activité soutenue.
+L'objectif de ce tests vérifiés est d'évaluer méticuleusement chaque composant de la machine, de mesurer la planéité réelle obtenue sur différentes essences, de vérifier la tenue des tolérances d'épaisseur et d'analyser son comportement face aux contraintes mécaniques d'un atelier en activité soutenue.
 
 ## Conception, ergonomie et prise en main
 
@@ -65,7 +65,7 @@ Avec des passes de 1,5 mm de profondeur, le moteur conserve un régime constant 
 
 ### Épreuve de force sur feuillus denses
 
-Le véritable banc d'essai d'une raboteuse réside dans sa capacité à traiter des bois durs et denses. Nous avons soumis la machine à des planches de chêne blanc européen et de hêtre étuvé d'une largeur de 250 mm et 300 mm. Dans ces conditions extrêmes, l'effort imposé aux couteaux et à la motorisation est maximal.
+Le véritable tests vérifiés d'une raboteuse réside dans sa capacité à traiter des bois durs et denses. Nous avons soumis la machine à des planches de chêne blanc européen et de hêtre étuvé d'une largeur de 250 mm et 300 mm. Dans ces conditions extrêmes, l'effort imposé aux couteaux et à la motorisation est maximal.
 
 Sur des largeurs approchant la limite structurelle de 317 mm, il convient d'adopter des profondeurs de passe modérées, comprises entre 0,5 mm et 0,8 mm par passage. Le moteur de 1 100 W maintient son couple de manière linéaire. Le bruit de coupe est franc et régulier. Les couteaux HSS pénètrent la fibre sans provoquer d'éclats ou de contre-fil indésirable sur les zones noueuses. La surface obtenue sur le chêne présente un état de brillance caractéristique d'une coupe tranchante nette, ne nécessitant qu'un égrenage léger au grain 180 avant finition.
 

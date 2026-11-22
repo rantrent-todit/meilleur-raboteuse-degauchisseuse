@@ -5,7 +5,7 @@ description_longue: "Découvrez notre analyse complète et technique du rabot sa
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/61L+NcnfbWL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B00HYEAN4I/?tag=amazonwp0b-21"
-meta_title: "Makita DKP180Z - Rabot sans fil 18V LXT : Test et Banc d'Essai"
+meta_title: "Makita DKP180Z - Rabot sans fil 18V LXT : Test et tests vérifiés"
 meta_description: "Avis complet et test indépendant sur RABOT MAKITA 82 MM 18 V LXT -DKP180Z. Découvrez ses performances réelles et points forts."
 ---
 

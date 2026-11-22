@@ -1,11 +1,11 @@
 ---
 titre: "Bosch Professional GHO 26-82 D - Rabot 710 W"
 description_courte: "Test complet du rabot Bosch Professional GHO 26-82 D : moteur de 710 W, éjection bilatérale des copeaux et semelle aluminium pour un rabotage précis du bois."
-description_longue: "Découvrez notre banc d'essai exhaustif du rabot électrique filaire Bosch Professional GHO 26-82 D. Analyse technique approfondie du moteur de 710 W, de la capacité de feuillure jusqu'à 9 mm, de l'évacuation bidirectionnelle des copeaux et de sa fiabilité en atelier comme sur chantier d'agencement."
+description_longue: "Découvrez notre test vérifié exhaustif du rabot électrique filaire Bosch Professional GHO 26-82 D. Analyse technique approfondie du moteur de 710 W, de la capacité de feuillure jusqu'à 9 mm, de l'évacuation bidirectionnelle des copeaux et de sa fiabilité en atelier comme sur chantier d'agencement."
 categories: ["gamme-semi-pro-professionnelle","raboteuses-epaisseur-portatives"]
 image_url: "https://m.media-amazon.com/images/I/612XzvESDUL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B01F1SZAO6/?tag=amazonwp0b-21"
-meta_title: "Bosch Professional GHO 26-82 D - Rabot 710 W : Test, Avis et Banc d'Essai"
+meta_title: "Bosch Professional GHO 26-82 D - Rabot 710 W : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Bosch Professional rabot GHO 26-82 D (puissance 710 W, avec butée parallèle, clé six pans mâle de 2,5 mm, sac à poussière en tissu, coffret de transport). Découvrez ses performances réelles et points forts."
 ---
 
@@ -96,7 +96,7 @@ Face aux rabots sans fil de la gamme 18V de la même marque, le GHO 26-82 D cons
 
 ## Points forts et points faibles
 
-Pour résumer de manière synthétique les observations issues de notre banc d'essai, voici la synthèse factuelle des atouts et des axes d'amélioration de cette machine :
+Pour résumer de manière synthétique les observations issues de notre tests vérifiés, voici la synthèse factuelle des atouts et des axes d'amélioration de cette machine :
 
 ### Points forts
 - Puissance moteur soutenue : Le bloc de 710 watts assure une vitesse de rotation de 18 000 tr/min constante, évitant les chutes de régime dans les bois denses.

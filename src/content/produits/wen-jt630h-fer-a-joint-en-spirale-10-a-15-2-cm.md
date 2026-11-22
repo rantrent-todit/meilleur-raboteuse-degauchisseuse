@@ -5,7 +5,7 @@ description_longue: "Découvrez notre analyse complète de la dégauchisseuse d'
 categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/712OeY8RPBL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B08M6KQ5LX/?tag=amazonwp0b-21"
-meta_title: "WEN JT630H Dégauchisseuse d'établi 152 mm : Test, Avis et Banc d'Essai"
+meta_title: "WEN JT630H Dégauchisseuse d'établi 152 mm : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur WEN JT630H Fer à joint en spirale 10 A 15,2 cm. Découvrez ses performances réelles et points forts."
 ---
 

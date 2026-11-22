@@ -1,11 +1,11 @@
 ---
 titre: "KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm"
 description_courte: "Test approfondi de la raboteuse stationnaire KATSU 330mm 1850W. Analyse des capacités de passe, de la précision d'usinage et de l'évacuation des copeaux."
-description_longue: "Découvrez notre banc d'essai complet de la raboteuse d'établi KATSU Tools 100772. Dotée d'un moteur de 1850W et d'une largeur de passage de 330 mm, cette machine stationnaire s'adresse aux menuisiers et charpentiers recherchant compacité et puissance pour le calibrage du bois massif."
+description_longue: "Découvrez notre test vérifié complet de la raboteuse d'établi KATSU Tools 100772. Dotée d'un moteur de 1850W et d'une largeur de passage de 330 mm, cette machine stationnaire s'adresse aux menuisiers et charpentiers recherchant compacité et puissance pour le calibrage du bois massif."
 categories: ["raboteuses-epaisseur-portatives","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61FUYM2rB6L._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0CPCWBMQZ/?tag=amazonwp0b-21"
-meta_title: "KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm : Test, Avis et Banc d'Essai"
+meta_title: "KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur KATSU Tools Rabot de Chantier 330mm 1850W Raboteuse Dégauchisseuse à Bois, Raboteuse Stationnaire Multifonction pour Travail du Bois 100772. Découvrez ses performances réelles et points forts."
 ---
 
@@ -15,7 +15,7 @@ Le travail du bois massif impose des exigences strictes en matière de planéit�
 
 Dotée d'une capacité de largeur utile de 330 millimètres (13 pouces) et d'un moteur électrique développant une puissance nominale de 1850 watts, cette unité cherche à concilier compacité structurelle et débit de matière conséquent. Proposée à un positionnement tarifaire compétitif autour de cinq cents euros, elle se pose en concurrente directe des modèles emblématiques de chantier proposés par les fabricants d'outillage électroportatif professionnel.
 
-L'objectif de ce banc d'essai est d'évaluer avec rigueur si la KATSU 100772 tient ses promesses sur le plan de la rigidité mécanique, de la régularité d'usinage, de la gestion des copeaux et de la durabilité face aux essences de bois dur les plus exigeantes.
+L'objectif de ce tests vérifiés est d'évaluer avec rigueur si la KATSU 100772 tient ses promesses sur le plan de la rigidité mécanique, de la régularité d'usinage, de la gestion des copeaux et de la durabilité face aux essences de bois dur les plus exigeantes.
 
 ## Conception, ergonomie et prise en main
 
@@ -63,7 +63,7 @@ Un volet déflecteur interne guide le flux de matière expulsé par la rotation 
 
 ### Comportement sur résineux et bois de charpente
 
-Le banc d'essai a débuté par le rabotage de chevrons et de bastaings en sapin du Nord et en pin Douglas présentant des nœuds durs et de la résine. Sur des largeurs de 100 à 150 millimètres, la machine accepte sans fléchir des passes de 1,5 à 2 millimètres par passage.
+Le tests vérifiés a débuté par le rabotage de chevrons et de bastaings en sapin du Nord et en pin Douglas présentant des nœuds durs et de la résine. Sur des largeurs de 100 à 150 millimètres, la machine accepte sans fléchir des passes de 1,5 à 2 millimètres par passage.
 
 Le moteur maintient son régime nominal sans chute de cadence audible. L'entraînement mécanique fait preuve d'une excellente motricité : même sur des sections rugueuses ou légèrement humides, les rouleaux tractent la pièce avec régularité sans patinage. Le système d'évacuation des copeaux volumineux propres aux résineux fonctionne sans bourrage dès lors qu'un aspirateur adapté est branché.
 

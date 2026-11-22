@@ -1,11 +1,11 @@
 ---
 titre: "Scheppach HMS1070 - Raboteuse Dégauchisseuse (+2 Fers)"
-description_courte: "Banc d'essai complet de la Scheppach HMS1070 : raboteuse-dégauchisseuse 1500W avec passage de 254 mm, guide inclinable et fers de rechange inclus."
+description_courte: "test vérifié complet de la Scheppach HMS1070 : raboteuse-dégauchisseuse 1500W avec passage de 254 mm, guide inclinable et fers de rechange inclus."
 description_longue: "Découvrez notre test détaillé de la raboteuse-dégauchisseuse Scheppach HMS1070 fournie avec un jeu de fers additionnel. Une machine compacte de 1500W taillée pour les ateliers de menuiserie amateurs et semi-professionnels."
 categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61f8xFQbAYL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B09N41N8BG/?tag=amazonwp0b-21"
-meta_title: "Scheppach HMS1070 - Raboteuse Dégauchisseuse (+2 Fers) : Test, Avis et Banc d'Essai"
+meta_title: "Scheppach HMS1070 - Raboteuse Dégauchisseuse (+2 Fers) : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse HMS1070 +2 fers supplémentaires inclus. Découvrez ses performances réelles et points forts."
 ---
 
@@ -64,7 +64,7 @@ L'arbre porte-outils accueille deux fers réaffûtables en acier rapide HSS de 2
 
 ## Test terrain et retours d'expérience
 
-Pour évaluer le comportement réel de la machine, plusieurs essences de bois ont été passées au banc d'essai : du sapin de charpente brut, du frêne sec et du chêne blanc européen.
+Pour évaluer le comportement réel de la machine, plusieurs essences de bois ont été passées au tests vérifiés : du sapin de charpente brut, du frêne sec et du chêne blanc européen.
 
 ### Phase 1 : Dégauchissage et dressage des faces
 

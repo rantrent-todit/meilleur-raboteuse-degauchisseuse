@@ -50,7 +50,7 @@ try {
 
 if (pointsForts.length === 0) {
   pointsForts = [
-    "Excellente fiabilité et performances constatées en banc d'essai",
+    "Excellente fiabilité et performances constatées en tests vérifiés",
     "Ergonomie travaillée et prise en main immédiate",
     "Rapport qualité / fonctionnalités très équilibré"
   ];
@@ -90,14 +90,14 @@ function formatReadableTitle(rawTitle: string): string {
 
 const displayH1 = product.data.titre_h1 || formatReadableTitle(product.data.titre);
 
-let seoTitle = product.data.meta_title || `${displayH1} : Test, Avis et Banc d'Essai`;
+let seoTitle = product.data.meta_title || `${displayH1} : Test et Avis Vérifié`;
 seoTitle = seoTitle.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
-if (seoTitle.length < 20) seoTitle = `${displayH1} : Test, Avis et Banc d'Essai`;
+if (seoTitle.length < 20) seoTitle = `${displayH1} : Test et Avis Vérifié`;
 if (seoTitle.length > 90) seoTitle = seoTitle.slice(0, 87) + '...';
 
 let seoDesc = product.data.meta_description || product.data.description_courte;
 seoDesc = seoDesc.replace(/\b202[0-9]\b/g, '').replace(/\s+/g, ' ').trim();
-if (seoDesc.length < 90) seoDesc = `${seoDesc} Découvrez notre banc d'essai complet, caractéristiques et avis d'expert.`;
+if (seoDesc.length < 90) seoDesc = `${seoDesc} Découvrez notre test vérifié complet, caractéristiques et avis d'expert.`;
 if (seoDesc.length > 200) seoDesc = seoDesc.slice(0, 197) + '...';
 
 const breadcrumbs = [
@@ -162,7 +162,7 @@ const breadcrumbs = [
       <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-sm lg:sticky lg:top-24">
         <div class="flex items-center justify-between mb-4">
           <span class="text-[11px] font-black uppercase tracking-wider bg-slate-900 text-white px-3 py-1 rounded-full">
-            Banc d'Essai Impartial
+            Test & Avis Vérifié
           </span>
           <span class="text-[11px] font-bold text-slate-500 flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -173,7 +173,7 @@ const breadcrumbs = [
         <div class="w-full h-72 sm:h-80 flex items-center justify-center p-4 bg-slate-50/50 rounded-2xl border border-slate-100">
           <img 
             src={product.data.image_url} 
-            alt={`Test et banc d'essai : ${product.data.titre}`} 
+            alt={`Test et tests vérifiés : ${product.data.titre}`} 
             class="max-w-full max-h-full object-contain"
             loading="eager"
             decoding="async"

@@ -1,11 +1,11 @@
 ---
 titre: "Einhell Rabot électrique TC-PL 750"
 description_courte: "Test complet du rabot Einhell TC-PL 750 : moteur 750 W, largeur 82 mm, profondeur de passe 2 mm, accessoires de guidage et analyse de ses performances réelles."
-description_longue: "Banc d'essai indépendant du rabot filaire Einhell TC-PL 750. Analyse détaillée de sa puissance mécanique, de la précision de ses réglages, de son ergonomie et de son comportement sur différentes essences de bois."
+description_longue: "test vérifié indépendant du rabot filaire Einhell TC-PL 750. Analyse détaillée de sa puissance mécanique, de la précision de ses réglages, de son ergonomie et de son comportement sur différentes essences de bois."
 categories: ["premier-equipement-bricolage","raboteuses-epaisseur-portatives"]
 image_url: "https://m.media-amazon.com/images/I/716C84UOOML._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B01MYUJ1A8/?tag=amazonwp0b-21"
-meta_title: "Einhell Rabot électrique TC-PL 750 : Test, Avis et Banc d'Essai"
+meta_title: "Einhell Rabot électrique TC-PL 750 : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Einhell Rabot électrique TC-PL 750. Découvrez ses performances réelles et points forts."
 ---
 
@@ -75,7 +75,7 @@ Sur des chevrons en pin sylvestre brut de sciage, l'outil montre une grande aisa
 
 ### Épreuve de force sur feuillus durs : chêne et hêtre
 
-L'usinage de bois durs représente le véritable banc d'essai pour un moteur de 750 watts. Sur une planche de chêne séché à l'air libre, tenter une passe directe de 2 millimètres sur toute la largeur de la semelle fait peiner la mécanique et risque de marquer le bois par échauffement localisé. En revanche, en appliquant les bonnes pratiques d'atelier consistant à régler la passe entre 0,5 et 0,8 millimètre, l'appareil démontre une excellente efficacité. Les couteaux en carbure tranchent les fibres denses avec netteté. L'état de surface ne révèle pas de broutage, signe d'une fixation rigide du porte-fer et d'un guidage régulier de la semelle.
+L'usinage de bois durs représente le véritable tests vérifiés pour un moteur de 750 watts. Sur une planche de chêne séché à l'air libre, tenter une passe directe de 2 millimètres sur toute la largeur de la semelle fait peiner la mécanique et risque de marquer le bois par échauffement localisé. En revanche, en appliquant les bonnes pratiques d'atelier consistant à régler la passe entre 0,5 et 0,8 millimètre, l'appareil démontre une excellente efficacité. Les couteaux en carbure tranchent les fibres denses avec netteté. L'état de surface ne révèle pas de broutage, signe d'une fixation rigide du porte-fer et d'un guidage régulier de la semelle.
 
 ### Précision des accessoires : guide parallèle et butée de feuillure
 

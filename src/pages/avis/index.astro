@@ -1,40 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import CarteApercu from '../../components/CarteApercu.astro';
-import FiltresCatalogue from '../../components/FiltresCatalogue.astro';
 import { getCollection } from 'astro:content';
-import { slugify } from '../../utils/slugify';
 import { siteConfig } from '../../config/site.config';
 
 const allProducts = await getCollection('produits');
-const categoryContent = await getCollection('categories');
-
-// Map des noms propres officiels pour un affichage soigné
-const officialNameMap = new Map<string, string>();
-for (const cat of categoryContent) {
-  const name = cat.data.titre_seo
-    ? cat.data.titre_seo.replace(/^Meilleurs?\s+(modèles\s+)?/i, '').split(':')[0].trim()
-    : cat.id.replace(/-/g, ' ');
-  officialNameMap.set(cat.id, name);
-}
-
-// Calcul des catégories avec compteurs
-const catCountMap = new Map<string, { name: string; slug: string; count: number }>();
-for (const p of allProducts) {
-  for (const catName of (p.data.categories || [])) {
-    const s = slugify(catName);
-    if (s === 'meilleurs-modeles') continue; // Ignorer le faux slug générique
-
-    const prettyName = officialNameMap.get(s) || (catName.includes('-') ? catName.replace(/-/g, ' ') : catName);
-
-    if (!catCountMap.has(s)) {
-      catCountMap.set(s, { name: prettyName, slug: s, count: 1 });
-    } else {
-      catCountMap.get(s)!.count++;
-    }
-  }
-}
-const sortedCategories = Array.from(catCountMap.values()).sort((a, b) => b.count - a.count);
 
 const breadcrumbs = [
   { name: "Accueil", url: "/" },
@@ -45,8 +15,8 @@ const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": `Tous les tests et avis détaillés | ${siteConfig.siteName}`,
-  "description": `Consultez nos bancs d'essai indépendants et analyses complètes sur ${siteConfig.siteName}.`,
+  "name": `Tous les tests et avis vérifiés | ${siteConfig.siteName}`,
+  "description": `Consultez nos tests vérifiés indépendants et avis complets sur ${siteConfig.siteName}.`,
   "mainEntity": {
     "@type": "ItemList",
     "itemListElement": allProducts.map((p, idx) => ({
@@ -76,7 +46,7 @@ const itemListSchema = {
 
   <div class="mb-8">
     <span class="text-xs font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full inline-block mb-3">
-      Bancs d'Essai Impartiaux
+      Nos avis et tests vérifiés
     </span>
     <h1 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3 tracking-tight">
       Tous nos avis et tests de matériel
@@ -86,11 +56,8 @@ const itemListSchema = {
     </p>
   </div>
 
-  <!-- Barre de Recherche, Filtres de Catégories et Tri Instantané -->
-  <FiltresCatalogue categories={sortedCategories} totalCount={allProducts.length} />
-
-  <!-- Grille de Produits Réactive -->
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="products-grid-container">
+  <!-- Listing Complet de tous les Produits du Site -->
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {allProducts.map((product, idx) => (
       <CarteApercu 
         titre={product.data.titre}

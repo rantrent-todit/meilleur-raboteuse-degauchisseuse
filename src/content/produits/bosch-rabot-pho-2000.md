@@ -1,11 +1,11 @@
 ---
 titre: "Bosch Rabot PHO 2000"
 description_courte: "Test complet du Bosch PHO 2000 : rabot électrique de 680 W offrant une passe précise jusqu'à 2 mm, double éjection des copeaux et système Woodrazor."
-description_longue: "Découvrez notre banc d'essai exhaustif du rabot électrique filaire Bosch PHO 2000. Analyse technique de ses 680 W, de ses 3 rainures de chanfreinage, de son patin de repos et de sa maniabilité sur différentes essences de bois."
+description_longue: "Découvrez notre test vérifié exhaustif du rabot électrique filaire Bosch PHO 2000. Analyse technique de ses 680 W, de ses 3 rainures de chanfreinage, de son patin de repos et de sa maniabilité sur différentes essences de bois."
 categories: ["premier-equipement-bricolage","raboteuses-epaisseur-portatives"]
 image_url: "https://m.media-amazon.com/images/I/51x3cSe7giL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B00LSYEHFQ/?tag=amazonwp0b-21"
-meta_title: "Bosch Rabot PHO 2000 : Test, Avis et Banc d'Essai"
+meta_title: "Bosch Rabot PHO 2000 : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Bosch Rabot PHO 2000. Découvrez ses performances réelles et points forts."
 ---
 

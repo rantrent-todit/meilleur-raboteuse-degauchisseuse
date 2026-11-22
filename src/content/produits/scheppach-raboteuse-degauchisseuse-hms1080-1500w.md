@@ -1,11 +1,11 @@
 ---
 titre: "Scheppach Raboteuse & Dégauchisseuse HMS1080 | 1500W"
-description_courte: "Test complet de la Scheppach HMS1080 : 1500W, 254 mm de largeur de coupe et 9000 tr/min. Notre banc d'essai complet pour équiper votre atelier."
-description_longue: "Découvrez notre banc d'essai complet sur la raboteuse-dégauchisseuse d'établi Scheppach HMS1080. Analyse technique de son moteur de 1500W, de sa table de 254 mm, de sa précision de coupe et de son comportement sur bois tendres et durs."
+description_courte: "Test complet de la Scheppach HMS1080 : 1500W, 254 mm de largeur de coupe et 9000 tr/min. Notre test vérifié complet pour équiper votre atelier."
+description_longue: "Découvrez notre test vérifié complet sur la raboteuse-dégauchisseuse d'établi Scheppach HMS1080. Analyse technique de son moteur de 1500W, de sa table de 254 mm, de sa précision de coupe et de son comportement sur bois tendres et durs."
 categories: ["raboteuses-degauchisseuses-etabli","premier-equipement-bricolage"]
 image_url: "https://m.media-amazon.com/images/I/61vdUCS63XL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B0819THD6J/?tag=amazonwp0b-21"
-meta_title: "Scheppach Raboteuse & Dégauchisseuse HMS1080 | 1500W : Test, Avis et Banc d'Essai"
+meta_title: "Scheppach Raboteuse & Dégauchisseuse HMS1080 | 1500W : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse HMS1080 | 1500W. Découvrez ses performances réelles et points forts."
 ---
 

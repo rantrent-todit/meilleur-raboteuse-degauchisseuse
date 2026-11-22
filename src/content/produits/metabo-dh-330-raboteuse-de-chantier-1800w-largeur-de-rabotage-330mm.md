@@ -1,11 +1,11 @@
 ---
 titre: "Metabo DH 330 - Raboteuse de chantier 1800 W"
-description_courte: "Banc d'essai complet de la raboteuse Metabo DH 330 : 1800W, passage de 330 mm, table en fonte d'acier et précision d'usinage passées au crible."
+description_courte: "test vérifié complet de la raboteuse Metabo DH 330 : 1800W, passage de 330 mm, table en fonte d'acier et précision d'usinage passées au crible."
 description_longue: "Découvrez notre test complet de la raboteuse transportable Metabo DH 330. Analyse technique de son moteur de 1800W, de sa capacité de passe, de la gestion du talonnage et de sa précision pour les artisans et menuisiers exigeants."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/81iJl8AcewL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B00068WPI6/?tag=amazonwp0b-21"
-meta_title: "Metabo DH 330 - Raboteuse de chantier 1800 W : Test, Avis et Banc d'Essai"
+meta_title: "Metabo DH 330 - Raboteuse de chantier 1800 W : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur metabo DH 330 Raboteuse de Chantier, 1800W, Largeur de Rabotage 330mm. Découvrez ses performances réelles et points forts."
 ---
 

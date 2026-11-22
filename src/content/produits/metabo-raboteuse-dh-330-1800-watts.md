@@ -1,11 +1,11 @@
 ---
 titre: "Metabo DH 330 - Raboteuse stationnaire 1800 W"
 description_courte: "Test approfondi de la raboteuse stationnaire Metabo DH 330 de 1800 Watts : précision d'usinage, robustesse, gestion du talonnage et avis d'expert."
-description_longue: "La raboteuse d'établi Metabo DH 330 combine une motorisation puissante de 1800 Watts à une capacité de passe généreuse de 330 mm. Découvrez notre banc d'essai complet évaluant ses performances mécaniques, sa précision et sa durabilité en atelier comme sur chantier."
+description_longue: "La raboteuse d'établi Metabo DH 330 combine une motorisation puissante de 1800 Watts à une capacité de passe généreuse de 330 mm. Découvrez notre test vérifié complet évaluant ses performances mécaniques, sa précision et sa durabilité en atelier comme sur chantier."
 categories: ["raboteuses-epaisseur-portatives","gamme-semi-pro-professionnelle"]
 image_url: "https://m.media-amazon.com/images/I/61scdXJ6jkL._AC_UL960_FMwebp_QL65_.jpg"
 lien_affiliation: "https://www.amazon.fr/dp/B07FK3R9MH/?tag=amazonwp0b-21"
-meta_title: "metabo raboteuse DH 330 1800 Watts : Test, Avis et Banc d'Essai"
+meta_title: "metabo raboteuse DH 330 1800 Watts : Test et Avis Vérifié"
 meta_description: "Avis complet et test indépendant sur metabo raboteuse DH 330 1800 Watts. Découvrez ses performances réelles et points forts."
 ---
 
@@ -19,7 +19,7 @@ Contrairement à une dégauchisseuse-raboteuse stationnaire traditionnelle qui p
 
 ### À qui s'adresse la Metabo DH 330 ?
 
-Cette machine s'adresse aux boiseux qui disposent déjà d'une méthode pour dresser une première face de référence (par exemple via une dégauchisseuse d'établi indépendante ou un montage sur défonceuse) et qui recherchent une unité de calibrage performante, répétable et constante. La réputation de la marque repose sur la solidité de ses outillages électroportatifs et stationnaires légers, et ce banc d'essai vise à déterminer si cette raboteuse répond aux exigences de finition des essences les plus dures.
+Cette machine s'adresse aux boiseux qui disposent déjà d'une méthode pour dresser une première face de référence (par exemple via une dégauchisseuse d'établi indépendante ou un montage sur défonceuse) et qui recherchent une unité de calibrage performante, répétable et constante. La réputation de la marque repose sur la solidité de ses outillages électroportatifs et stationnaires légers, et ce tests vérifiés vise à déterminer si cette raboteuse répond aux exigences de finition des essences les plus dures.
 
 ## Conception, ergonomie et prise en main
 
