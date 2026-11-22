@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/61vdUCS63XL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0819THD6J/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach Raboteuse & Dégauchisseuse HMS1080 | 1500W"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse HMS1080 | 1500W. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Client vérifié"
+    note: 5
+    titre: "Bien , content de mon achat ."
+    commentaire: "Une bonne petite machine , malgré que je trouve dommage d'être obligé de démonter le guide d'équerre du degauchissage pour passer en rabotage ."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Stéphane"
+    note: 4
+    titre: "À servi que 30mn mais marche parfaitement après changement de pièce"
+    commentaire: "Elle est arrivée avec une pièce cassée qui correspond à l’interrupteur de surcharge.Il ne tient plus en place.La machine une fois en route (car c’est pas gagné) ne tient sue 30s et s’arrête.Je compte sur le support pour qu’ils puissent vite me dépanner.Affaire à suivre …. Je mets quand même 4 étoiles car elle marche bien sinon.05/02/25 Le support me renvoie l'interrupteur de surcharge défecteux. très réactif."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Zavagno"
+    note: 5
+    titre: "Très bon rapport qualité prix"
+    commentaire: "Exactement ce que j'attendais.Conditionnement parfait.Bonne description de l'outil sur la recherche.Bref cinq étoiles."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "DEVOIVRE M."
+    note: 3
+    titre: "\"Ça dépanne\""
+    commentaire: "Plutôt une bonne machine pour un usage occasionnel ou ne demandant pas trop de précision.La première a vu son moteur griller après quelques heures d'utilisation et fut remplacée rapidement par la seconde qui marche fort bien.Puissance suffisante et travail très correct avec du bois de qualité pour peu qu'on ne soit pas trop gourmand en épaisseur de coupe, et avec une aspiration (indispensable), c'est le cas de toutes les dégau/rabot.La surface dégauchie est belle.Deux points noirs toutefois :1° - cette f... grille qui obstrue la sortie des copeaux et qu'on doit enlever (attention à la garantie mais on trouve la pièce facilement sur le Net) sous peine d'avoir une sortie de ces derniers au niveau de l'arbre de coupe avec d'importantes et très vilaines irrégularités de surface, ceci en dépit d'une puissante aspiration.2° - Les tables sont bien alignées avec une épaisseur de coupe à zéro mais ne le sont plus a partir du moment où la table de départ est abaissée et les bois de faible longueur sont dégauchis en arrondi, c'est assez marqué pour donner des ajustages approximatifs. Des bois plus longs (longueur des deux tables) sont moins sensibles à ce problème. Ça semble un défaut récurrent sur ces machines (vendues sous plusieurs marques différentes) depuis plusieurs années. Heureusement, cela se corrige assez bien au rabotage qui doit se faire sur les deux faces, et ça fonctionne...Machine recommandable malgré tout avec sa table de 26 cm, moyennant quelques adaptations"
+    usage: "Retour terrain vérifié Amazon"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.1
+  total_avis: 100
+  taux_positif: "79%"
 ---
 
 ## Introduction et positionnement

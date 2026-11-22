@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/716C84UOOML._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B01MYUJ1A8/?tag=amazonwp0b-21"
 meta_title: "Avis Einhell Rabot électrique TC-PL 750"
 meta_description: "Avis complet et test indépendant sur Einhell Rabot électrique TC-PL 750. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "jérémy"
+    note: 5
+    titre: "Utile"
+    commentaire: "Superbe machine elle fonctionne tres bien et ma bien servie :)"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "squalls"
+    note: 4
+    titre: "J'approuve"
+    commentaire: "Bonjour,Plutôt confiant en voyant les avis, j'ai décider de franchir moi aussi le pas .Je ne regrette pas, bon rapport qualité/prix.Point positif 😀😀Robuste, pour le prix je m'attendais pas a une machine très solide, j'avouerai que les plastiques utiliser et le **grip** sont très bon, pour l'avoir fait tomber du haut de mon établie il n'a pas bouger, vraiment satisfait.Ensemble bien fini, la molette est solide, la poignée et le maintient du câble électrique sont bon, moi qui ai tendance a prendre mon matos électrique par les câbles (honte a moi pour un ancien électricien) je suis très sensible a la fixation du câble.Coupe très correcte, je l'ai utiliser intensivement sur mes 2 derniers we pour me faire un salon de jardin en palette bois, il n'a pas failli.La précision des coupes est bien, sans être exceptionnelle (j'y reviens ensuite) pour le bricoleur lambda et même l'amateur menuisier sa suffira largement .Point négatif.😧😧😧Peu de point négatif, pour le prix vous pouvez y aller, mais je signale quant même 2 petite choses.1/ J'ai dû recalibrer les lames qui étaient un poil trop basses, rien de méchant mais j'aime avoir -5mm et enlever -5 et non -7mm .2/ Machine un peu lourde, mais clairement je préfère avoir une machine robuste et lourde qu'un truc léger qui claque au bout de 2 semaines.A prendre en compte lors de l'achat, car pour l'avoir utiliser intensivement le poids ce fait sentir en fin de journée.4 étoiles et demi donc, satisfait de mon achat, je reviendrai mettre a jour mon avis au fils du temps.👍👍👍En espérant avoir été intéressant merci de me le faire savoir, bonne soirée.👍👍👍"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Richard"
+    note: 5
+    titre: "Très bon rapport qualité prix/prix."
+    commentaire: "Très bon rapport qualité prix/prix.Réglages faciles.Travail précis et soigné.Bonne endurance."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "NC-MMX"
+    note: 5
+    titre: "Bon appareil"
+    commentaire: "Acheté pour raboter une porte, j'ai pris ce modèle pour les commentaires et le prix. Pas déçu. J'ai déjà une scie table de cette marque. Pas qualité pro, mais suffisant pour faire du travail propre.Reproche : pas moyen de verrouiller le bouton de profondeur qui à tendance à tourner quand on ne travaille pas à l'horizontal."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.4
+  total_avis: 100
+  taux_positif: "86%"
 ---
 
 ## Introduction et positionnement

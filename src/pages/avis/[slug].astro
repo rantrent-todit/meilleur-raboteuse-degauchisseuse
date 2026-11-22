@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import BoutonAmazon from '../../components/BoutonAmazon.astro';
 import CarteApercu from '../../components/CarteApercu.astro';
 import PointsFortsFaibles from '../../components/PointsFortsFaibles.astro';
+import BlocAvisClientsVerifies from '../../components/BlocAvisClientsVerifies.astro';
 import StickyMobileCta from '../../components/StickyMobileCta.astro';
 import { slugify } from '../../utils/slugify';
 import { siteConfig } from '../../config/site.config';
@@ -249,6 +250,16 @@ const breadcrumbs = [
 
     <!-- BLOC UNIQUE POINTS FORTS ET LIMITES (SANS ÉTOILES) -->
     <PointsFortsFaibles pointsForts={pointsForts} pointsFaibles={pointsFaibles} />
+
+    <!-- PREUVE SOCIALE ET RETOURS D'EXPÉRIENCE CLIENTS VÉRIFIÉS -->
+    <BlocAvisClientsVerifies 
+      titreProduit={cleanProductName}
+      lienAmazon={product.data.lien_affiliation}
+      avisClients={product.data.avis_clients}
+      satisfaction={product.data.satisfaction_globale}
+      pointsFortsFallback={pointsForts}
+      pointsFaiblesFallback={pointsFaibles}
+    />
 
     <!-- BANNIÈRE INTERMÉDIAIRE CRO -->
     <div class="my-10 bg-slate-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">

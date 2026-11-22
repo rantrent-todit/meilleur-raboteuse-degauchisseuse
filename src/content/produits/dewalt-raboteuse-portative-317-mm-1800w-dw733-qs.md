@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/71qEv0MomSL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0013LK5TQ/?tag=amazonwp0b-21"
 meta_title: "Avis DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS"
 meta_description: "Avis complet et test indépendant sur DEWALT Raboteuse portative 317 mm, 1800W, DW733-QS. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Alexis"
+    note: 5
+    titre: "Raboteuse au top ! Et encore plus appréciable quand on réussit à l’avoir à un super prix 😁"
+    commentaire: "Parfaite !! Je l’ai achetée en seconde main pour moins de 350 € et j’en suis vraiment ravi 😁 Hyper précise, elle fait parfaitement le job. Je ne regrette absolument pas mon achat !"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "emilie"
+    note: 5
+    titre: "."
+    commentaire: "Trop content"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "claudine V."
+    note: 1
+    titre: "LA qualite"
+    commentaire: "dans la barre de recherche j avais demande un deguauchisseuse raboteurs pour quoi je recois une raboteuse uniquement merci lisez les commandes de vos clients"
+    usage: "Retour terrain vérifié Amazon"
+    achat_verifie: true
+  - auteur: "BOYER D."
+    note: 4
+    titre: "Produit conforme"
+    commentaire: "Bien"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4
+  total_avis: 100
+  taux_positif: "73%"
 ---
 
 ## Introduction et positionnement

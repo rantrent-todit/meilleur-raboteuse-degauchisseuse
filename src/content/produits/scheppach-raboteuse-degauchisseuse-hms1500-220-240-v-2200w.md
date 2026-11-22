@@ -8,6 +8,29 @@ image_url: "https://m.media-amazon.com/images/I/61J8d2v11GL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0DFH32W5W/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse / dégauchisseuse HMS1500 - 220-240 V - 2200W. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Fouet D."
+    note: 5
+    titre: "Raboteuse"
+    commentaire: "Très bon produit et fonctionne très bien"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Origans"
+    note: 2
+    titre: "des couteaux plus solides svp"
+    commentaire: "Bonjourjolie Machine mais les couteaux se sont déjà écaillés tres facilement et sur du sapin c'est bien dommage et regretable.des marques sont visibles sur toutes les surfaces rabotéesSerait il possible de m'envoyer un nouveau jeu plus resistant comme il se doit . Merci bien"
+    usage: "Retour terrain vérifié Amazon"
+    achat_verifie: true
+  - auteur: "phoDOGrapher"
+    note: 4
+    titre: "La mienne a eu un défaut électrique, mais le fournisseur m'a remboursé"
+    commentaire: "Malheureusement, la raboteuse/dégauchisseuse est arrivée avec un défaut électrique et j'ai dû la renvoyer, mais le fournisseur m'a remboursé intégralement."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 3.8
+  total_avis: 100
+  taux_positif: "69%"
 ---
 
 ## Introduction et positionnement

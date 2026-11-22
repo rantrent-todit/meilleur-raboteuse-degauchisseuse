@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/612XzvESDUL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B01F1SZAO6/?tag=amazonwp0b-21"
 meta_title: "Avis Bosch Professional GHO 26-82 D - Rabot 710 W"
 meta_description: "Avis complet et test indépendant sur Bosch Professional rabot GHO 26-82 D (puissance 710 W, avec butée parallèle, clé six pans mâle de 2,5 mm, sac à..."
+avis_clients:
+  - auteur: "TRICOCHE"
+    note: 5
+    titre: "Excellent produit"
+    commentaire: "Excellent produit"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Client D."
+    note: 5
+    titre: "Efficace et robuste"
+    commentaire: "Bon produit comme tout les produits pro"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Pierre C."
+    note: 4
+    titre: "Efficace"
+    commentaire: "Maniement simple et résultats satisfaisants"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Gwenaël O."
+    note: 5
+    titre: "parfait!"
+    commentaire: "Rarement déçu par Bosh Pro. J'avais besoin de rabotter des portes en bois qui ne fermaient plus.Longtemps j'ai emprunté celle de mon voisin (marque concurrente), mais je dois avouer que le résultat était bien hasardeux... et je trouvais la machine peu pratique (sécurité à enfoncer à chaque fois).Du coup j'ai investi et 0 regret, ça fonctionne parfaitement, c'est droit, rien ne lui resiste (attention quand même au métal qui peut vite abimer la lame), vraiment parfait.Petit bémol sur le sac de récupération, j'ai cassé un petit truc à l'intérieur qui permettait au sac de rester \"rigide\". Mais bon, à part ça, RAS."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.6
+  total_avis: 100
+  taux_positif: "93%"
 ---
 
 ## Introduction et positionnement

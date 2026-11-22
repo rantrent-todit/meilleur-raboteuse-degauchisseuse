@@ -8,6 +8,23 @@ image_url: "https://m.media-amazon.com/images/I/51vX-zz4TPL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0F1CJD71C/?tag=amazonwp0b-21"
 meta_title: "Avis Rabot électrique professionnel 800 W - Largeur 82 mm"
 meta_description: "Avis complet et test indépendant sur Rabot professionnel électrique | 800 W | Largeur de rabotage 82 mm | Profondeur max 2 mm | Plateau fraisé à plat..."
+avis_clients:
+  - auteur: "Yannick G."
+    note: 5
+    titre: "Super"
+    commentaire: "Trés content , fait son boulot pour raboter mes portes et faire l'essentiel , RAS..."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Peg P."
+    note: 1
+    titre: "Pas terrible"
+    commentaire: "Petite qualité...réglage très difficile et notice tout en anglais"
+    usage: "Retour terrain vérifié Amazon"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.3
+  total_avis: 100
+  taux_positif: "78%"
 ---
 
 ## Introduction et positionnement

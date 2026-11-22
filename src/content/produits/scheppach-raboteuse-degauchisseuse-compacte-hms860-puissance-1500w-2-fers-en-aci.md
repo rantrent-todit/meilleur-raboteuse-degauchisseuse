@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/61NVhq-oupL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B08BPH3YFJ/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach HMS860 - Raboteuse Dégauchisseuse 1500W"
 meta_description: "Avis et test indépendant sur la Scheppach HMS860 (1500W, 204mm). Découvrez nos mesures d'atelier, points forts et performances pour équiper votre espace."
+avis_clients:
+  - auteur: "PRVT71400"
+    note: 5
+    titre: "Très bien, réglages précis, mais pas fait pour un professionnel."
+    commentaire: "Pour un usage amateur et bricoleur fait très bien son job.Suffisamment précise pour les réglages.J'en suis très satisfait.Ne convient pas pour un usage intensif et professionnel."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "chojnacki"
+    note: 5
+    titre: "Machine pour amateurs avertis"
+    commentaire: "Je suis très satisfait après plusieurs utilisations. C'est une bonne machine stable, pas trop bruyante, à magner avec douceur, ce n'est pas une degauchisseuse de professionnel, ceci pour dire de ne pas la faire tourner à outrance. Évitez les démarrages, arrêts à outrance, la courroie ne va pas aimer. Je suis très satisfait de cette machine. Je conseille. Je m'en suis servi pour l'instant que sur du bois tendre."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Pagniez"
+    note: 1
+    titre: "A fuir !"
+    commentaire: "A peine 10 heures d'utilisation qu'il a fallu que je change une lame.Ensuite en moins de 50 heures, il a fallu que je change plusieurs les roulements, pour me rendre compte en l'amenant a un SAV tiers que tout les roulements de la machine était HS et qu'il s'agit d'une panne connu...A fuir !"
+    usage: "Retour terrain vérifié Amazon"
+    achat_verifie: true
+  - auteur: "Fafane"
+    note: 4
+    titre: "Bonne machine"
+    commentaire: "Bonne machine, seul bémol, les réglages sont un peu compliqué et aléatoire..."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4
+  total_avis: 100
+  taux_positif: "75%"
 ---
 
 ## Introduction et positionnement

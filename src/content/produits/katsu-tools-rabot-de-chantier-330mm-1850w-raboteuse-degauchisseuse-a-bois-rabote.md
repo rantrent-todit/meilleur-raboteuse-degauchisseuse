@@ -8,6 +8,29 @@ image_url: "https://m.media-amazon.com/images/I/61FUYM2rB6L._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0CPCWBMQZ/?tag=amazonwp0b-21"
 meta_title: "Avis KATSU Tools 100772 - Raboteuse de Chantier 1850 W 330 mm"
 meta_description: "Avis complet et test indépendant sur KATSU Tools Rabot de Chantier 330mm 1850W Raboteuse Dégauchisseuse à Bois, Raboteuse Stationnaire Multifonction..."
+avis_clients:
+  - auteur: "blondelle M."
+    note: 5
+    titre: "Super machine"
+    commentaire: ""
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Mimie"
+    note: 5
+    titre: "Raboteuse katsu"
+    commentaire: "Raboteuse excellente qualitee"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "boris R."
+    note: 2
+    titre: "Raboteuse bof"
+    commentaire: "Article arrivée endommager impossible de trouver la pièce manquante. C est dommage sourtout quand c est la pièce qui indique le niveau de la hauteur. Pas de blocage de chariot."
+    usage: "Retour terrain vérifié Amazon"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.4
+  total_avis: 100
+  taux_positif: "83%"
 ---
 
 ## Introduction et positionnement

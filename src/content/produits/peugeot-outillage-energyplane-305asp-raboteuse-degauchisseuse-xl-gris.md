@@ -8,6 +8,23 @@ image_url: "https://m.media-amazon.com/images/I/71QBWFoaJsL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0B5Y9Z94T/?tag=amazonwp0b-21"
 meta_title: "Avis Peugeot ENERGYPLANE-305ASP - Raboteuse-dégauchisseuse 305 mm"
 meta_description: "Avis complet et test indépendant sur Peugeot Outillage ENERGYPLANE-305ASP raboteuse dégauchisseuse XL, Gris. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Carpentry74"
+    note: 5
+    titre: "Du peugeot !"
+    commentaire: "Alors, je suis professeur de charpente et je souhaitais avoir mon propre petit atelier pour préparer mes cours, maquettes, prototypes, etc. Cette dégau-rabot correspond parfaitement à mes besoins (petite, lourde mais déplaçable, avec la possibilité de ne pas mettre d’aspiration).Assez déçu par quelques points tout de même :Peinture écaillée à plusieurs endroits, avec des usinages non ébavurés (mon doigt s’en souvient encore).Manque de puissance pour une passe de 2 mm en rabotage (à voir si ce n’est pas dû au rouleau entraîneur neuf, mais ça m’étonnerait, surtout qu’il est écrit en gras : NE PAS DÉPASSER 2 MM).En mode dégauchissage, la machine projette les copeaux en surnombre sur la table d’entrée.Par contre, on sent une certaine qualité malgré quelques économies, notamment sur les pièces en plastique et la peinture et le logo scotché dessus au lieu de moulé."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Client D."
+    note: 4
+    titre: "Je pense que c'est une bonne machine en moyen format, mais ....."
+    commentaire: "De bons résultats mais nécessite un réglage de parallélisme des 2 tables. En attente du retour de ma demande de conseil faite chez Peugeot outillage. Les tables ont un désaffleure de 0,45 mm ce qui crée un galbe sur les pièces dégauchies. La notice ne donne aucun information pour corriger ce défaut."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.6
+  total_avis: 100
+  taux_positif: "100%"
 ---
 
 ## Introduction et positionnement

@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/61n5ASEj+bL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B01BTZLSNM/?tag=amazonwp0b-21"
 meta_title: "Avis Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W"
 meta_description: "Avis complet et test indépendant sur Scheppach Raboteuse & Dégauchisseuse compacte HMS850 |1250W. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "amemael"
+    note: 5
+    titre: "Parfait"
+    commentaire: "Très bien,rend vraiment un effet de profondeur 👍"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Client vérifié"
+    note: 4
+    titre: "conforme aux attentes"
+    commentaire: "Efficace, conforme aux attentes"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "WILLY E."
+    note: 5
+    titre: "Impeccable travail précis et propre"
+    commentaire: "Raboteuse dégauchisseuse pour le prix Franchement j'étais esitant car je touche le SMIC mais maintenant que le les prises c'est nikel pas trop bruyant en plus facile d'utilisation prévoir un aspirateur de copeaux quand-même un gros bouquins avec toute les langues et toutes les explications je suis suis très satisfait de mon achat au près de cette marque j'ai même acheté la scie angulaire de chez eux vous pouvez acheter sans soucis livraison rapide et possibilité de payer en plusieurs fois et le sav et très rapide j'ai eux un soucis avec l'autre machine et il mon répondu rapidement"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Michel P."
+    note: 5
+    titre: "Très très pratique et pas imposante"
+    commentaire: "Très bonne machine très pratique et fonctionne très très bien"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.5
+  total_avis: 100
+  taux_positif: "89%"
 ---
 
 ## Introduction et positionnement

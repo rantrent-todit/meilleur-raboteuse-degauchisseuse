@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/712fqvob2fL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0FNC1ZFNG/?tag=amazonwp0b-21"
 meta_title: "Avis VEVOR Raboteuse d'Établi 3 Lames (330 mm)"
 meta_description: "Avis complet et test indépendant sur VEVOR Raboteuse Bois Électrique 3 Lames, Table de Travail Largeur 33 cm. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Virgile S."
+    note: 5
+    titre: "très bon produit pour amateur"
+    commentaire: "Très satisfait de mon achat. Cet outil est bien utile dans l'atelier et me facilite grandement le travail pour un usage amateur. Un petit réglage des plateaux s'est avéré utile lors de la première utilisation mais très pratique à faire. Je suis très satisfait car aucun talon ne se forme sur le bois ni en entrée ni en sortie. ma note 10/10."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "PHILIPPO B."
+    note: 5
+    titre: "Super."
+    commentaire: "Ras."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "DJULS"
+    note: 4
+    titre: "Rien a signaler."
+    commentaire: "Pratique et facile d'utilisation. Finition ok.Utiliser pour bois de récupération.Un peu bruyant quand même ...mais sa fais parti du jeux"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "superfrog"
+    note: 5
+    titre: "Bon rapport qualité prix, ajustement corrects en sortie d'usine"
+    commentaire: "Excellente pour le prix. Je viens de reprendre 55m2 de cumaru avec, elle a pas bronché.Sessions de 5m2 environ.(Mise a l'épaisseur et retrait des restes des colle sur un parquet récupére, après un premier grattage à la spatule sur burineur)Les charbons sont toujours bons, les copeaux sont propres et se séparent bien au cyclone, assez peu de ratés (une dizaine de planche ont un talonage a 5cm de la fin, pas clair pourquoi)La sortie d'aspiration en 50 est pratique et accepte sans problème des raccords plomberie pvc de 50 si il y a besoin de bricoler un truc."
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.2
+  total_avis: 100
+  taux_positif: "81%"
 ---
 
 ## Introduction et positionnement

@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/71hO3OvZphL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B0848LHJKV/?tag=amazonwp0b-21"
 meta_title: "Avis Makita DKP181Z - Rabot sans fil 18V LXT Brushless (82 mm)"
 meta_description: "Avis complet et test indépendant sur Rabot 18V LXT largeur 82mm (Produit seul) - MAKITA DKP181Z. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Cany"
+    note: 5
+    titre: "très bon matériel"
+    commentaire: "très bon matériel"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "PLANET"
+    note: 5
+    titre: "rien à dire"
+    commentaire: "Très belle machine de chez Makita ! Le Top"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Isabelle V."
+    note: 5
+    titre: "Très satisfaite"
+    commentaire: "Correspond à ce que je recherchais"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Cédric M."
+    note: 5
+    titre: "Parfait"
+    commentaire: "Parfait"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.8
+  total_avis: 100
+  taux_positif: "96%"
 ---
 
 ## Introduction et positionnement

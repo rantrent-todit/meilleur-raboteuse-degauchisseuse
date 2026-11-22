@@ -8,6 +8,35 @@ image_url: "https://m.media-amazon.com/images/I/61L+NcnfbWL._AC_UL960_FMwebp_QL6
 lien_affiliation: "https://www.amazon.fr/dp/B00HYEAN4I/?tag=amazonwp0b-21"
 meta_title: "Avis Makita DKP180Z - Rabot sans fil 18V LXT (82 mm)"
 meta_description: "Avis complet et test indépendant sur RABOT MAKITA 82 MM 18 V LXT -DKP180Z. Découvrez ses performances réelles et points forts."
+avis_clients:
+  - auteur: "Buzer"
+    note: 5
+    titre: "Très bon produit"
+    commentaire: "Je suis très content de cette outil qui est facile à manipuler et très efficace"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "ludovic L."
+    note: 5
+    titre: "."
+    commentaire: "Super"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "aimé"
+    note: 5
+    titre: "tres bien pour le bricoleur"
+    commentaire: "R A S du makita conforme a mes demande"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+  - auteur: "Eric M."
+    note: 5
+    titre: "Produit conforme"
+    commentaire: "Makita top"
+    usage: "Acheteur vérifié Amazon.fr"
+    achat_verifie: true
+satisfaction_globale:
+  note_moyenne: 4.8
+  total_avis: 100
+  taux_positif: "96%"
 ---
 
 ## Introduction et positionnement
