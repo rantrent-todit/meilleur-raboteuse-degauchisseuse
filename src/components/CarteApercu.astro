@@ -2,29 +2,30 @@
 import { slugify } from '../utils/slugify';
 
 interface Props {
-  titre: string;
-  description: string;
-  image: string;
-  slug: string;
+  titre?: string;
+  description?: string;
+  image?: string;
+  slug?: string;
   badge?: string;
   lienAffiliation?: string;
   categories?: string[];
   index?: number;
+  id?: string;
+  data?: any;
 }
 
-const { 
-  titre, 
-  description, 
-  image, 
-  slug, 
-  badge, 
-  lienAffiliation,
-  categories = [],
-  index = 0
-} = Astro.props;
+const rawProps = Astro.props;
+const titre = rawProps.titre || rawProps.data?.titre || '';
+const description = rawProps.description || rawProps.data?.description_courte || rawProps.data?.description_longue || '';
+const image = rawProps.image || rawProps.data?.image_url || '';
+const slug = rawProps.slug || rawProps.id || '';
+const badge = rawProps.badge || '';
+const lienAffiliation = rawProps.lienAffiliation || rawProps.data?.lien_affiliation || '';
+const categories = (rawProps.categories || rawProps.data?.categories || []) as string[];
+const index = rawProps.index || 0;
 
 // Extraire ratio optique éventuel (ex: 8x42)
-const optiqueMatch = titre.match(/(\d+x\d+)/i);
+const optiqueMatch = titre ? titre.match(/(\d+x\d+)/i) : null;
 const optique = optiqueMatch ? optiqueMatch[1].toLowerCase() : null;
 const categoriesStr = categories.join(' ');
 const categorySlugs = categories.map(c => slugify(c)).join(',');
@@ -71,7 +72,7 @@ const firstCat = categories[0] || "Matériel testé";
         </span>
       </div>
 
-      <h3 class="text-base font-extrabold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors leading-snug !my-0">
+      <h3 class="text-base font-extrabold text-slate-900 mb-2 group-hover:text-brand transition-colors leading-snug !my-0">
         <a href={`/avis/${slug}/`} class="focus:outline-none focus:underline">
           {titre}
         </a>
@@ -85,7 +86,7 @@ const firstCat = categories[0] || "Matériel testé";
     <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2 mt-2">
       <a 
         href={`/avis/${slug}/`} 
-        class="text-xs font-extrabold text-slate-700 hover:text-orange-600 transition-colors flex items-center gap-1"
+        class="text-xs font-extrabold text-slate-700 hover:text-brand transition-colors flex items-center gap-1"
       >
         Lire le test
         <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -98,7 +99,7 @@ const firstCat = categories[0] || "Matériel testé";
           href={lienAffiliation}
           target="_blank"
           rel="sponsored nofollow noopener noreferrer"
-          class="text-xs font-extrabold bg-orange-600 hover:bg-orange-700 text-white px-3 py-1.5 rounded-lg shadow-sm transition-colors whitespace-nowrap"
+          class="text-xs font-extrabold bg-brand hover:bg-brand-hover text-white px-3 py-1.5 rounded-lg shadow-sm transition-colors whitespace-nowrap"
         >
           Voir prix Amazon
         </a>
