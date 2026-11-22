@@ -37,23 +37,34 @@ const allCategories = Array.from(categoryMap.entries())
 
 const siteUrl = siteConfig.siteDomain.replace(/\/$/, '');
 
-// FAQ par défaut enrichie pour le référencement et Schema.org FAQPage
+// Titres et métadonnées SEO ciblés (mot-clé principal "Meilleure raboteuse dégauchisseuse", sans branding parasite)
+const primaryKeyword = siteConfig.primaryKeyword || "Meilleure raboteuse dégauchisseuse";
+const homeTitle = siteConfig.homeSeoTitle || `${primaryKeyword} : Comparatif, Tests & Guide`;
+const homeH1 = siteConfig.homeH1 || primaryKeyword;
+const homeTagline = siteConfig.homeTagline || "Le comparatif indépendant et guide d'achat pour équiper votre atelier bois";
+const homeDescription = siteConfig.homeDescription || siteConfig.description;
+
+// FAQ technique experte et intemporelle (sans branding, sans dates)
 const faqItems = [
   {
-    q: `Comment notre équipe sélectionne-t-elle les modèles présentés sur ${siteConfig.siteName} ?`,
-    r: `Notre protocole d'analyse repose sur une étude comparative rigoureuse des caractéristiques techniques, des retours d'expérience vérifiés d'utilisateurs sur le long terme, et de tests vérifiés indépendants. Nous évaluons en priorité la fiabilité des composants, l'ergonomie d'utilisation et le rapport qualité-prix réel.`
+    q: "Quelle est la différence fondamentale entre une dégauchisseuse et une raboteuse ?",
+    r: "La dégauchisseuse intervient en premier pour aplanir une première face de référence sur un morceau de bois brut, puis dresser un chant perpendiculaire à 90 degrés grâce à son guide d'équerre. La raboteuse intervient dans un second temps : elle calibre la seconde face pour la rendre parfaitement parallèle à la première tout en amenant la planche à l'épaisseur exacte souhaitée au dixième de millimètre près. Le combiné d'atelier rassemble ces deux fonctions indispensables en une seule machine compacte."
   },
   {
-    q: "Quels sont les critères décisifs à étudier avant de finaliser un achat ?",
-    r: "Les trois critères indispensables sont la qualité des matériaux de conception, l'adéquation exacte entre vos besoins réels et les performances annoncées, ainsi que la disponibilité des pièces de rechange et le sérieux du service après-vente du fabricant."
+    q: "Faut-il privilégier un arbre porte-fers classique ou un arbre hélicoïdal ?",
+    r: "L'arbre traditionnel à 2 ou 3 fers droits en acier HSS offre d'excellentes finitions sur bois tendres et représente un coût d'acquisition accessible. L'arbre hélicoïdal à pastilles carbure interchangeables constitue le sommet de la technologie moderne : il divise la nuisance sonore de moitié, élimine quasiment tout risque d'arrachement sur les bois durs au contrefil prononcé, et permet de pivoter une plaquette ébréchée en quelques secondes sans devoir recalibrer tout l'arbre de coupe."
   },
   {
-    q: "Les prix affichés sur le comparatif sont-ils actualisés ?",
-    r: "Les liens d'affiliation partenaires redirigent directement vers les boutiques officielles vérifiées où les tarifs, promotions et disponibilités des stocks sont actualisés en temps réel afin de vous garantir les conditions d'achat les plus avantageuses."
+    q: "Quelle largeur de rabotage choisir pour un atelier de menuiserie ou d'ébénisterie ?",
+    r: "Une largeur de 204 mm convient parfaitement aux petits ateliers, aux créateurs d'objets en bois ou aux luthiers ayant des contraintes d'espace. Pour un usage polyvalent incluant la réalisation de meubles, de portes ou le corroyage de chevrons et bastaings, une largeur de 254 mm à 260 mm constitue le compromis idéal. Les modèles de 305 mm à 330 mm s'adressent aux artisans devant corroyer de larges plateaux de table en bois massif et des poutres épaisses."
   },
   {
-    q: "Comment entretenir durablement son équipement pour maximiser sa durée de vie ?",
-    r: "Un entretien régulier préventif, comprenant le nettoyage après chaque utilisation, le respect scrupuleux des préconisations du fabricant et le stockage dans un environnement sec et tempéré, permet d'éviter l'usure prématurée et de préserver un niveau de performance optimal au fil des années."
+    q: "Un aspirateur d'atelier à copeaux est-il indispensable pour utiliser une raboteuse dégauchisseuse ?",
+    r: "Oui, un aspirateur d'atelier spécifique raccordé à la buse d'extraction (généralement de 100 mm de diamètre) est indispensable. Un combiné rabot-dégau génère plusieurs dizaines de litres de copeaux volumineux en quelques minutes. Sans évacuation forcée, les copeaux s'accumulent instantanément autour de l'arbre porte-fers, provoquant un bourrage, un échauffement anormal des couteaux et des marques de martèlement indélébiles sur les surfaces usinées."
+  },
+  {
+    q: "Comment éliminer le phénomène de talon (snipe) aux extrémités des planches rabotées ?",
+    r: "Le talon survient lorsque la planche pénètre ou quitte la zone de coupe sans être soutenue simultanément par les deux rouleaux presseurs. Pour l'éviter, il convient d'aligner rigoureusement les servantes à rouleaux d'entrée et de sortie, d'exercer une légère pression ascendante sur le morceau de bois au début et à la fin de la passe, ou tout simplement de prévoir une surlongueur de quelques centimètres qui sera tronçonnée après calibrage."
   }
 ];
 
@@ -64,7 +75,7 @@ const websiteSchema = {
       "@type": "WebSite",
       "name": siteConfig.siteName,
       "url": `${siteUrl}/`,
-      "description": siteConfig.description,
+      "description": homeDescription,
       "inLanguage": "fr-FR",
       "publisher": {
         "@type": "Organization",
@@ -82,8 +93,8 @@ const websiteSchema = {
     },
     ...(allProducts.length > 0 ? [{
       "@type": "ItemList",
-      "name": `Top Sélections | ${siteConfig.siteName}`,
-      "description": `Sélection des meilleurs modèles recommandés par les experts de ${siteConfig.siteName}.`,
+      "name": `Top Sélections : ${primaryKeyword}`,
+      "description": `Sélection comparative des modèles les plus performants pour le bois.`,
       "itemListElement": allProducts.slice(0, 3).map((p, idx) => ({
         "@type": "ListItem",
         "position": idx + 1,
@@ -107,29 +118,29 @@ const websiteSchema = {
 ---
 
 <Layout
-  title={`${siteConfig.siteName} : Comparatifs et Tests d'Experts`}
-  description={siteConfig.description}
+  title={homeTitle}
+  description={homeDescription}
   breadcrumbs={[{ name: "Accueil", url: "/" }]}
 >
   <script type="application/ld+json" is:inline slot="extra-head" set:html={JSON.stringify(websiteSchema)} />
 
-  <!-- HERO SECTION CONVERSION BENTO -->
+  <!-- HERO SECTION CONVERSION BENTO OPTIMISÉE SEO SANS BRANDING -->
   <section class="py-8 md:py-16">
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
       <div class="lg:col-span-7 text-left">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs font-black uppercase tracking-wider mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-black uppercase tracking-wider mb-6">
           <svg class="w-4 h-4 text-orange-600" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
           </svg>
-          Guide Comparatif & Tests Vérifiés Indépendants
+          Comparatif Indépendant & Guide Technique d'Atelier
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-6">
-          {siteConfig.siteName} : <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500">{siteConfig.tagline}</span>
+          {homeH1} : <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700">{homeTagline}</span>
         </h1>
 
         <p class="text-base sm:text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
-          {siteConfig.description}
+          {homeDescription}
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
@@ -196,12 +207,12 @@ const websiteSchema = {
   <!-- SOMMAIRE RAPIDE DE NAVIGATION PILIER -->
   <section class="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 my-8 shadow-xl">
     <div class="max-w-4xl">
-      <span class="text-xs font-black uppercase tracking-wider text-orange-400">Navigation directe</span>
+      <span class="text-xs font-black uppercase tracking-wider text-amber-400">Navigation directe</span>
       <h2 class="text-xl sm:text-2xl font-black text-white mt-1 mb-4 !my-0">
-        Accès direct aux sélections et guides d'experts
+        Accès direct aux sélections et guides d'experts du bois
       </h2>
       <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
-        Accédez rapidement à nos tests, au tableau comparatif complet ou approfondissez vos critères de choix grâce à notre dossier conseil.
+        Accédez rapidement à nos tests complets, au comparatif technique interactif ou plongez dans notre dossier d'ingénierie bois pour choisir la machine adaptée à vos pièces de menuiserie.
       </p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-extrabold">
         <a href="#podium" class="bg-slate-800 hover:bg-orange-600 text-slate-100 hover:text-white p-3.5 rounded-xl border border-slate-700/80 transition-all text-center">
@@ -233,8 +244,8 @@ const websiteSchema = {
       <TableauComparatif 
         produits={allProducts} 
         limit={3}
-        titreSection="Tableau Comparatif : Le Top 3 des Meilleurs Modèles"
-        sousTitreSection="Comparaison directe des 3 équipements les plus performants selon nos tests vérifiés"
+        titreSection="Tableau Comparatif : Les Meilleures Raboteuses Dégauchisseuses"
+        sousTitreSection="Comparaison technique directe des 3 combinés bois les plus performants pour votre atelier"
       />
     </div>
   )}
@@ -244,9 +255,9 @@ const websiteSchema = {
     <section class="my-16">
       <div class="flex items-center justify-between mb-8">
         <div>
-          <span class="text-xs font-black uppercase tracking-wider text-orange-600">Catégories & Usages</span>
+          <span class="text-xs font-black uppercase tracking-wider text-orange-600">Catégories & Usages d'Atelier</span>
           <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1 !my-0">
-            Trouvez selon votre besoin
+            Trouvez le combiné adapté à vos projets
           </h2>
         </div>
         <a href="/comparatifs/" class="text-xs sm:text-sm font-extrabold text-orange-600 hover:text-orange-700">
@@ -273,60 +284,133 @@ const websiteSchema = {
     </section>
   )}
 
-  <!-- GUIDE D'ACHAT PILIER SEO TEXTUEL -->
+  <!-- GUIDE D'ACHAT PILIER SEO TEXTUEL ULTRA-SPÉCIALISÉ (+1000 MOTS, ZÉRO DATE, ZÉRO BRANDING) -->
   <article id="guide-achat" class="my-20 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm scroll-mt-24">
-    <header class="max-w-3xl mb-12">
-      <span class="text-xs font-black uppercase tracking-wider bg-orange-100 text-orange-800 px-3 py-1 rounded-full inline-block mb-3">
-        Critères d'Évaluation Technique
+    <header class="max-w-4xl mb-12">
+      <span class="text-xs font-black uppercase tracking-wider bg-amber-100 text-amber-900 px-3 py-1 rounded-full inline-block mb-3">
+        Dossier Technique Menuiserie & Ébénisterie
       </span>
       <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight !my-0">
-        Guide d'Achat : Les Clés pour Choisir le Meilleur Équipement
+        Guide d'Achat : Comment Choisir la Meilleure Raboteuse Dégauchisseuse ?
       </h2>
       <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-        Sélectionner le produit idéal exige de regarder au-delà des arguments commerciaux pour identifier les critères techniques qui font une réelle différence dans la pratique quotidienne.
+        Transformer des pièces de bois brut en plateaux parfaitement droits, réguliers et calibrés au dixième de millimètre constitue le fondement même de tout projet de menuiserie réussi. Découvrez les critères techniques déterminants pour sélectionner l'équipement idéal sans compromis sur la précision.
       </p>
     </header>
 
-    <div class="space-y-10 text-slate-700 text-sm sm:text-base leading-relaxed">
+    <div class="space-y-12 text-slate-700 text-sm sm:text-base leading-relaxed">
       <section>
         <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
-          1. Définir précisément votre fréquence d'usage et votre niveau d'exigence
+          1. Pourquoi investir dans une raboteuse dégauchisseuse combinée pour son atelier ?
         </h3>
         <p class="mb-4">
-          La première erreur commise lors de l'achat d'un matériel réside dans le surdimensionnement ou, au contraire, la sous-évaluation des contraintes d'utilisation. Pour un besoin occasionnel, la simplicité de manipulation, la compacité et la facilité de rangement priment sur les options techniques complexes. À l'inverse, pour une utilisation fréquente ou intensive, l'accent doit être mis sans compromis sur la robustesse mécanique des composants, la précision des réglages fins et la résistance à l'usure prématurée.
+          Le corroyage est l'étape primordiale par laquelle passe chaque morceau de bois massif avant de pouvoir être débité, assemblé ou sculpté. À l'état brut de sciage, une planche présente des déformations inhérentes aux tensions internes du végétal : voilage, tuilage, gauchissement ou cintrage en arc. Travailler sur un bois non dégauchi condamne inévitablement les futurs assemblages à l'imprécision et au jeu mécanique.
         </p>
-      </section>
-
-      <section>
-        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
-          2. La qualité de fabrication et le choix des matériaux de structure
-        </h3>
         <p class="mb-4">
-          La durabilité d'un modèle se mesure directement à la qualité de ses assemblages. Privilégiez toujours des structures intégrant des métaux usinés (alliages d'aluminium moulé sous pression, acier ou fonte) aux endroits soumis à de fortes contraintes mécaniques, plutôt que des pièces maîtresses entièrement conçues en polymères plastiques. La rigidité structurelle garantit non seulement la longévité de l'appareil, mais assure également une reproductibilité constante des résultats au fil des utilisations répétées.
+          La force du combiné d'atelier réside dans l'alliance de deux opérations complémentaires au sein d'une seule et même unité mécanique. La dégauchisseuse utilise des tables supérieures horizontales pour dresser une première face parfaitement plane, puis un chant perpendiculaire strict à 90 degrés grâce à l'appui d'un guide rectifié. Une fois ces deux références obtenues, la raboteuse fait glisser la planche sur une table inférieure motorisée pour usiner la face opposée. Le résultat est un parallélisme rigoureux et une épaisseur constante d'un bout à l'autre de la pièce.
         </p>
-      </section>
-
-      <section>
-        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
-          3. L'ergonomie générale, le confort d'utilisation et la sécurité
-        </h3>
-        <p class="mb-4">
-          Un matériel performant doit avant tout être agréable et intuitif à manier. Les organes de commande doivent tomber naturellement sous la main, les molettes et curseurs de réglage doivent comporter des graduations lisibles et précises, et les dispositifs de sécurité doivent fonctionner de manière fluide sans entraver le travail de l'opérateur. L'expérience d'utilisation quotidienne dépend directement de ces détails d'ergonomie qui préviennent la fatigue et renforcent la précision.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
-          4. L'écosystème, les accessoires disponibles et le service après-vente
-        </h3>
         <p>
-          L'achat d'un équipement ne s'arrête pas à la boîte d'origine. Un modèle de marque reconnue vous assure une compatibilité étendue avec de nombreux accessoires d'extension, la garantie de trouver aisément des pièces d'usure de rechange pendant plusieurs années, et une valeur résiduelle supérieure sur le marché de l'occasion en cas de revente.
+          Pour l'artisan passionné comme pour le professionnel travaillant dans un atelier à surface optimisée, le combiné 2-en-1 représente une économie substantielle de précieux mètres carrés tout en divisant les coûts d'acquisition et de maintenance moteur par deux.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          2. Largeur de passage et dimensionnement des tables de corroyage
+        </h3>
+        <p class="mb-4">
+          La capacité utile d'un combiné détermine directement la dimension maximale des bois que vous pourrez corroyer en une seule passe :
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li><strong>Le calibre 204 mm (8 pouces) :</strong> Format compact par excellence, particulièrement prisé pour les établis d'appartement, les petits garages, la lutherie et la confection de petits mobiliers. Ces machines légères se déplacent aisément et suffisent largement pour raboter des tasseaux, montants et petites planches.</li>
+          <li><strong>Le calibre 254 mm à 260 mm (10 pouces) :</strong> Le standard de référence pour la grande majorité des menuisiers amateurs avertis et bricoleurs confirmés. Il permet d'usiner la quasi-totalité des chevrons de charpente, madriers refendus et plateaux de meubles courants sans se heurter aux limites du bâti.</li>
+          <li><strong>Le calibre 305 mm à 330 mm (12 à 13 pouces) :</strong> La dimension reine pour les créations d'ébénisterie imposantes, les tables de salle à manger en bois massif et les poutres de rénovation.</li>
+        </ul>
+        <p class="mb-4">
+          Au-delà de la largeur de coupe, la longueur totale des tables de dégauchissage (addition de la table d'entrée et de la table de sortie) est un facteur capital pour la planéité. Plus les tables sont longues (généralement entre 700 mm et 1100 mm sur les machines d'atelier), plus il est aisé d'empêcher les pièces longues de basculer, garantissant ainsi un dressage rectiligne sans déformation conique.
+        </p>
+        <p>
+          Sur le plan des matériaux, les tables en fonte d'aluminium rectifiée sous pression offrent une excellente planéité tout en conservant un poids modéré idéal pour le transport. Pour une installation fixe pérenne, la fonte d'acier massive reste le summum : son poids imposant absorbe les vibrations parasites générées par la rotation rapide de l'arbre et confère une stabilité inébranlable.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          3. Arbre porte-fers et technologie de coupe : fers HSS classiques vs arbre hélicoïdal
+        </h3>
+        <p class="mb-4">
+          Au cœur mécanique de la machine réside l'arbre rotatif, propulsé à des régimes compris entre 6 000 et 9 000 tours par minute. Le choix de la technologie de coupe influence grandement la qualité de finition et le confort de travail :
+        </p>
+        <p class="mb-4">
+          <strong>Les fers traditionnels droits en acier rapide (HSS) :</strong> Montés par deux ou trois sur l'arbre cylindrique, ils coupent le bois sur toute la largeur de manière simultanée. S'ils offrent un tranchant rasoir et une finition glacée sur les bois résineux et feuillus droits, ils génèrent un bruit de sifflement caractéristique puissant lors de la frappe dans l'air. De plus, leur réglage d'alignement avec la table de sortie requiert de la minutie et l'usage de positionneurs magnétiques après chaque réaffûtage.
+        </p>
+        <p class="mb-4">
+          <strong>L'arbre hélicoïdal à pastilles carbure (spiral cutterhead) :</strong> Véritable bond en avant technologique, cet arbre dispose d'une multitude de petites plaquettes carrées en carbure de tungstène disposées en spirale progressive. Chaque pastille pénètre le bois en coupe biaise et séquentielle, transformant le choc frontal continu en un cisaillement fluide et régulier.
+        </p>
+        <p>
+          Les avantages de l'arbre hélicoïdal sont incomparables : la pression sonore diminue de près de 50%, les risques d'arrachement de matière (tear-out) sur les bois noueux, ronceux ou ondulés sont quasiment annihilés, et en cas d'impact avec un corps étranger ou un clou dissimulé, il suffit de faire pivoter la pastille touchée sur l'une de ses quatre arêtes neuves sans avoir à démonter ni réaligner l'ensemble de l'arbre.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          4. Puissance moteur, entraînement et vitesse d'avance automatique
+        </h3>
+        <p class="mb-4">
+          Le corroyage de bois denses comme le chêne, le hêtre ou les essences exotiques exige une réserve de couple importante. Pour une machine compacte de 204 mm, une motorisation de 1 250 W à 1 500 W est nécessaire pour assurer une passe de rabotage de 1,5 à 2 mm sans chute de régime. Pour des largeurs de 254 mm à 305 mm, un moteur de 1 800 W à 2 200 W permet de maintenir la vitesse de coupe constante, évitant ainsi les traces d'échauffement ou les brûlures sur les fibres du bois.
+        </p>
+        <p class="mb-4">
+          En mode raboteuse, le déplacement de la pièce est automatisé par des rouleaux d'entraînement synchronisés :
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li><strong>Le rouleau d'entrée cranté en acier :</strong> Il agrippe vigoureusement la planche brute pour l'engager fermement sous l'arbre porte-fers.</li>
+          <li><strong>Le rouleau de sortie surmoulé en caoutchouc souple :</strong> Il tracte la pièce usinée vers l'extérieur sans marquer la surface plane fraîchement rabotée.</li>
+          <li><strong>La vitesse d'avance :</strong> Calibrée généralement entre 5 et 8 mètres par minute, elle assure le rapport idéal entre rapidité d'exécution et densité d'impacts de lames par centimètre usiné.</li>
+        </ul>
+        <p>
+          Par ailleurs, toute machine moderne digne de ce nom intègre des cliquets métalliques anti-recul (peigne anti-kickback). Ces doigts pivotants en acier laissent glisser la planche vers l'avant mais se verrouillent instantanément si l'effort de coupe venait à projeter violemment la planche en arrière vers l'opérateur.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          5. Aspiration des copeaux, guide d'angle et sécurité d'atelier
+        </h3>
+        <p class="mb-4">
+          Travailler le bois avec un combiné dégau-rabot génère un volume impressionnant de déchets en un temps record. Une passe de 2 mm sur un madrier produit plusieurs seaux de copeaux légers et volumineux. L'utilisation d'un aspirateur à copeaux équipé d'une buse d'au moins 100 mm est une condition impérative au bon fonctionnement de la machine.
+        </p>
+        <p class="mb-4">
+          Une aspiration performante prévient la formation d'agglomérats sous le carter, évite que les copeaux ne soient réécrasés sur la planche par les rouleaux d'entraînement (ce qui laisserait des indentations inesthétiques), et protège les poumons de l'utilisateur contre l'inhalation de particules de poussière fine. De plus, sur la quasi-totalité des modèles, le capot d'évacuation fait office de pont de sécurité électrique : s'il n'est pas solidement verrouillé en position, un microcontact empêche physiquement le démarrage du moteur.
+        </p>
+        <p class="mb-4">
+          Le guide parallèle de dégauchissage mérite également un examen attentif. Conçu en profilé d'aluminium extrudé rigide ou en fonte, il doit être parfaitement rectiligne, pouvoir coulisser transversalement sur toute la largeur des tables, et s'incliner avec exactitude de 90° à 45° pour la réalisation de chanfreins d'onglet précis. Des butées mécaniques franches aux positions 90° et 45° évitent d'avoir à vérifier systématiquement l'angle à l'équerre d'atelier avant chaque passe.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          6. Pratique d'atelier : comment éliminer le talon (snipe) et entretenir votre combiné
+        </h3>
+        <p class="mb-4">
+          Le talon, ou "snipe", est la hantise des utilisateurs de raboteuse : il s'agit d'une légère surcoupe de quelques dixièmes de millimètre creusée sur les 5 à 10 premiers ou derniers centimètres de la planche lors de son passage. Ce phénomène mécanique se produit au moment où la pièce n'est maintenue que par un seul des deux rouleaux presseurs, provoquant un léger basculement vers l'arbre de coupe.
+        </p>
+        <p class="mb-4">
+          Pour supprimer totalement l'effet de talon :
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li>Installez des servantes à rouleaux rigoureusement de niveau avec la table de rabotage pour soutenir le porte-à-faux des planches volumineuses en entrée comme en sortie.</li>
+          <li>Appliquez une pression manuelle douce vers le haut sur l'extrémité de la planche lors de son introduction jusqu'à ce que le second rouleau prenne le relais, puis reproduisez ce geste en sortie lors de l'extraction.</li>
+          <li>Engagez vos planches les unes après les autres bout à bout de façon continue, afin que les rouleaux presseurs restent continuellement sous tension.</li>
+          <li>Pour les projets de très haute précision, prévoyez systématiquement 10 centimètres de surlongueur brute à tronçonner après l'opération de rabotage final.</li>
+        </ul>
+        <p>
+          Enfin, la pérennité d'un combiné d'atelier repose sur un entretien méthodique : appliquez régulièrement une cire de glisse sèche sans silicone sur les tables pour fluidifier le glissement du bois sans encrasser les finitions futures, dépoussiérez et lubrifiez périodiquement les chaînes et vis sans fin d'élévation, et contrôlez fréquemment le tranchant de vos couteaux pour préserver la mécanique de tout échauffement prématuré.
         </p>
       </section>
     </div>
   </article>
 
-  <!-- FOIRE AUX QUESTIONS EXPERTE (SCHEMA FAQPAGE) -->
+  <!-- FOIRE AUX QUESTIONS EXPERTE (SCHEMA FAQPAGE SANS BRANDING) -->
   <section id="faq" class="my-16 scroll-mt-24">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-10">
@@ -337,7 +421,7 @@ const websiteSchema = {
           Foire aux questions : Tout comprendre avant de commander
         </h2>
         <p class="text-xs sm:text-sm text-slate-600 mt-2">
-          Retrouvez les réponses aux interrogations les plus fréquentes pour concrétiser votre choix en toute sérénité.
+          Retrouvez les réponses techniques aux interrogations les plus fréquentes pour concrétiser votre choix en toute sérénité.
         </p>
       </div>
 

@@ -1,4 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="24" fill="#1E293B" />
-  <text x="50" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" fill="#ffffff" text-anchor="middle">L</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Dégradé principal de fond diagonal fonte atelier -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Lueur subtile ambre/chêne au sommet -->
+    <radialGradient id="topGlow" cx="25%" cy="15%" r="70%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#d97706" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ombre douce sous le glyphe -->
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+
+    <!-- Ombre générale du squircle -->
+    <filter id="boxShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#090d16" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Fond Squircle Moderne Style iOS / macOS (rayon 56px) -->
+  <rect 
+    x="12" 
+    y="12" 
+    width="232" 
+    height="232" 
+    rx="56" 
+    ry="56" 
+    fill="url(#bgGrad)" 
+    filter="url(#boxShadow)"
+  />
+
+  <!-- Halo de lumière chaude supérieure ambre bois -->
+  <rect 
+    x="12" 
+    y="12" 
+    width="232" 
+    height="232" 
+    rx="56" 
+    ry="56" 
+    fill="url(#topGlow)" 
+  />
+
+  <!-- Liseré intérieur biseauté (Glass border) -->
+  <rect 
+    x="14" 
+    y="14" 
+    width="228" 
+    height="228" 
+    rx="54" 
+    ry="54" 
+    fill="none" 
+    stroke="rgba(255, 255, 255, 0.22)" 
+    stroke-width="3" 
+  />
+
+  <!-- Éléments vectoriels de la thématique Travail du bois & Raboteuse Dégauchisseuse -->
+  <g filter="url(#softShadow)">
+    <g transform="translate(128, 128) scale(1.12) translate(-128, -128)">
+      <!-- Tables de dégauchissage (entrée & sortie en fonte rectifiée) -->
+      <path d="M42 168 L214 168 L206 182 L50 182 Z" fill="rgba(255,255,255,0.22)" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" />
+      <line x1="40" y1="168" x2="216" y2="168" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+      
+      <!-- Fût / Corps de machine & colonne de rabotage -->
+      <rect x="74" y="182" width="108" height="26" rx="4" fill="rgba(255,255,255,0.12)" stroke="#ffffff" stroke-width="6" />
+      <line x1="96" y1="194" x2="160" y2="194" stroke="#fbbf24" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 8" />
+
+      <!-- Arbre porte-fers central cylindrique -->
+      <circle cx="128" cy="148" r="22" fill="#0f172a" stroke="#ffffff" stroke-width="8" />
+      <!-- Couteaux / Fers de rabotage tranchants dorés -->
+      <line x1="112" y1="134" x2="144" y2="162" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+      <line x1="144" y1="134" x2="112" y2="162" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+
+      <!-- Rabot manuel d'ébéniste stylisé au-dessus en lévitation d'artisan -->
+      <path d="M68 126 L96 74 C100 66 110 62 120 64 L180 78 C190 80 196 90 194 100 L188 126 Z" fill="rgba(255,255,255,0.18)" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" />
+      <!-- Poignée arrière ergonomique & poignée avant boule -->
+      <circle cx="86" cy="88" r="9" fill="#ffffff" />
+      <path d="M168 86 C176 86 182 92 180 102" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" />
+      
+      <!-- Copeau de bois ruban doré élégant jaillissant de l'arbre -->
+      <path d="M136 122 C148 104 168 102 176 114 C184 126 166 142 152 136 C144 132 142 122 150 116" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round" />
+      <!-- Étoile d'excellence atelier au sommet -->
+      <polygon points="128,34 132,44 143,44 134,51 138,62 128,55 118,62 122,51 113,44 124,44" fill="#fbbf24" stroke="none" />
+    </g>
+  </g>
 </svg>
